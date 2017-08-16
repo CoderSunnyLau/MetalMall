@@ -1,0 +1,117 @@
+.cnt_header .tip{
+	display:block;
+	text-align:center;
+	font-size:20px;
+	color:#E33;
+}
+.checkout{
+	margin:20px 0;
+}
+.box_title{
+	position:relative;
+	border:1px solid #DDD;
+	height:35px;
+}
+.box_title span{
+	position:absolute;
+	display:block;
+	height:35px;
+	border-bottom:2px solid #F90;
+	padding:0 10px;
+	line-height:35px;
+	font-size:16px;
+	z-index:9;
+}
+.company_name{
+	border:1px solid #DDD;
+	border-bottom:none;
+	background-color:#F8F8F8;
+	line-height:35px;
+	height:35px;
+	padding:0 10px;
+}
+.pdts_list{
+	margin:0;
+	border:1px solid #DDD;
+	border-bottom:none;
+	font-size:14px;
+}
+.pdts_list thead{
+	background-color:#FAFAFA;
+}
+.pdts_list thead th{
+	color:#333;
+}
+.amount{
+	width:60px;
+	height:25px;
+}
+.sum{
+	background-color:#FAFAFA;
+	text-align:right;
+	padding-right:20px;
+	height:35px;
+}
+.sum b{
+	color:#E33;
+	font-size:20px;
+}
+.payment_type{
+	border:1px solid #DDD;
+	border-bottom:none;
+	padding:10px 0;
+}
+.payment_type select{
+	width:180px;
+	height:30px;
+	margin-left:50px;
+	border:1px solid #DDD;
+	cursor:pointer;
+}
+.remark{
+	width:100%;
+	height:80px;
+	padding:10px;
+	border:1px solid #DDD;
+	resize: none;
+}
+.settlement_box{
+	border:1px solid #DDD;
+	border-top:none;
+	overflow:hidden;
+}
+.settlement{
+	float:right;
+	margin:20px;
+}
+.settlement_row{
+	height:40px;
+	line-height:40px;
+}
+.settlement_row span{
+	display:block;
+	float:left;
+	width:80px;
+}
+.settlement i, .settlement b{
+	display:block;
+	float:right;
+	width:160px;
+	text-align:right;
+	color:#E33;
+	font-size:20px;
+}
+.total{
+	border-top:1px solid #F90;
+	margin-top:5px;
+	padding-top:5px;
+}
+.total b{
+	font-size:22px;
+}
+.settlement .submit{
+	width:240px;
+	height:45px;
+	font-size:20px;
+	margin-top:10px;
+}

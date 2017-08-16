@@ -19,11 +19,11 @@
 		<div class="main_width">
 			<i class="login_icon"></i>
 			<ul class="main_nav">
-				<li class="nav_item" id="index">首页</li>
-				<li class="nav_item" id="mall">商城</li>
-				<li class="nav_item" id="need">需求单</li>
-				<li class="nav_item">供应链金融</li>
-				<li class="nav_item">行情速递</li>
+				<li class="nav_item" id="index"><a href="../web/index.jsp">首页</a></li>
+				<li class="nav_item" id="mall"><a href="../web/mall.jsp">商城</a></li>
+				<li class="nav_item" id="need"><a href="../web/mall.jsp">需求单</a></li>
+				<li class="nav_item"><a href="../web/mall.jsp">供应链金融</a></li>
+				<li class="nav_item"><a href="../web/mall.jsp">行情速递</a></li>
 			</ul>
 		</div>
 	</div>
