@@ -1,0 +1,181 @@
+body{
+	background-color: #FFF;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	box-shadow: 0 -1px 1px #FB8 inset;
+	border-bottom: 1px solid #F80;
+	min-width: 850px;
+	background-color: #FFF;
+}
+.header .user{
+	display:none;
+}
+.page_body{
+	position: relative;
+	width: 100%;
+	margin: 81px 0 50px;
+	*top:81px;
+}
+.page_cnt{
+	position: relative;
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+}
+.login_body{
+	height: 480px;
+	background-color: #6A5246;
+}
+.login_cnt{
+	height: 480px;
+}
+.login_box, .forget_box, .setpsd_box{
+	width: 280px;
+	height: 300px;
+	background-color: #FFF;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.input_field{
+	position: relative;
+	height: 50px;
+	margin: 10px 0;
+}
+.input_field i{
+	position:absolute;
+	left:70px;
+	bottom:-10px;
+	color: #E33;
+}
+.setpsd_box .input_field i{
+	left:100px;
+}
+.input_field span{
+	font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	text-align: right;
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+.input_field input, .input_field select{
+	display: block;
+	float: left;
+	width: 185px;
+	height: 34px;
+	line-height:34px;
+	margin: 6px 0;
+	border-radius: 0;
+	border: 1px solid #DDD;
+}
+.box_title{
+	text-align: center;
+	font-size: 18px;
+	color: #F80;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	letter-spacing: 8px;
+}
+.user_valid input{
+	width: 90px;
+}
+.user_valid img{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 38px;
+	margin:6px 0 6px 5px;
+}
+.login_box button, .forget_box button, .setpsd_box button{
+	width: 260px;
+	height: 35px;
+	margin: 20px auto 10px;
+	font-size: 18px;
+}
+.register, .forget, .login, .login_2{
+	display: block;
+	margin: 0 10px;
+}
+.register{
+	float: left;
+}
+.forget, .login, .login_2{
+	float: right;
+}
+
+/*  register  */
+.cnt_header{
+	margin: 10px 0;
+}
+.company_info p, .user_info p{
+	font-size: 16px;
+	font-weight: 600;
+}
+.box_wrap{
+	position: relative;
+	width: 320px;
+	height: 340px;
+	overflow: hidden;
+	float: right;
+	margin: 70px 50px;
+}
+.register_body .input_field span{
+	width: 120px;
+}
+.register_body .input_field input, .input_field select{
+	width: 300px;
+}
+.company_info, .user_info{
+	padding-left:230px;
+	width: 770px;
+	margin: 0 0 20px;
+}
+.register_body .user_valid input{
+	width: 145px;
+}
+.user_valid button{
+	width: 145px;
+	height: 36px;
+	margin: 6px 10px;
+	float: left;
+	font-size: 16px;
+}
+.register_submit{
+	width: 300px;
+	height: 36px;
+	margin:20px 0 0 370px;
+}
+.forget_box, .setpsd_box{
+	opacity: 0;
+	right: -320px;
+	display: none;
+}
+.forget_box .valid_btn{
+	width: 86px;
+	font-size: 14px;
+}
+.forget_box .sent{
+	background-color:#AAA;
+}
+.forget_box .input_field, .setpsd_box .input_field{
+	margin: 33px 0;
+}
+.setpsd_box .input_field input{
+	width: 165px;
+}
+.setpsd_box .input_field span{
+	width: 80px;
+}
