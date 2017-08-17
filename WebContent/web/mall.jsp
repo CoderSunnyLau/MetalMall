@@ -13,32 +13,7 @@
 	<jsp:include page="../components/header2.jsp"></jsp:include>
 	<div class="page_body" nav="mall">
 		<div class="page_cnt main_width">
-			<div class="search_box">
-				<div class="search_row">
-					<div><span>品名</span><input type="text"/></div>
-					<div><span>规格</span><input type="text"/></div>
-					<div><span>材质</span><input type="text"/></div>
-					<div><span>企业</span><input type="text"/></div>
-				</div>
-				<div class="search_row">
-					<div>
-						<span>地区</span>
-						<select>
-							<option value="guangzhou">广州</option>
-						</select>
-					</div>
-					<div>
-						<span>商品类型</span>
-						<select>
-							<option value="">未定义</option>
-						</select>
-					</div>
-					<div class="search_price">
-						<span>价格</span><input type="number"/><i>—</i><input type="number">
-					</div>
-					<button>搜索</button>
-				</div>
-			</div>
+			<jsp:include page="../components/search_box.jsp"></jsp:include>
 			<div class="pdts_box">
 				<ul class="rank">
 					<li class="rank_item">日期</li>
