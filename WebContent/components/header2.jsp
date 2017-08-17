@@ -34,7 +34,7 @@
 <script>
 	//初始化頁面主寬度
 	var widthResize = function(){
-		if($(window).width() > 1300){
+		if($(window).width() > 1400){
 			$('body').removeClass('min');
 		}else{
 			$('body').addClass('min');

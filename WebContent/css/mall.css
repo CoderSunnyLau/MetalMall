@@ -64,6 +64,7 @@
 	background-color:#EEE;
 	text-align:right;
 	border-bottom:1px solid #CCC;
+	margin-top:10px;
 }
 .rank .rank_item{
 	display:inline-block;
@@ -226,14 +227,15 @@
  	height:42px;
  }
  .change_page *{
- 	display:inline-block;
- 	*display:inline;
- 	*zoom:1;
+	display:block;
+	float:left;
 	font-size:16px;
  }
  .change_page input{
  	width:50px;
  	height:40px;
+ 	line-height:40px;
+ 	text-align:center;
  	margin:0 5px;
  	padding:0 5px;
  }
