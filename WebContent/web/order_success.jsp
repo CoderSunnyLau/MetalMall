@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>订单确认</title>
+    <title>提交成功</title>
     <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/order.css">
 </head>
@@ -12,7 +12,7 @@
 	<div class="page_body" nav="mall">
 		<div class="page_cnt main_width">
 			<div class="cnt_header">
-				<span class="tip">填写并核对订单信息</span>
+				<span class="tip success"><i></i>订单提交成功，请您尽快付款！</span>
 			</div>
 			<div class="checkout">
 				<div class="table_box">
@@ -39,7 +39,7 @@
 								<td>1000</td>
 								<td>400</td>
 								<td>500</td>
-								<td><input class="amount" type="number" value="1" /></td>
+								<td><input class="amount" type="number" value="1" disabled="disabled" style="border:none;" /></td>
 							</tr>
 						</tbody>
 						<tfoot>
@@ -52,18 +52,24 @@
 					<p class="company_name">广州钢材集团 | 电话：8888888</p>
 					<p class="box_title"><span>支付方式</span></p>
 					<div class="payment_type">
-						<select>
-							<option>选择支付方式</option>
-						</select>
-						<select>
-							<option>选择银行</option>
-						</select>
-						<select>
-							<option>选择期限</option>
-						</select>
+						<table>
+							<tr class="type_th">
+								<td>支付方式</td>
+								<td>已选银行</td>
+								<td>已选期限</td>
+								<td colspan="3"></td>
+							</tr>
+							<tr>
+								<td>反向保理</td>
+								<td>工商银行</td>
+								<td>2个月</td>
+								<td colspan="3"></td>
+							</tr>
+						</table>
 					</div>
-					<p class="box_title"><span>我要备注</span></p>
-					<textarea class="remark" placeholder="请输入您要备注的信息"></textarea>
+					<p class="bank_credit">银行授信：<span>1000000.00</span></p>
+					<p class="box_title"><span>留言备注</span></p>
+					<textarea class="remark" disabled="disabled"></textarea>
 				</div>
 				<div class="settlement_box">
 					<div class="settlement">
@@ -76,7 +82,7 @@
 						<p class="settlement_row total">
 							<span>应付金额：</span><b>￥20100.00</b>
 						</p>
-						<button class="submit">提交订单</button>
+						<a><button class="view_order">查看订单</button></a>
 					</div>
 				</div>
 			</div>

@@ -1,8 +1,15 @@
+.cnt_header{
+	height:auto;
+}
 .cnt_header .tip{
 	display:block;
 	text-align:center;
 	font-size:20px;
 	color:#E33;
+}
+.cnt_header .success{
+	height:100px;
+	line-height:100px;
 }
 .checkout{
 	margin:10px 0;
@@ -59,14 +66,28 @@
 .payment_type{
 	border:1px solid #DDD;
 	border-bottom:none;
-	padding:10px 0;
 }
 .payment_type select{
 	width:180px;
 	height:30px;
-	margin-left:50px;
+	margin:10px 0 10px 50px;
 	border:1px solid #DDD;
 	cursor:pointer;
+}
+.payment_type table{
+	margin:0;
+	border:none;
+	font-size:14px;
+}
+.type_th{
+	background-color:#FAFAFA;
+	color:#999;
+}
+.bank_credit{
+	height:50px;
+	line-height:50px;
+	border:1px solid #DDD;
+	padding-left:10px;
 }
 .remark{
 	width:100%;
@@ -110,7 +131,7 @@
 .total b{
 	font-size:22px;
 }
-.settlement .submit{
+.settlement .submit, .view_order{
 	width:240px;
 	height:45px;
 	font-size:20px;

@@ -1,0 +1,108 @@
+body .row_grey{
+	background-color:#F8F8F8;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	position:relative;
+}
+.row_grey span{
+	font-size:18px;
+	font-weight:600;
+}
+.row_grey i{
+	position:absolute;
+	top:0;
+	right:15px;
+}
+.info_box{
+	border:1px solid #DDD;
+	overflow:hidden;
+}
+.float{
+	float:left;
+	width:50%;
+}
+.demand_info{
+	width:300px;
+	border:1px solid #DDD;
+	margin:30px auto;
+}
+.demand_info p{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.info_block{
+	border-bottom:1px solid #DDD;
+	padding:15px;
+}
+.text_row{
+	height:25px;
+	line-height:25px;
+}
+.text_row span{
+	margin-right:15px;
+}
+.text_row .text3_4{
+	letter-spacing:5px;
+	margin-right:9px;
+}
+.text_row input{
+	width:250px;
+	height:35px;
+}
+.text_row textarea{
+	width:250px;
+	height:60px;
+}
+.budget{
+	background-color:#F8F8F8;
+	height:50px;
+	line-height:50px;
+	padding:0 15px;
+}
+.budget span{
+	font-size:20px;
+	color:#E33;
+	margin-left:15px;
+}
+.offer_info{
+	margin:30px 0;
+	padding-left:80px;
+	height:264px;
+	border-left:2px solid #CCC;
+}
+.offer_info p{
+	height:50px;
+	line-height:50px;
+}
+.float2 span, .float2 textarea{
+	float:left;
+	display:block;
+}
+.offer_info .float2{
+	height:auto;
+	overflow:hidden;
+}
+.offer{
+	clear: both;
+	margin: 10px 0 0 85px;
+	width: 250px;
+	height: 43px;
+	font-size:16px;
+}
+body .row_white{
+	background-color:#F8F8F8;
+	margin:0 0 10px;
+}
+body .row_white span{
+	padding:0 15px;
+	font-size:17px;
+}
+.detail_box{
+	border:1px solid #DDD;
+	margin:15px 0;
+}
+.detail_cnt{
+	padding:10px 20px 15px;
+}
