@@ -29,50 +29,62 @@
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float">2100</td>
 								<td>吨</td>
 							</tr>
 							<tr>
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float fall">2100</td>
 								<td>吨</td>
 							</tr>
 							<tr>
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float">2100</td>
 								<td>吨</td>
 							</tr>
 							<tr>
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float">2100</td>
 								<td>吨</td>
 							</tr>
 							<tr>
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float">2100</td>
 								<td>吨</td>
 							</tr>
 							<tr>
 								<td>电解铜</td>
 								<td>2200</td>
 								<td>2000</td>
-								<td>2100</td>
+								<td class="market_float">2100</td>
 								<td>吨</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 				<div class="float">
-					<div class="chart_box">
-						
+					<div class="border">
+						<p class="right_top"><span>AMM1#电解铜</span><i>【49910.00（49750-50070）】</i></p>
+						<table class="tab_row">
+							<tr>
+								<td>本月最低：<span>50150</span></td>
+								<td>本月最高：<span class="red">50150</span></td>
+								<td>本月均值：<span>50150</span></td>
+								<td>本月环比：<span class="red">3.7%</span></td>
+							</tr>
+						</table>
+						<p class="price_crr"><span>现货价格</span></p>
+						<div class="chart_box">
+							<div id="market_chart"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -135,6 +147,7 @@
 			</ol>
 		</div>
 	</div>
-	<script src="../js/demand.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
+	<script src="../js/market.js"></script>
 </body>
 </html>

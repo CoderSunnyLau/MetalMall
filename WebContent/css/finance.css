@@ -131,9 +131,59 @@ body .row_white span{
 .market_table td{
 	height:35px;
 	line-height:35px;
+	border:1px solid #DDD;
 }
 .market_table thead td{
 	font-weight:600;
-	font-size:16px;
+	font-size:15px;
+	border:none;
 }
-
+.market_float{
+	color:#E33;
+}
+.market_table .fall{
+	color:#098;
+}
+.float .border{
+	border:1px solid #DDD;
+	margin:5px 0 5px 15px;
+}
+.right_top{
+	height:35px;
+	border-bottom:1px solid #DDD;
+}
+.right_top span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	padding:0 15px;
+	background-color:#CCC;
+	color:#FFF;
+	line-height:35px;
+	text-align:center;
+}
+.right_top i{
+	color:#E33;
+	padding:0 10px;
+}
+.tab_row td{
+	font-size:12px;
+}
+.price_crr{
+	border-bottom:1px solid #DDD;
+}
+.price_crr span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:125px;
+	height:35px;
+	background-color:#F90;
+	color:#FFF;
+	text-align:center;
+	line-height:35px;
+}
+#market_chart{
+	width:580px;
+	height:215px;
+}
