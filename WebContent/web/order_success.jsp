@@ -8,7 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/order.css">
 </head>
 <body>
-	<jsp:include page="../components/header2.jsp"></jsp:include>
+	<jsp:include page="../components/header2.jsp">
+		<jsp:param value="mall" name="pageName"/>
+	</jsp:include>
 	<div class="page_body" nav="mall">
 		<div class="page_cnt main_width">
 			<div class="cnt_header">

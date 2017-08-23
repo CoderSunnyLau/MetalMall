@@ -1,12 +1,6 @@
 .cnt_header{
 	height:auto;
 }
-.cnt_header .tip{
-	display:block;
-	text-align:center;
-	font-size:20px;
-	color:#E33;
-}
 .cnt_header .success{
 	height:100px;
 	line-height:100px;

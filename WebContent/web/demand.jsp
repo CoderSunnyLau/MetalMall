@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/mall.css">
 </head>
 <body>
-	<jsp:include page="../components/header2.jsp"></jsp:include>
+	<jsp:include page="../components/header2.jsp">
+		<jsp:param value="demand" name="pageName"/>
+	</jsp:include>
 	<div class="page_body" nav="demand">
 		<div class="page_cnt main_width">
 			<table class="select_box">

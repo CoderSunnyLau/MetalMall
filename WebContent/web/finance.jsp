@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
 <body>
-	<jsp:include page="../components/header2.jsp"></jsp:include>
+	<jsp:include page="../components/header2.jsp">
+		<jsp:param value="finance" name="pageName"/>
+	</jsp:include>
 	<div class="page_body" nav="finance">
 		<div class="banner">
 			<img src="../images/finance_banner01.jpg" />
@@ -55,43 +57,55 @@
 				<li class="result_item">
 					<div class="item_left"><i>工商银行</i></div>
 					<div class="item_right">
+						<div class="border">
 						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
 						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
 					</div>
 				</li>
 				<li class="result_item crr_finance">
 					<div class="item_left"><i>工商银行</i></div>
 					<div class="item_right">
+						<div class="border">
 						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
 						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
 					</div>
 				</li>
 				<li class="result_item">
 					<div class="item_left"><i>工商银行</i></div>
 					<div class="item_right">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-					</div>
-				</li>
-				<li class="result_item">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
+						<div class="border">
 						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
 						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
 					</div>
 				</li>
 				<li class="result_item">
 					<div class="item_left"><i>工商银行</i></div>
 					<div class="item_right">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i><i> | 2017-08-21</i></p>
-						<p class="item_cnt">【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						<div class="border">
+						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
+						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
+					</div>
+				</li>
+				<li class="result_item">
+					<div class="item_left"><i>工商银行</i></div>
+					<div class="item_right">
+						<div class="border">
+						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
+						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
 					</div>
 				</li>
 				<li class="result_item">
 					<div class="item_left"></div>
 					<div class="item_right">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i><i> | 2017-08-21</i></p>
-						<p class="item_cnt">【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						<div class="border">
+						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
+						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
+						</div>
 					</div>
 				</li>
 			</ul>

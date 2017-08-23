@@ -1,3 +1,4 @@
+
 // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('pdt_chart'));
         var myChart2 = echarts.init(document.getElementById('area_chart'));

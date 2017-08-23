@@ -130,6 +130,9 @@ body{
 	background-color:#FFF;
 	border-bottom:2px solid #F90;
 }
+.header3 .logo_wrapper{
+	margin:0;
+}
 .login_icon{
 	display:block;
 	float:left;
@@ -235,8 +238,13 @@ textarea{
 	color:#FFF !important;
 }
 .cnt_header{
-	height:40px;
 	line-height:40px;
+}
+.cnt_header .tip{
+	display:block;
+	text-align:center;
+	font-size:22px;
+	color:#E33;
 }
 .show{
 	display:block !important;
@@ -389,4 +397,10 @@ textarea{
  }
  .red{
  	color:#E33;
+ }
+ 
+ /* header2樣式 */
+ .index#index a, .mall#mall a, .demand#demand a, .finance#finance a, .market#market a{
+ 	background-color:#F90;
+ 	color:#FFF;
  }

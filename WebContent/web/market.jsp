@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
 <body>
-	<jsp:include page="../components/header2.jsp"></jsp:include>
+	<jsp:include page="../components/header2.jsp">
+		<jsp:param value="market" name="pageName"/>
+	</jsp:include>
 	<div class="page_body" nav="market">
 		<div class="page_cnt main_width">
 			<div class="market_top">
