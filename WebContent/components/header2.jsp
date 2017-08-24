@@ -30,8 +30,6 @@
 		</div>
 	</div>
 </div>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/header2.js"></script>
 <!-- IE8及以下版本瀏覽器 -->
 <!--[if lte IE 8]>
 <script>

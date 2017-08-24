@@ -5,18 +5,16 @@
 <head>
 	<title>企业注册</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/system_login.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
-	<jsp:include page="../components/header.jsp">
-		<jsp:param name="systemTitle" value="注册"/> 
-	</jsp:include>
+	<div class="header_more">
+		<span>欢迎注册</span>
+		<a href="./login.jsp">我已经注册，马上登录></a>
+	</div>
+	<jsp:include page="../components/header3.jsp"></jsp:include>
 	<div class="page_body">
 		<div class="page_cnt">
-		    <div class="cnt_header">
-		        <span>首页 > 企业注册</span>
-		    </div>
 			<div class="register_body">
 				<div class="company_info input_box">
 					<p>企业信息</p>
@@ -27,7 +25,7 @@
 						<span>企业简称</span><input type="text" name="">
 					</div>
 					<div class="input_field">
-						<span>行业类别</span>
+						<span>企业类别</span>
 						<select>
 							<option value="有限责任公司">有限责任公司</option>
 							<option value="股份责任公司">股份责任公司</option>
@@ -46,7 +44,7 @@
 				<div class="user_info input_box">
 					<p>账号信息</p>
 					<div class="user_name input_field">
-						<span>手机号码</span><input type="text" name="" />
+						<span>手机号</span><input type="text" name="" />
 					</div>
 					<div class="user_valid input_field">
 						<span>验证码</span><input type="text" name=""><button>获取验证码</button>
@@ -55,12 +53,13 @@
 						<span>设置密码</span><input type="password" name="">
 					</div>
 					<div class="user_psd input_field">
-						<span>请再次输入密码</span><input type="password" name="">
+						<span>确认密码</span><input type="password" name="">
 					</div>
 				</div>
-				<button class="register_submit">提交注册</button>
+				<button class="register_submit">立即注册</button>
 			</div>
 		</div>
 	</div>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 </body>
 </html>

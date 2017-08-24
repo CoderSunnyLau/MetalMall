@@ -90,6 +90,7 @@
 			</div>
 		</div>
 	</div>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="../js/order.js"></script>
 </body>
 </html>

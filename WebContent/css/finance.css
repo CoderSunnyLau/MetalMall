@@ -34,10 +34,10 @@ body .page_cnt{
 	border-left:1px solid #DDD;
 	padding:0 0 0 40px;
 }
-.border{
+.item_right .border{
 	padding:30px 1px 1px;
 }
-.border:hover{
+.item_right .border:hover{
 	/*border:1px solid #FDB;
 	background-color:#FED;*/
 	background-color:#F4F4F4;

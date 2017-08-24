@@ -5,7 +5,6 @@
 <head>
 	<title>用户登录</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
@@ -68,7 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="../js/jquery.min.js"></script>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="../js/system_login.js"></script>
 </body>
 </html>

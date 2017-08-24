@@ -5,7 +5,6 @@
 <head>
     <title>供应链金融</title>
     <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
 <body>
@@ -149,6 +148,7 @@
 			</ol>
 		</div>
 	</div>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
 	<script src="../js/market.js"></script>
 </body>

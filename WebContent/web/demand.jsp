@@ -5,7 +5,6 @@
 <head>
     <title>需求单</title>
     <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/mall.css">
 </head>
 <body>
@@ -245,6 +244,7 @@
 			<jsp:include page="../components/page.jsp"></jsp:include>
 		</div>
 	</div>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="../js/demand.js"></script>
 </body>
 </html>

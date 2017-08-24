@@ -451,6 +451,7 @@
 			</div>
 		</div>
 	</div>
+	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
 	<script src="../js/index.js"></script>
 </body>

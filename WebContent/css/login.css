@@ -63,6 +63,10 @@ body .header3 .main_width{
 	height: 50px;
 	margin: 10px 0;
 }
+.register_body .input_field{
+	width:407px;
+	margin: 10px auto;
+}
 .input_field i{
 	position:absolute;
 	left:70px;
@@ -79,9 +83,9 @@ body .header3 .main_width{
 	width: 50px;
 	overflow: hidden;
 	text-align: right;
+	margin: 0 10px;
 	display: block;
 	float: left;
-	margin: 0 10px;
 }
 .input_field input, .input_field select{
 	display: block;
@@ -137,6 +141,25 @@ body .header3 .main_width{
 .cnt_header{
 	margin: 10px 0;
 }
+.header_more{
+	position:relative;
+	height:0;
+	width:980px;
+	margin:0 auto;
+	z-index:9;
+}
+.header_more span{
+	position:absolute;
+	top:30px;
+	left:222px;
+	font-size:16px;
+	color:#B40;
+}
+.header_more a{
+	position:absolute;
+	top:50px;
+	right:0;
+}
 .company_info p, .user_info p{
 	font-size: 16px;
 	font-weight: 600;
@@ -149,35 +172,57 @@ body .header3 .main_width{
 	float: right;
 	margin: 70px 50px;
 }
+.register_body{
+	margin:20px 0;
+	padding:15px 0 50px;
+	border:1px solid #DDD;
+	border-top:3px solid #F90;
+	background-color:#FFF;
+}
 .register_body .input_field span{
-	width: 120px;
+	position:absolute;
+	width: 80px;
+	line-height:46px;
+	text-align:left;
+	top:5px;
+	margin-left:20px;
+	color:#B40;
+	z-index:9;
 }
 .register_body .input_field input{
-	width: 300px;
+	width: 310px;
+	height:44px;
+	padding-left:90px;
+	font-size:15px;
 }
 .register_body .input_field select{
-	width: 312px;
-	height:36px;
+	width: 407px;
+	height:46px;
+	padding-left:90px;
+	font-size:15px;
 }
 .company_info, .user_info{
-	padding-left:230px;
 	width: 770px;
-	margin: 0 0 20px;
+	margin: 20px auto 0;
 }
 .register_body .user_valid input{
-	width: 145px;
+	width: 150px;
+	float:left;
+	position:relative;
 }
-.user_valid button{
+.register_body .user_valid button{
 	width: 145px;
-	height: 36px;
-	margin: 6px 10px;
-	float: left;
+	height: 46px;
+	float: right;
 	font-size: 16px;
+	margin-top:6px;
+	background-color:#8ad3cc;
 }
 .register_submit{
-	width: 312px;
-	height: 36px;
-	margin:20px 0 0 370px;
+	width: 407px;
+	height: 42px;
+	margin:15px auto;
+	font-size:18px;
 }
 .forget_box, .setpsd_box{
 	opacity: 0;
@@ -187,6 +232,8 @@ body .header3 .main_width{
 .forget_box .valid_btn{
 	width: 86px;
 	font-size: 14px;
+	float: right;
+	margin: 6px 10px 0 0;
 }
 .forget_box .sent{
 	background-color:#AAA;
@@ -199,4 +246,11 @@ body .header3 .main_width{
 }
 .setpsd_box .input_field span{
 	width: 80px;
+}
+body .footer{
+	margin-top:0;
+}
+body .footer_bg{
+	background-color:#FFF;
+	border-top:1px solid #DDD;
 }
