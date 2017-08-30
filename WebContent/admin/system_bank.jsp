@@ -47,7 +47,7 @@
         	<jsp:include page="./bank_home.jsp"></jsp:include>
         </div>
     </div>
-    <script src="../js/jquery.min.js"></script>
+    <script src="../libs/jquery.min.js"></script>
     <script src="../js/system.js"></script>
 </body>
 </html>

@@ -32,24 +32,29 @@
 					<div class="user_valid input_field">
 						<span>验证码</span><input type="text" name=""><button>获取验证码</button>
 					</div>
-					<div class="input_field">
+					<div class="input_field company_type">
 						<span>企业类别</span>
 						<select>
 							<option value="有限责任公司">有限责任公司</option>
 							<option value="股份责任公司">股份责任公司</option>
 						</select>
 					</div>
-					<div class="input_field">
+					<div class="input_field company_area">
 						<span>企业区域</span>
-						<select>
-							<option value="广州">广州</option>
-						</select>
+						<select name="province"></select><select name="city"></select>
 					</div>
 				</div>
 				<button class="register_submit">立即注册</button>
 			</div>
 		</div>
 	</div>
-	<jsp:include page="../components/footer.jsp"></jsp:include>
+	<script src="../libs/pca.js"></script>
+	<script>
+	    new PCAS("province","city");
+	</script>
+	<jsp:include page="../components/footer.jsp">
+		<jsp:param value="false" name="show"/>
+	</jsp:include>
+	<script src="../js/register.js"></script>
 </body>
 </html>

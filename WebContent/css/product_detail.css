@@ -79,9 +79,9 @@
 	position:relative;
 	width:100%;
 	height:35px;
-	background-color:#EEE;
+	background-color:#F4F4F4;
 	border-bottom:1px solid #BBB;
-	font-size:16px;
+	font-size:17px;
 }
 .detail_header span{
 	display:block;
@@ -106,7 +106,7 @@
 }
 .detail_key{
 	width:250px;
-	background-color:#EEE;
+	background-color:#F4F4F4;
 }
 .param .detail_val{
 	text-align:left;
@@ -115,4 +115,11 @@
 #detail_cnt{
 	width:92%;
 	margin:30px auto;
+	line-height:30px;
+}
+.sold_service{
+	background-color:#F4F4F4;
+	min-height:50px;
+	padding:20px;
+	line-height:30px;
 }

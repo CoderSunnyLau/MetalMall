@@ -60,12 +60,12 @@ body .header3 .main_width{
 }
 .input_field{
 	position: relative;
-	height: 50px;
+	height: 46px;
 	margin: 10px 0;
 }
 .register_body .input_field{
 	width:407px;
-	margin: 10px auto;
+	margin: 15px auto;
 }
 .input_field i{
 	position:absolute;
@@ -184,7 +184,6 @@ body .header3 .main_width{
 	width: 80px;
 	line-height:46px;
 	text-align:left;
-	top:5px;
 	margin-left:20px;
 	color:#B40;
 	z-index:9;
@@ -193,13 +192,34 @@ body .header3 .main_width{
 	width: 310px;
 	height:44px;
 	padding-left:90px;
+	margin:0;
 	font-size:15px;
 }
-.register_body .input_field select{
+.company_type select{
 	width: 407px;
 	height:46px;
 	padding-left:90px;
+	margin:0;
 	font-size:15px;
+}
+.company_area{
+	border:1px solid #DDD;
+	height:46px;
+}
+.company_area select{
+	width:150px;
+	height:46px;
+	font-size:15px;
+	border:none;
+	border-left:1px dashed #CCC;
+	padding-left:10px;
+}
+.company_area [name=province]{
+	margin:0 0 0 100px;
+}
+.company_area [name=city]{
+	float:right;
+	margin:0;
 }
 .company_info, .user_info{
 	width: 770px;
@@ -215,7 +235,6 @@ body .header3 .main_width{
 	height: 46px;
 	float: right;
 	font-size: 16px;
-	margin-top:6px;
 	background-color:#8ad3cc;
 }
 .register_submit{

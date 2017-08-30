@@ -21,6 +21,7 @@
 					<li class="rank_item">价格</li>
 				</ul>
 				<ul class="pdts">
+				<!--
 					<li class="pdt">
 						<div class="pdt_l">
 							<img src="#" />
@@ -56,186 +57,13 @@
 							<button>下单</button>
 						</div>
 					</li>
-					<li class="pdt">
-						<div class="pdt_l">
-							<img src="#" />
-                        </div>
-						<div class="pdt_c">
-							<p class="pdt_title">
-								<b class="pdt_name">无铅高温铜条</b>
-								<span class="company_name">【成品厂名称】</span>
-							</p>
-							<div class="pdt_info">
-								<div class="pdt_state">
-									<p class="pdt_price">
-										￥<b>10.00</b>元/条
-									</p>
-									<p class="pdt_stock">
-										<span>库存</span><i>1000条</i>
-									</p>
-								</div>
-								<div class="pdt_detail">
-									<p class="pdt_dtl_cnt">
-										<span>类型：电解铜1</span>
-										<span>地区：无锡</span>
-									</p>
-									<p class="pdt_dtl_cnt">
-										<span>材质：xxxxxx</span>
-										<span>规格：xxxxxxxxx</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="pdt_r">
-							<p class="date">2017-08-14</p>
-							<button>下单</button>
-						</div>
-					</li>
-					<li class="pdt">
-						<div class="pdt_l">
-							<img src="#" />
-                        </div>
-						<div class="pdt_c">
-							<p class="pdt_title">
-								<b class="pdt_name">无铅高温铜条</b>
-								<span class="company_name">【成品厂名称】</span>
-							</p>
-							<div class="pdt_info">
-								<div class="pdt_state">
-									<p class="pdt_price">
-										￥<b>10.00</b>元/条
-									</p>
-									<p class="pdt_stock">
-										<span>库存</span><i>1000条</i>
-									</p>
-								</div>
-								<div class="pdt_detail">
-									<p class="pdt_dtl_cnt">
-										<span>类型：电解铜1</span>
-										<span>地区：无锡</span>
-									</p>
-									<p class="pdt_dtl_cnt">
-										<span>材质：xxxxxx</span>
-										<span>规格：xxxxxxxxx</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="pdt_r">
-							<p class="date">2017-08-14</p>
-							<button>下单</button>
-						</div>
-					</li>
-					<li class="pdt">
-						<div class="pdt_l">
-							<img src="#" />
-                        </div>
-						<div class="pdt_c">
-							<p class="pdt_title">
-								<b class="pdt_name">无铅高温铜条</b>
-								<span class="company_name">【成品厂名称】</span>
-							</p>
-							<div class="pdt_info">
-								<div class="pdt_state">
-									<p class="pdt_price">
-										￥<b>10.00</b>元/条
-									</p>
-									<p class="pdt_stock">
-										<span>库存</span><i>1000条</i>
-									</p>
-								</div>
-								<div class="pdt_detail">
-									<p class="pdt_dtl_cnt">
-										<span>类型：电解铜1</span>
-										<span>地区：无锡</span>
-									</p>
-									<p class="pdt_dtl_cnt">
-										<span>材质：xxxxxx</span>
-										<span>规格：xxxxxxxxx</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="pdt_r">
-							<p class="date">2017-08-14</p>
-							<button>下单</button>
-						</div>
-					</li>
-					<li class="pdt">
-						<div class="pdt_l">
-							<img src="#" />
-                        </div>
-						<div class="pdt_c">
-							<p class="pdt_title">
-								<b class="pdt_name">无铅高温铜条</b>
-								<span class="company_name">【成品厂名称】</span>
-							</p>
-							<div class="pdt_info">
-								<div class="pdt_state">
-									<p class="pdt_price">
-										￥<b>10.00</b>元/条
-									</p>
-									<p class="pdt_stock">
-										<span>库存</span><i>1000条</i>
-									</p>
-								</div>
-								<div class="pdt_detail">
-									<p class="pdt_dtl_cnt">
-										<span>类型：电解铜1</span>
-										<span>地区：无锡</span>
-									</p>
-									<p class="pdt_dtl_cnt">
-										<span>材质：xxxxxx</span>
-										<span>规格：xxxxxxxxx</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="pdt_r">
-							<p class="date">2017-08-14</p>
-							<button>下单</button>
-						</div>
-					</li>
-					<li class="pdt">
-						<div class="pdt_l">
-							<img src="#" />
-                        </div>
-						<div class="pdt_c">
-							<p class="pdt_title">
-								<b class="pdt_name">无铅高温铜条</b>
-								<span class="company_name">【成品厂名称】</span>
-							</p>
-							<div class="pdt_info">
-								<div class="pdt_state">
-									<p class="pdt_price">
-										￥<b>10.00</b>元/条
-									</p>
-									<p class="pdt_stock">
-										<span>库存</span><i>1000条</i>
-									</p>
-								</div>
-								<div class="pdt_detail">
-									<p class="pdt_dtl_cnt">
-										<span>类型：电解铜1</span>
-										<span>地区：无锡</span>
-									</p>
-									<p class="pdt_dtl_cnt">
-										<span>材质：xxxxxx</span>
-										<span>规格：xxxxxxxxx</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="pdt_r">
-							<p class="date">2017-08-14</p>
-							<button>下单</button>
-						</div>
-					</li>
+				-->
 				</ul>
 				<jsp:include page="../components/page.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
+	<script src="../js/mall.js"></script>
 </body>
 </html>

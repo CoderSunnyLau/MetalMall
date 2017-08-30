@@ -6,7 +6,6 @@
     <title>商品详情</title>
     <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/product_detail.css">
-	<script src="../js/jquery.min.js"></script>
 </head>
 <body>
 	<jsp:include page="../components/header2.jsp">
@@ -21,35 +20,30 @@
 				<div class="main_info">
 					<div class="img_box">
 						<img src="#" class="main_img" />
-						<ul class="imgs">
-							<li class="img"><img src="#" /></li>
-							<li class="img"><img src="#" /></li>
-							<li class="img"><img src="#" /></li>
-							<li class="img"><img src="#" /></li>
-						</ul>
+						<ul class="imgs"></ul>
 					</div>
 					<div class="summary">
 						<div class="pdt_title">
-							<p class="pdt_name">无铅高温铜条</p>
+							<p class="pdt_name">--</p>
 							<i class="favorite">收藏</i>
 						</div>
 						<div class="info_row">
-							<p><span>企业</span><span>成品厂名称1</span></p>
-							<p><span>类型</span><span>电解铜1</span></p>
-							<p><span>日期</span><span>2017-08-17</span></p>
+							<p><span>企业</span><span id="company">--</span></p>
+							<p><span>类型</span><span id="pdt_type">--</span></p>
+							<p><span>日期</span><span id="add_date">0000-00-00</span></p>
 						</div>
 						<div class="info_row">
-							<p><span>地区</span><span>无锡</span></p>
-							<p><span>材质</span><span>xxxxxxxxxxx</span></p>
-							<p><span>规格</span><span>zxxxxxx</span></p>
+							<p><span>地区</span><span id="area">--</span></p>
+							<p><span>材质</span><span id="material">--</span></p>
+							<p><span>规格</span><span id="specification">--</span></p>
 						</div>
 						<div class="info_row">
-							<p><span>件重</span><span>0.2kg</span></p>
-							<p><span>起订</span><span>12</span></p>
-							<p><span>库存</span><span>2000</span></p>
+							<p><span>件重</span><span id="weight">--kg</span></p>
+							<p><span>起订</span><span id="min_order">0件</span></p>
+							<p><span>库存</span><span id="stock">0</span></p>
 						</div>
 						<div class="pdt_action">
-							<span class="price"><b>￥26.00</b>/盒</span>
+							<span class="price"><b>￥--</b>/--</span>
 							<button>我要下单</button>
 						</div>
 					</div>
@@ -68,24 +62,15 @@
 								<td class="detail_val">无铅高温纯锡条</td>
 							</tr>
 						</table>
-						<div id="detail_cnt">
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						
-							产品特点：整体选用优质铜材，使用寿命长。产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长产品特点：整体选用优质铜材，使用寿命长
-						</div>
+						<div id="detail_cnt"></div>
 					</div>
+					<p class="detail_header"><span>售后服务</span></p>
+					<div class="sold_service"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
+	<script src="../js/product_detail.js"></script>
 </body>
 </html>

@@ -20,6 +20,9 @@ body{
 	width: 100%;
 	height: 80px;
 	overflow: hidden;
+	background-image:url(../images/header_bg.jpg);
+	background-position:center -100px;
+	background-size:cover;
 	box-shadow: 0 -1px 1px #FB8 inset;
 	border-bottom: 1px solid #F90;
 	min-width: 850px;
@@ -33,16 +36,16 @@ body{
 .logo span{
 	font-size: 30px;
 	line-height: 80px;
-	font-weight: 600;
 }
 .logo i{
-	background-image: url(./images/logo.png);
+	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
+	background-size:contain;
 	width: 200px;
 	height: 60px;
 	display: block;
 	float: left;
-	margin-top: 10px;
+	margin: 10px 20px 0 0;
 }
 .blur{
 	width: 100%;
@@ -421,7 +424,7 @@ textarea{
  }
  
  /* header2樣式 */
- .index#index a, .mall#mall a, .demand#demand a, .finance#finance a, .market#market a{
+ .index #index a, .mall #mall a, .demand #demand a, .finance #finance a, .market #market a{
  	background-color:#F90;
  	color:#FFF;
  }

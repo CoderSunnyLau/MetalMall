@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%request.setCharacterEncoding("utf-8");%>
 <div class="footer">
-<!-- <c:if test="${requestScope.login}"> -->
+<c:if test="${param.show != 'false'}">
 	<div class="footer_bg">
 		<div class="main_width">
 			<ul class="justify">
@@ -88,7 +89,7 @@
 			</ul>
 		</div>
 	</div>
-<!-- </c:if> -->
+</c:if>
 	<div class="main_width">
 		<div class="descriptions">
 			<p><a>关于我们</a>|<a>法律声明</a>|<a>诚聘英才</a>|<a>投资洽谈</a>|<a>联系我们</a>|<a>常见问题</a></p>
@@ -104,4 +105,19 @@
 		</ul>
 	</div>
 </div>
-<script src="../js/jquery.min.js"></script>
+<script src="../libs/jquery.min.js"></script>
+<!-- IE8及以下版本瀏覽器 -->
+<!--[if lte IE 8]>
+<script>
+	//初始化頁面主寬度
+	var widthResize = function(){
+		if($(window).width() > 1400){
+			$('body').removeClass('min');
+		}else{
+			$('body').addClass('min');
+		}
+	}
+	widthResize();
+	$(window).resize(widthResize);
+</script>
+<![endif]-->

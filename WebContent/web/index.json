@@ -1,0 +1,196 @@
+{
+    "orderPriceBoardInfos": [
+        "AAA企业在2017-08-25 11:12:36成功出售高密度铜板,价格为：￥1800.0",
+        "BBB企业在2017-08-25 11:16:22成功出售普通铜线,价格为：￥3.0",
+        "CCC企业在2017-08-25 16:44:31成功出售铜螺丝,价格为：￥2.0"
+    ],
+    "statisticsPriceInfos": {
+        "area_sort": [
+            {
+                "name": "广州",
+                "week": 201733,
+                "weekPrice": 12366,
+                "month": 201708,
+                "monthPrice": 14555,
+                "lastMonth": 201707,
+                "lastMonthPrice": 15233
+            },
+            {
+                "name": "深圳",
+                "week": 201733,
+                "weekPrice": 16233,
+                "month": 201708,
+                "monthPrice": 17369,
+                "lastMonth": 201707,
+                "lastMonthPrice": 14678
+            },
+            {
+                "name": "上海",
+                "week": 201733,
+                "weekPrice": 17500,
+                "month": 201708,
+                "monthPrice": 21066,
+                "lastMonth": 201707,
+                "lastMonthPrice": 16893
+            }
+        ],
+        "product_sort": [
+            {
+                "name": "电解铜",
+                "week": 201733,
+                "weekPrice": 2755,
+                "month": 201708,
+                "monthPrice": 2800,
+                "lastMonth": 201707,
+                "lastMonthPrice": 2900
+            },
+            {
+                "name": "AA铜",
+                "week": 201733,
+                "weekPrice": 6988,
+                "month": 201708,
+                "monthPrice": 6781,
+                "lastMonth": 201707,
+                "lastMonthPrice": 6169
+            },
+            {
+                "name": "BB铜",
+                "week": 201733,
+                "weekPrice": 1726,
+                "month": 201708,
+                "monthPrice": 1800,
+                "lastMonth": 201707,
+                "lastMonthPrice": 1880
+            }
+        ],
+        "company_sort": [
+            {
+                "name": "老AA公司",
+                "week": 201733,
+                "weekPrice": 4500,
+                "month": 201708,
+                "monthPrice": 4400,
+                "lastMonth": 201707,
+                "lastMonthPrice": 4300
+            },
+            {
+                "name": "老BB公司",
+                "week": 201733,
+                "weekPrice": 3200,
+                "month": 201708,
+                "monthPrice": 3000,
+                "lastMonth": 201707,
+                "lastMonthPrice": 3100
+            }
+        ]
+    },
+    "typeChartData": {
+        "20170802": 2365,
+        "20170803": 2369,
+        "20170804": 2388,
+        "20170805": 2377,
+        "20170806": 2359,
+        "20170807": 2366,
+        "20170808": 2400
+    },
+    "areaChartData": {
+        "20170802": 2365,
+        "20170803": 2369,
+        "20170804": 2377,
+        "20170805": 2400,
+        "20170806": 2359,
+        "20170807": 2366,
+        "20170808": 2388
+    },
+    "companyChartData": {
+        "20170802": 2365,
+        "20170803": 2377,
+        "20170804": 2400,
+        "20170805": 2359,
+        "20170806": 2366,
+        "20170807": 2388,
+        "20170808": 2369
+    },
+    "bankProductInfos": [
+        {
+            "name": "工行白条计划03",
+            "bankName": "工商银行",
+            "brief": null,
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "3个月",
+            "addTime": "2017-08-24 15:14:51"
+        },
+        {
+            "name": "工行白条计划02",
+            "bankName": "工商银行",
+            "brief": null,
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "6个月",
+            "addTime": "2017-08-24 15:14:47"
+        },
+        {
+            "name": "工行白条省手续费30%",
+            "bankName": "工商银行",
+            "brief": null,
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "6个月,9个月",
+            "addTime": "2017-08-23 15:14:40"
+        },
+        {
+            "name": "招商银行夏日阳光分期",
+            "bankName": "招商银行",
+            "brief": null,
+            "introduction": "招商银行夏日阳光100--分期理财，让客户更自由，更省心地还款 ，这是一款白条分期的产品..........省略100字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "3个月",
+            "addTime": "2017-08-23 15:14:29"
+        }
+    ],
+    "requirementFormInfos": [
+        {
+            "name": "想要100米的铜线",
+            "productType": "铜线",
+            "description": "大概100米，要求2cm以上粗细",
+            "material": "铜",
+            "specification": "2cm*100米",
+            "quantityReqrm": 1,
+            "unit": "件",
+            "companyName": "香港AAA001金属再造公司",
+            "phone": "13530000000",
+            "minBudget": 300,
+            "maxBudget": 600,
+            "area": "广州",
+            "whoAdd": null,
+            "addTime": "2017-08-25 18:08:52"
+        },
+        {
+            "name": "急购1.5吨电解铜",
+            "productType": "电解铜",
+            "description": "由于XXX原因，先急需1.5吨电解铜",
+            "material": "铜",
+            "specification": "普通的即可，形状不要求",
+            "quantityReqrm": 1,
+            "unit": "吨",
+            "companyName": "香港AAA001金属再造公司",
+            "phone": "13530000000",
+            "minBudget": 80000,
+            "maxBudget": 95000,
+            "area": "广州",
+            "whoAdd": null,
+            "addTime": "2017-08-25 18:06:39"
+        }
+    ],
+    "outstandingCompanys": [
+        {
+            "companyName": "AAA",
+            "logo": "/server/company/logo/0001.png"
+        },
+        {
+            "companyName": "BBB",
+            "logo": "/server/company/logo/0002.png"
+        }
+    ]
+}

@@ -20,18 +20,18 @@
     		<li class="menu_item">
                 <span>供货中心</span>
                 <ul class="menu2">
-                    <li class="menu2_item menu_link" name="all_pdts">全部商品</li>
+                    <li class="menu2_item menu_link" name="pdts_all">全部商品</li>
                 </ul>
             </li>
     		<li class="menu_item"><span>订单中心</span>
                 <ul class="menu2">
-                    <li class="menu2_item">供货订单</li>
-                    <li class="menu2_item">采购订单</li>
+                    <li class="menu2_item menu_link" name="orders_supply">供货订单</li>
+                    <li class="menu2_item menu_link" name="orders_purchase">采购订单</li>
                 </ul>
             </li>
     		<li class="menu_item"><span>需求中心</span>
                 <ul class="menu2">
-                    <li class="menu2_item">需求单管理</li>
+                    <li class="menu2_item menu_link" name="demand_management">需求单管理</li>
                 </ul>
             </li>
     		<li class="menu_item"><span>资信中心</span>
@@ -54,7 +54,7 @@
         	<jsp:include page="./company_home.jsp"></jsp:include>
         </div>
     </div>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../libs/jquery.min.js"></script>
     <script src="../js/system.js"></script>
 </body>
 </html>

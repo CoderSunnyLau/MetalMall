@@ -4,9 +4,11 @@
 </div>
 <div class="cnt_body">
     <div class="pdts_part">
-        <div class="search">
-            <button>搜索</button>
-            <input type="text" />
+        <div>
+	        <div class="search">
+	            <button>搜索</button>
+	            <input type="text" />
+	        </div>
         </div>
         <div class="pdts_list">
             <table>

@@ -64,8 +64,14 @@ body .page_body{
 	border:1px solid #CCC;
 	padding:0;
 }
-.search_row div select{
+.search_row .search_type select{
 	margin-left:1%;
+}
+.search_row .search_area select{
+	width:103px;
+}
+.search_row .search_area [name=province]{
+	margin:0;
 }
 .search_box .search_price{
 	width:32%;
@@ -113,11 +119,18 @@ body .page_body{
     display: block;
 	position:absolute;
 }
-.scroll_item{
+.scroll li{
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
-	width:100%;
+	width:930px;
+	padding:0 10px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.scroll .scroll_last{
+	width:auto;
 }
 .pdt_index{
 	overflow:hidden;
@@ -125,7 +138,9 @@ body .page_body{
 	position:relative;
 }
 .index_table{
-	width:65%;
+	width:63%;
+	height:205px;
+	border:1px solid #DDD;
 	float:left;
 }
 .chart{
@@ -140,20 +155,13 @@ body .page_body{
 	height:280px;
 }
 .tables{
-	width:49%;
+	width:50%;
 	display:block;
 	float:left;
 }
 .table{
 	width:100%;
 	margin:0;
-	border:1px solid #DDD;
-}
-.table_l{
-	border-right:none;
-}
-.table_r{
-	border-left:none;
 }
 .table thead{
 	background-color:#FFF;
@@ -171,6 +179,18 @@ body .page_body{
 }
 .table .type{
 	font-size:15px;
+	position:relative;
+	text-align:center;
+}
+.table .type::before{
+	content:"";
+	display:block;
+	position:absolute;
+	top:16px;
+	left:8px;
+	width:6px;
+	height:6px;
+	background-color:rgb(29,194,102);
 }
 .table .this_week{
 	color:#E33;

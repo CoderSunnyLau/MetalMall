@@ -7,13 +7,11 @@
 		<div><span>企业</span><input type="text"/></div>
 	</div>
 	<div class="search_row">
-		<div>
+		<div class="search_area">
 			<span>地区</span>
-			<select>
-				<option value="guangzhou">广州</option>
-			</select>
+			<select name="province"></select><select name="city"></select>
 		</div>
-		<div>
+		<div class="search_type">
 			<span>商品类型</span>
 			<select>
 				<option value="">未定义</option>

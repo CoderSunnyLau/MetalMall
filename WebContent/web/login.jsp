@@ -67,7 +67,9 @@
 			</div>
 		</div>
 	</div>
-	<jsp:include page="../components/footer.jsp"></jsp:include>
+	<jsp:include page="../components/footer.jsp">
+		<jsp:param value="false" name="show"/>
+	</jsp:include>
 	<script src="../js/system_login.js"></script>
 </body>
 </html>
