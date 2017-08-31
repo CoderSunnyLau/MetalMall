@@ -19,7 +19,7 @@
 			<div class="checkout">
 				<div class="table_box">
 					<p class="box_title"><span>卖家企业</span></p>
-					<p class="company_name">xxxxxx</p>
+					<p class="company_name seller_name"></p>
 					<p class="box_title"><span>商品明细</span></p>
 					<table class="pdts_list">
 						<thead>
@@ -35,23 +35,23 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>电解铜</td>
-								<td>asdi35k</td>
-								<td>4.75*150</td>
-								<td>1000</td>
-								<td>400</td>
-								<td>500</td>
-								<td><input class="amount" type="number" value="1" disabled="disabled" style="border:none;" /></td>
+								<td class="pdt_name">电解铜</td>
+								<td class=""></td>
+								<td></td>
+								<td></td>
+								<td class="total_weight"></td>
+								<td class="pdt_price"></td>
+								<td class="pdt_amount"></td>
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr><td class="sum" colspan="7">商品总计：<b>￥<i>20000.00</i></b></td></tr>
+							<tr><td class="sum" colspan="7">商品总计：<b>￥<i class="pdt_total"></i></b></td></tr>
 						</tfoot>
 					</table>
 				</div>
 				<div class="table_box">
 					<p class="box_title"><span>买家企业</span></p>
-					<p class="company_name">广州钢材集团 | 电话：8888888</p>
+					<p class="company_name buyer_name"></p>
 					<p class="box_title"><span>支付方式</span></p>
 					<div class="payment_type">
 						<table>
@@ -62,27 +62,27 @@
 								<td colspan="3"></td>
 							</tr>
 							<tr>
-								<td>反向保理</td>
-								<td>工商银行</td>
-								<td>2个月</td>
+								<td class="pay_type"></td>
+								<td class="bank_name"></td>
+								<td class="selected_time"></td>
 								<td colspan="3"></td>
 							</tr>
 						</table>
 					</div>
-					<p class="bank_credit">银行授信：<span>1000000.00</span></p>
+					<p class="bank_credit">银行授信：<span></span></p>
 					<p class="box_title"><span>留言备注</span></p>
 					<textarea class="remark" disabled="disabled"></textarea>
 				</div>
 				<div class="settlement_box">
 					<div class="settlement">
 						<p class="settlement_row">
-							<span>商品总价：</span><i>￥20000.00</i>
+							<span>商品总价：</span><i></i>
 						</p>
 						<p class="settlement_row">
-							<span>服务费用：</span><i>￥100.00</i>
+							<span>服务费用：</span><i></i>
 						</p>
 						<p class="settlement_row total">
-							<span>应付金额：</span><b>￥20100.00</b>
+							<span>应付金额：</span><b></b>
 						</p>
 						<a><button class="view_order">查看订单</button></a>
 					</div>

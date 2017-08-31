@@ -36,15 +36,15 @@
             </li>
     		<li class="menu_item"><span>资信中心</span>
                 <ul class="menu2">
-                    <li class="menu2_item">我的授信</li>
+                    <li class="menu2_item menu_link" name="credit">我的授信</li>
                 </ul>
             </li>
     		<li class="menu_item system"><span>系统管理</span>
                 <ul class="menu2">
-                    <li class="menu2_item">账户信息</li>
-                    <li class="menu2_item">账户安全</li>
-                    <li class="menu2_item">我的收藏</li>
-                    <li class="menu2_item">修改密码</li>
+                    <li class="menu2_item menu_link" name="demand_management">账户信息</li>
+                    <li class="menu2_item menu_link" name="demand_management">账户安全</li>
+                    <li class="menu2_item menu_link" name="demand_management">我的收藏</li>
+                    <li class="menu2_item menu_link" name="demand_management">修改密码</li>
                 </ul>
             </li>
     	</ul>
