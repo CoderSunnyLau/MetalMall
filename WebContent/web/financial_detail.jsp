@@ -33,15 +33,15 @@
 						<span>Step1 网上申请</span>
 					</li>
 					<li class="step">
-						<div class="step_icon"></div>
+						<div class="step_icon step_1"></div>
 						<span>Step2 上传资料</span>
 					</li>
 					<li class="step">
-						<div class="step_icon"></div>
+						<div class="step_icon step_2"></div>
 						<span>Step1 资料审核</span>
 					</li>
 					<li class="step">
-						<div class="step_icon"></div>
+						<div class="step_icon step_3"></div>
 						<span>Step1 签署合同放款</span>
 					</li>
 				</ol>

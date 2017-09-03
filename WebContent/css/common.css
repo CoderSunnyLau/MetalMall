@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	background-repeat:no-repeat;
 }
 li{
 	list-style: none;
@@ -9,7 +10,7 @@ body{
     font-family:"Microsoft YaHei","Hiragino Sans GB","STHeiti",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #FFF;
     min-width: 850px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #666;
 }
 .header{
@@ -130,6 +131,9 @@ body{
 		width:1100px;
 		margin-left:-55px;
 	}
+	body #market_chart{
+		width:470px;
+	}
 }
 .logo_wrapper{
 	position:relative;
@@ -226,9 +230,6 @@ a{
 	cursor: pointer;
 	text-decoration: none;
 }
-a:hover{
-	text-decoration:underline;
-}
 i{
 	font-style: normal;
 }
@@ -296,6 +297,7 @@ textarea{
 	float:right;
 	line-height:38px;
 	padding:0 5px;
+	color:#AAA;
 }
 .row_grey{
 	background-color:#EEE;
@@ -470,18 +472,21 @@ textarea{
 }
 .circle_img{
 	float:left;
-	width:50px;
-	height:50px;
-	border:2px solid #E33;
-	border-radius:50%;
+	width:60px;
+	height:60px;
 	margin-left:25px;
+	background-image:url(../images/footer_icon1.png);
 }
 .circle_item span{
 	display:block;
-	line-height:54px;
+	line-height:60px;
 	font-size:17px;
 	text-align:center;
 }
+.circle_1{background-position:0 -70px;}
+.circle_2{background-position:0 -140px;}
+.circle_3{background-position:0 -210px;}
+.circle_4{background-position:0 -280px;}
 .footer_bg2{
 	overflow:hidden;
 	width:100%;
@@ -534,12 +539,19 @@ textarea{
 	overflow:hidden;
 	margin:30px;
 }
+.footer_icons{
+	text-align:center;
+}
 .footer_icons li{
-	float:left;
-	width:120px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:106px;
 	height:40px;
+	background-image:url(../images/footer_icon2.png);
+	margin:0 6px;
 }
-.footer_icons img{
-	width:98%;
-	margin:0 1%;
-}
+.footer_1{background-position:0 -50px;}
+.footer_2{background-position:0 -100px;}
+.footer_3{background-position:0 -150px;}
+.footer_4{background-position:0 -200px;}

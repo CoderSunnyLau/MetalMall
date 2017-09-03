@@ -51,8 +51,10 @@
 	right:10px;
 	top:5px;
 	font-size:18px;
-	padding-left:50px;
+	padding-left:35px;
 	cursor:pointer;
+	background-image:url(../images/common_icons.png);
+	background-position:0 -56px;
 }
 .pdt_action{
 	padding:10px 0;

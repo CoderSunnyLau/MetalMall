@@ -5,6 +5,17 @@
 	height:100px;
 	line-height:100px;
 }
+.success i{
+	width:55px;
+	height:55px;
+	display:block;
+	position:absolute;
+	left:50%;
+	top:20px;
+	margin-left:-220px;
+	background-image:url(../images/common_icons.png);
+	background-position:0 -90px;
+}
 .checkout{
 	margin:10px 0;
 }

@@ -9,7 +9,7 @@
 	<div class="search_row">
 		<div class="search_area">
 			<span>地区</span>
-			<select name="province"></select><select name="city"></select>
+			<select name="province"><option>广州</option></select>
 		</div>
 		<div class="search_type">
 			<span>商品类型</span>

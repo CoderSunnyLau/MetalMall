@@ -14,30 +14,55 @@ body .page_cnt{
 .item_left{
 	position:relative;
 	float:left;
-	width:98px;
+	width:105px;
 	height:30px;
+}
+.live_date{
+	position:relative;
 }
 .item_left i, .live_tag{
 	position:absolute;
 	display:block;
-	width:100px;
-	height:28px;
+	width:106px;
+	height:32px;
 	background-color:#F90;
 	color:#FFF;
 	font-size:15px;
 	text-align:center;
-	line-height:28px;
+	line-height:32px;
+	z-index:9;
+}
+.item_left i::after, .live_tag::after, .item_left span::after{
+	content:"";
+	position:absolute;
+	top:6px;
+	left:96px;
+	width:20px;
+	height:20px;
+	background-image:url(../images/common_icons.png);
+	background-position:0 -184px;
+	z-index:1;
+}
+.item_left span::after{
+	top:1px;
+	left:58px;
+}
+.live_date:hover .live_tag, .result_item:hover .item_left i{
+	background-color:#F99;
+}
+.live_date:hover .live_tag::after, .result_item:hover .item_left i::after{
+	background-position:0 -154px;
 }
 .item_right{
 	float:left;
-	width:1060px;
+	width:1067px;
 	border-left:1px solid #DDD;
-	padding:0 0 0 40px;
+	padding:0 0 0 25px;
 }
 .item_right .border{
 	padding:30px 1px 1px;
 }
-.item_right .border:hover{
+.result_item:hover .border{
 	/*border:1px solid #FDB;
 	background-color:#FED;*/
 	background-color:#F4F4F4;
@@ -68,14 +93,11 @@ body .page_cnt{
 	color:#888;
 	line-height:25px;
 }
-.crr_finance{
+.result_item:hover .item_title{
 	color:#FF8080;
 }
-.crr_finance .item_title{
+.result_item:hover .item_title{
 	border-color:#FF8080;
-}
-.crr_finance .item_left i{
-	background-color:#FF8080;
 }
 .financial_tip{
 	border-top:1px solid #DDD;
@@ -85,12 +107,16 @@ body .page_cnt{
 	margin:10px 0 0;
 }
 .financial_tip span{
-	margin:0 10px;
+	padding:0 5px 0 15px;
+	margin-left:15px;
+	background-image:url(../images/common_icons.png);
+	background-position:0 -210px;
 }
 .financial_tip .date{
 	position:absolute;
 	top:0;
 	right:0;
+	background:none;
 }
 .financial_img img{
 	width:100%;
@@ -136,14 +162,19 @@ body .page_cnt{
 	font-size:16px;
 }
 .step_icon{
-	width:130px;
-	height:130px;
+	width:128px;
+	height:128px;
 	margin:0 auto 15px;
 	border-radius:50%;
 	border:1px solid #FB2;
 	background-color:#FFF;
 	position:relative;
+	background-image:url(../images/guide_icon.png);
+	background-position:30px 28px;
 }
+.step_1{background-position:30px -79px;}
+.step_2{background-position:30px -183px;}
+.step_3{background-position:30px -287px;}
 .line{
 	position:relative;
 	width:80%;
@@ -214,11 +245,11 @@ body .row_white span{
 	border:none;
 	border-left:1px solid #E8E8E8;
 	border-bottom:1px solid #E8E8E8;
-	margin-left:98px;
+	margin-left:105px;
 	padding-top:15px;
 }
 .live_date ul{
-	padding-top:25px;
+	padding-top:30px;
 }
 .live_date .item_right{
 	padding-top:5px;
@@ -240,13 +271,20 @@ body .row_white span{
 	font-weight:600;
 	line-height:30px;
 	height:35px;
+	padding-left:15px;
 	overflow:hidden;
 }
 .live_cnt{
-	padding:0 0 5px;
+	padding:0 0 5px 15px;
 }
-.crr_live .live_title{
+.live_time:hover .live_title{
 	color:#FF8080;
+}
+.live_time:hover .item_right p{
+	background-color:#F4F4F4;
+}
+.live_time:hover .item_left span::after{
+	background-position:0 -154px;
 }
 .market_table{
 	font-size:15px;
@@ -313,4 +351,7 @@ body .row_white span{
 #market_chart{
 	width:580px;
 	height:215px;
+}
+.min #market_chart{
+	width:470px;
 }

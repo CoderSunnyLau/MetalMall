@@ -14,25 +14,25 @@
 				</li>
 				<li class="circle">
 					<div class="circle_item">
-						<div class="circle_img"></div>
+						<div class="circle_img circle_1"></div>
 						<span>商城原料供销</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
-						<div class="circle_img"></div>
+						<div class="circle_img circle_2"></div>
 						<span>品种规格齐全</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
-						<div class="circle_img"></div>
+						<div class="circle_img circle_3"></div>
 						<span>上下游企业链</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
-						<div class="circle_img"></div>
+						<div class="circle_img circle_4"></div>
 						<span>缺钱申请分期</span>
 					</div>
 				</li>
@@ -97,11 +97,11 @@
 			<p>商务部2015-2016年度电子商务示范企业 2016年度国家级服务标准化试点项目 中国互联网诚信示范企业 2015年中国大宗商品你现代流通诚信市场</p>
 		</div>
 		<ul class="footer_icons">
-			<li><img src="" /></li>
-			<li><img src="" /></li>
-			<li><img src="" /></li>
-			<li><img src="" /></li>
-			<li><img src="" /></li>
+			<li></li>
+			<li class="footer_1"></li>
+			<li class="footer_2"></li>
+			<li class="footer_3"></li>
+			<li class="footer_4"></li>
 		</ul>
 	</div>
 </div>

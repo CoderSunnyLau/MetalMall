@@ -1,12 +1,9 @@
 body .page_body{
 	margin:0 0 50px;
 }
-.banner{
-	height:350px;
-}
 .banner img{
-	height:100%;
-	width:auto;
+	height:auto;
+	width:100%;
 }
 .tab_box{
 	position:relative;
@@ -18,14 +15,19 @@ body .page_body{
 	background-color:#AAA;
 	text-align:center;
 	color:#FFF;
-	font-size:16px;
+	font-size:14px;
 	line-height:40px;
 	float:left;
-	margin-right:10px;
+	margin:8px 10px 0 0;
 	cursor:pointer;
+	border-radius:10px 10px 0 0;
 }
 .tabs .tab_crr{
 	background-color:#F90;
+	height:48px;
+	line-height:48px;
+	font-size:16px;
+	margin-top:0;
 }
 .search_box{
 	width:100%;
@@ -109,15 +111,16 @@ body .page_body{
 	overflow:hidden;
 	border:1px solid #DDD;
 	border-left:none;
-	margin:10px 0;
+	margin:15px 0;
 }
 .scroll_box i::before {
     content: "";
-    background: #F90;
-    width: 2px;
+    width: 8px;
     height: 35px;
     display: block;
 	position:absolute;
+	background-image:url(../images/common_icons.png);
+	background-position:0 -5px;
 }
 .scroll li{
 	display:inline-block;
@@ -176,6 +179,7 @@ body .page_body{
 	height:42px;
 	border-bottom:1px solid #DDD;
 	font-size:16px;
+	color:#AAA;
 }
 .table .type{
 	font-size:15px;

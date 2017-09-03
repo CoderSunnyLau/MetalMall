@@ -12,6 +12,7 @@
 			</div>
 			<div class="top_right">
 				<a href="#" class="tocompany">我的企业平台</a>|
+				<a href="#" class="toorders">我的订单</a>|
 				<a href="#" class="tohelp">帮助中心</a>|
 				<a href="#" class="toask">在线客服</a>
 			</div>

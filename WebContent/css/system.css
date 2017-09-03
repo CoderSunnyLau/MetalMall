@@ -266,6 +266,7 @@ body .logo i{
 	display:block;
 	float:left;
 	height:30px;
+	line-height:30px;
 }
 .order_row span{
 	width:12%;
@@ -278,6 +279,22 @@ body .logo i{
 	margin:5px 0 5px 7%;
 	width:auto;
 	min-width:70%;
+}
+.os_serviceCharge{
+	color:#E33;
+}
+.order_total{
+	font-size:22px;
+}
+.order_total_style{
+	font-weight:600;
+	font-size:18px;
+}
+.order_box .os_userMark, .order_track{
+	padding-left:55px;
+}
+.order_track{
+	margin-left:1%;
 }
 .order_box button{
 	width:200px;

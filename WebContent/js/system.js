@@ -1,4 +1,19 @@
 $(function(){
+	var getUrlParameter = function(param){
+	     var reg = new RegExp("(^|&)"+ param +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r != null)
+	    	 return  unescape(r[2]);
+	     return null;
+	}
+	//初始化頁面
+	var page = getUrlParameter('page');
+	if(page){
+		$('.cnt').load(page + '.jsp');
+		$('.active').removeClass('active');
+		$('[name=' + page + ']').addClass('active');
+	}
+
 	//初始化菜單
 	$('.menu').css({height: $(window).height() - 91});
 	$('.menu_item span').click(function(){
@@ -35,6 +50,7 @@ $(function(){
 	$('.menu_link').click(function(){
 		var name = $(this).attr('name');
 		$('#cnt').load('./' + name + '.jsp');
+//		window.location.search = 'page=' + name;
 	});
 });
 

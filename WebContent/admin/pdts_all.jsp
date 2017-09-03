@@ -21,10 +21,10 @@
                     <th>当前状态</th>
                     <th>时间</th>
                     <th>成交笔数</th>
-                    <th>成交金额</th>
+                    <th>成交总额</th>
                     <th>操作</th>
                 </thead>
-                <tbody>
+                <tbody class="pdts">
                     <tr>
                         <td class="pdt_name">001号电解铜</td>
                         <td>电解铜</td>
@@ -270,3 +270,4 @@
         </div>
     </div>
 </div>
+<script src="../js/system_pdts.js"></script>
