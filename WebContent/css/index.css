@@ -36,71 +36,6 @@ body .page_body{
 	box-shadow:none\9;
 	border:7px solid #DDD\9;
 	margin-left:-8px\9;
-	overflow:hidden;
-}
-.search_row{
-	width:100%;
-	height:40px;
-	margin:20px 0 20px -5px;
-	overflow:hidden;
-}
-.search_row div{
-	float:left;
-	width:25%;
-}
-.search_row div span{
-	width:25%;
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	text-align:center;
-	font-size:14px;
-	line-height:30px;
-}
-.search_row div input, .search_row div select{
-	width:70%;
-	margin-left:2%;
-	height:30px;
-	line-height:30px;
-	border-radius:5px;
-	border:1px solid #CCC;
-	padding:0;
-}
-.search_row .search_type select{
-	margin-left:1%;
-}
-.search_row .search_area select{
-	width:103px;
-}
-.search_row .search_area [name=province]{
-	margin:0;
-}
-.search_box .search_price{
-	width:32%;
-}
-.search_box .search_price input{
-	width:34%;
-}
-.search_box .search_price i{
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	width:7%;
-	text-align:right;
-}
-.search_box .search_price span{
-	width:19.5%;
-}
-.search_box button{
-	position:absolute;
-	width:10%;
-	height:40px;
-	line-height:40px;
-	font-size:18px;
-	right:18px;
-	right:10px\9;
-	bottom:30px;
-	bottom:35px\9;
 }
 .scroll_box{
 	position:relative;
@@ -111,7 +46,7 @@ body .page_body{
 	overflow:hidden;
 	border:1px solid #DDD;
 	border-left:none;
-	margin:15px 0;
+	margin:15px 0 0;
 }
 .scroll_box i::before {
     content: "";
@@ -135,9 +70,15 @@ body .page_body{
 .scroll .scroll_last{
 	width:auto;
 }
+.row_white a{
+	font-size:14px;
+}
+.index_block{
+	overflow:hidden;
+}
 .pdt_index{
 	overflow:hidden;
-	margin:0 0 10px;
+	margin:0 0 20px;
 	position:relative;
 }
 .index_table{
@@ -171,18 +112,16 @@ body .page_body{
 }
 .table td, .table th{
 	color:#333;
-	font-size:14px;
 	padding:2px;
 	height:40px;
+	font-size:12px;
 }
 .table th{
 	height:42px;
 	border-bottom:1px solid #DDD;
-	font-size:16px;
 	color:#AAA;
 }
 .table .type{
-	font-size:15px;
 	position:relative;
 	text-align:center;
 }
@@ -198,10 +137,8 @@ body .page_body{
 }
 .table .this_week{
 	color:#E33;
-	font-size:16px;
 }
 .table .this_month{
-	font-size:16px;
 	color:rgb(29,194,102);
 }
 .trend_dynamics{
@@ -232,22 +169,24 @@ body .page_body{
 	line-height:28px;
 	overflow:hidden;
 	background-color:#F4F4F4;
+	color:#777;
 }
 .trend_title span{
-	font-size:16px;
+	font-size:14px;
 	line-height:32px;
 }
 .trend_title i{
 	display:block;
 	float:right;
 	line-height:32px;
+	color:#999;
 }
 .trend_title a:hover{
 	color:#F90;
 }
 .demand_trend{
 	width:100%;
-	background-color:#F4F4F4;
+	background-color:#EEE;
 	margin:10px 0;
 	padding-bottom:10px;
 	overflow:hidden;
@@ -255,7 +194,7 @@ body .page_body{
 .demand_box{
 	float:left;
 	width:285px;
-	border:1px solid #DDD;
+	border:1px solid #CCC;
 	margin:10px 0 0 10px;
 }
 .min .demand_box{
@@ -266,7 +205,7 @@ body .page_body{
 }
 .demand_title{
 	height:35px;
-	font-size:16px;
+	font-size:14px;
 	font-weight:600;
 	text-align:center;
 }
@@ -291,14 +230,15 @@ body .page_body{
 .demand_budget span{
 	color:#E33;
 	font-weight:600;
+	font-size:13px;
 }
 .demand_action button{
-	float:right;
 	width:100px;
-	font-size:15px;
+	font-size:14px;
+	margin:15px auto 10px;
 }
 .demand_title, .demand_cnt li{
-	line-height:25px;
+	line-height:35px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;

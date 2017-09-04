@@ -172,7 +172,7 @@ body{
 }
 .main_nav .nav_item a{
 	display:block;
-	font-size:18px;
+	font-size:17px;
 	min-width:50px;
 	padding:0 25px;
 	height:40px;
@@ -239,10 +239,17 @@ input{
 	border:1px solid #CCC;
 	-moz-appearance: textfield;
 	background-color:#FFF;
+	text-indent:10px;
+}
+select{
+	text-indent:10px;
+	color:#666;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
+}input::-webkit-input-placeholder {
+	color: #999;
 }
 textarea{
 	background-color:#FFF;
@@ -279,7 +286,7 @@ textarea{
 
 .row_white{
 	border-bottom:2px solid #DDD;
-	margin:15px 0 5px;
+	margin:18px 0 5px;
 	height:38px;
 	background-color:#FFF;
 }
@@ -288,11 +295,11 @@ textarea{
 	float:left;
 	height:37px;
 	line-height:38px;
-	font-size:18px;
+	font-size:16px;
 	border-bottom:2px solid #F90;
 	padding:0 5px;
 }
-.row_white i{
+.row_white i, .row_white a{
 	display:block;
 	float:right;
 	line-height:38px;
@@ -301,7 +308,7 @@ textarea{
 }
 .row_grey{
 	background-color:#EEE;
-	font-size:16px;
+	font-size:14px;
 	height:35px;
 	line-height:35px;
 	text-indent:15px;
@@ -480,7 +487,7 @@ textarea{
 .circle_item span{
 	display:block;
 	line-height:60px;
-	font-size:17px;
+	font-size:16px;
 	text-align:center;
 }
 .circle_1{background-position:0 -70px;}
@@ -501,7 +508,7 @@ textarea{
 .list_title{
 	width:150px;
 	margin:10px auto;
-	font-size:18px;
+	font-size:16px;
 	height:40px;
 	line-height:30px;
 	position:relative;
@@ -511,11 +518,11 @@ textarea{
 	position:absolute;
 	bottom:0;
 	left:0;
-	width:55px;
+	width:48px;
 	border-bottom:3px solid #FB2;
 }
 .list_title::after{
-	left:55px;
+	left:48px;
 	border-bottom:3px solid #666;
 }
 .list_block{
@@ -555,3 +562,74 @@ textarea{
 .footer_2{background-position:0 -100px;}
 .footer_3{background-position:0 -150px;}
 .footer_4{background-position:0 -200px;}
+
+/************search_box*************/
+.search_box{
+	overflow:hidden;
+}
+.search_row{
+	width:100%;
+	height:40px;
+	margin:20px 0;
+	overflow:hidden;
+	position:relative;
+}
+.search_row div{
+	float:left;
+	width:25%;
+}
+.search_row div span{
+	width:20%;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	text-align:center;
+	line-height:32px;
+}
+.search_row div input, .search_row div select{
+	width:70%;
+	margin-left:2%;
+	height:32px;
+	line-height:3px;
+	border-radius:5px;
+	border:1px solid #CCC;
+	padding:0;
+}
+.search_row .search_type select{
+	margin-left:1%;
+}
+.search_box button{
+	position:absolute;
+	width:12%;
+	height:32px;
+	line-height:32px;
+	font-size:15px;
+	top:1px;
+	right:24px;
+	right:16px\9;
+	background-color:E33;
+}
+.search_box .search_price span{
+	width:19.5%;
+	margin-left:-15px;
+	text-indent:15px;
+}
+.search_box .search_price input{
+	width:34%;
+	text-indent:20px;
+}
+.search_box .search_price small{
+	position:absolute;
+	margin:9px 0 0 15px;
+	color:#888;
+}
+.search_box .search_price i{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:7%;
+	text-align:right;
+}
+.search_box .search_price{
+	width:32%;
+}

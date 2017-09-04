@@ -32,7 +32,7 @@
 				<i></i>
 				<marquee><ul class="scroll"></ul></marquee>
 			</div>
-			<div>
+			<div class="index_block">
 				<p class="row_white">
 					<span>易金所指数</span>
 					<i>每天9:30-10:30更新价格，12:00、16:30更新景气指数，请及时刷新查看</i>
@@ -106,50 +106,50 @@
 					</div>
 				</div>
 				<div class="pdt_index_box">
-				<p class="row_grey">企业指数</p>
-				<div class="pdt_index">
-					<div class="index_table">
-							<div class="tables">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>类型</th>
-											<th>本周</th>
-											<th>本月</th>
-											<th>上月</th>
-										</tr>
-									</thead>
-									<tbody class="company_l"></tbody>
-								</table>
+					<p class="row_grey">企业指数</p>
+					<div class="pdt_index">
+						<div class="index_table">
+								<div class="tables">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>类型</th>
+												<th>本周</th>
+												<th>本月</th>
+												<th>上月</th>
+											</tr>
+										</thead>
+										<tbody class="company_l"></tbody>
+									</table>
+								</div>
+								<div class="tables">
+									<table class="table table_r">
+										<thead>
+											<tr>
+												<th>类型</th>
+												<th>本周</th>
+												<th>本月</th>
+												<th>上月</th>
+											</tr>
+										</thead>
+										<tbody class="company_r"></tbody>
+									</table>
+								</div>
 							</div>
-							<div class="tables">
-								<table class="table table_r">
-									<thead>
-										<tr>
-											<th>类型</th>
-											<th>本周</th>
-											<th>本月</th>
-											<th>上月</th>
-										</tr>
-									</thead>
-									<tbody class="company_r"></tbody>
-								</table>
-							</div>
-						</div>
-					<div class="chart"><div id="company_chart"></div></div>
+						<div class="chart"><div id="company_chart"></div></div>
+					</div>
 				</div>
 			</div>
-			</div>
-			<div>
-				<p class="row_white"><span>金融动态</span></p>
+			<div class="index_block">
+				<p class="row_white" style="margin-top:10px;"><span>金融动态</span></p>
 				<ul class="trend_dynamics"></ul>
 			</div>
-			<div>
-				<p class="row_white"><span>需求动态</span></p>
+			<div class="index_block">
+				<p class="row_white"><span>需求动态</span><a href="demand.jsp">更多</a></p>
 				<ul class="demand_trend"></ul>
 			</div>
-			<div>
-				<p class="row_white"><span>优秀企业</span></p>
+			<div class="index_block">
+				<p class="row_white"><span>优秀企业</span><a href="finance.jsp">更多</a></p>
 				<ul class="good_company"></ul>
 			</div>
 		</div>
