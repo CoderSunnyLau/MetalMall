@@ -30,7 +30,7 @@
 			</div>
 			<div class="scroll_box">
 				<i></i>
-				<marquee><ul class="scroll"></ul></marquee>
+				<ul class="scroll"></ul>
 			</div>
 			<div class="index_block">
 				<p class="row_white">
@@ -141,7 +141,7 @@
 				</div>
 			</div>
 			<div class="index_block">
-				<p class="row_white" style="margin-top:10px;"><span>金融动态</span></p>
+				<p class="row_white" style="margin-top:10px;"><span>金融动态</span><a href="finance.jsp">更多</a></p>
 				<ul class="trend_dynamics"></ul>
 			</div>
 			<div class="index_block">
@@ -149,7 +149,7 @@
 				<ul class="demand_trend"></ul>
 			</div>
 			<div class="index_block">
-				<p class="row_white"><span>优秀企业</span><a href="finance.jsp">更多</a></p>
+				<p class="row_white"><span>优秀企业</span></p>
 				<ul class="good_company"></ul>
 			</div>
 		</div>

@@ -40,19 +40,19 @@
 	background-color:#F8F8F8;
 	line-height:35px;
 	height:35px;
-	padding:0 10px;
+	padding:5px 10px 10px;
 }
 .pdts_list{
 	margin:0;
 	border:1px solid #DDD;
 	border-bottom:none;
-	font-size:14px;
+	font-size:13px;
 }
 .pdts_list thead{
 	background-color:#FAFAFA;
 }
 .pdts_list thead th{
-	color:#333;
+	color:#999;
 }
 .amount{
 	width:60px;
@@ -64,13 +64,14 @@
 	padding-right:20px;
 	height:35px;
 }
-.sum b{
+.sum big{
 	color:#E33;
-	font-size:20px;
+	font-size:18px;
 }
 .payment_type{
 	border:1px solid #DDD;
 	border-bottom:none;
+	padding:10px 0 15px;
 }
 .payment_type select{
 	width:180px;
@@ -119,6 +120,7 @@
 	display:block;
 	float:left;
 	width:80px;
+	font-size:14px;
 }
 .settlement i, .settlement b{
 	display:block;
@@ -138,7 +140,7 @@
 }
 .settlement .submit, .view_order{
 	width:240px;
-	height:45px;
-	font-size:20px;
+	height:40px;
+	font-size:18px;
 	margin-top:10px;
 }

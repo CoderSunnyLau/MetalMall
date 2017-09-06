@@ -2,6 +2,7 @@
 	position:relative;
 	width:100%;
 	overflow:hidden;
+	margin-bottom:20px;
 }
 .img_box{
 	width:400px;
@@ -33,7 +34,7 @@
 	border-bottom:2px dashed #EEE;
 	padding:8px 0;
 	line-height:28px;
-	font-size:16px;
+	font-size:14px;
 }
 .pdt_title{
 	padding-top:0;
@@ -42,7 +43,7 @@
 	margin-right:30px;
 }
 .pdt_name{
-	font-size:20px;
+	font-size:16px;
 	line-height:30px;
 	font-weight:bold;
 }
@@ -50,11 +51,13 @@
 	position:absolute;
 	right:10px;
 	top:5px;
-	font-size:18px;
-	padding-left:35px;
+	font-size:14px;
+	line-height:25px;
+	padding-left:20px;
 	cursor:pointer;
 	background-image:url(../images/common_icons.png);
-	background-position:0 -56px;
+	background-position:0 -35px;
+	background-size:35px auto;
 }
 .pdt_action{
 	padding:10px 0;
@@ -67,15 +70,16 @@
 	color:#E33;
 }
 .price b{
-	font-size:28px;
+	font-size:24px;
 }
 .pdt_action button{
 	display:block;
 	float:right;
 	width:150px;
-	height:40px;
-	line-height:40px;
-	font-size:18px;
+	height:35px;
+	line-height:35px;
+	font-size:15px;
+	margin-top:15px;
 }
 .detail_header{
 	position:relative;
@@ -83,7 +87,7 @@
 	height:35px;
 	background-color:#F4F4F4;
 	border-bottom:1px solid #BBB;
-	font-size:17px;
+	font-size:16px;
 }
 .detail_header span{
 	display:block;
@@ -95,13 +99,13 @@
 }
 .detail_title{
 	line-height:50px;
-	font-size:16px;
+	font-size:14px;
 	text-indent:45px;
 }
 .param{
 	width:93%;
 	border:1px solid #CCC;
-	font-size:14px;
+	font-size:12px;
 }
 .param td{
 	padding:10px;
@@ -116,7 +120,7 @@
 }
 #detail_cnt{
 	width:92%;
-	margin:30px auto;
+	margin:30px auto 40px;
 	line-height:30px;
 }
 .sold_service{

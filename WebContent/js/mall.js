@@ -18,7 +18,7 @@ $(function(){
 								"<p class='pdt_dtl_cnt'><span>材质：" + pdt.material + "</span><span>规格：" + pdt.specification + "</span></p>" +
 						"</div></div></div>" +
 					"<div class='pdt_r'><p class='date'>" + pdt.addTime + "</p>" +
-					"<a href='product_detail.jsp?productId=" + pdt.id + "'>下单</a></div></li>"
+					"<a href='product_detail.jsp?productId=" + pdt.id + "'>下 单</a></div></li>"
 			)
 		}
 	});

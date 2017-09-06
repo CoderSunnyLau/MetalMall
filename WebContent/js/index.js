@@ -119,6 +119,22 @@ $(function(){
 		myChart2.setOption(chartOption[1]);
 		myChart3.setOption(chartOption[2]);
 	}
+	
+	//slide to left
+	var isScroll = 0;
+	var scrollFn = function(){
+		if(isScroll == 0){
+			$('.scroll').stop().css({left:1200}).animate({left:0},10000,'linear');
+			isScroll = 1;
+		}else if(isScroll == 1){
+			$('.scroll').stop().animate({left:-950},10000,'linear');
+			isScroll = 2;
+		}else{
+			$('.scroll').stop().append($('.scroll li:first')).css({left:0}).animate({left:-950},10000,'linear');
+		}
+	}
+	scrollFn();
+	setInterval(scrollFn,10000);
 });
 
 // function

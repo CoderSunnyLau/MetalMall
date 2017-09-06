@@ -12,6 +12,6 @@
 	<button class="near_page page_btn">下一页</button>
 	<div class="change_page">
 		<span>到</span><input type="number" /><span>页</span>
-		<button class="page_btn">确定</button>
+		<button class="page_btn">确 定</button>
 	</div>
 </div>

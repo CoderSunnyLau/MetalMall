@@ -45,7 +45,7 @@
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr><td class="sum" colspan="7">商品总计：<b>￥<i>20000.00</i></b></td></tr>
+							<tr><td class="sum" colspan="7">商品总计：<big>￥<i>20000.00</i></big></td></tr>
 						</tfoot>
 					</table>
 				</div>

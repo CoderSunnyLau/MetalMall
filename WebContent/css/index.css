@@ -57,6 +57,11 @@ body .page_body{
 	background-image:url(../images/common_icons.png);
 	background-position:0 -5px;
 }
+.scroll{
+	white-space:nowrap;
+	position:absolute;
+	left:1200px;
+}
 .scroll li{
 	display:inline-block;
 	*display:inline;
@@ -66,9 +71,6 @@ body .page_body{
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
-}
-.scroll .scroll_last{
-	width:auto;
 }
 .row_white a{
 	font-size:14px;
@@ -119,7 +121,7 @@ body .page_body{
 .table th{
 	height:42px;
 	border-bottom:1px solid #DDD;
-	color:#AAA;
+	color:#999;
 }
 .table .type{
 	position:relative;
@@ -140,6 +142,12 @@ body .page_body{
 }
 .table .this_month{
 	color:rgb(29,194,102);
+}
+.table .this_week, .table .this_month{
+	font-size:16px;
+}
+.table .pre_month{
+	font-size:14px;
 }
 .trend_dynamics{
 	width:1218px;
@@ -216,13 +224,13 @@ body .page_body{
 	overflow:hidden;
 }
 .demand_company{
-	color: #000;
+	color: #444;
 	height: 30px;
 	line-height: 18px;
 	margin-top: 10px;
 }
 .demand_budget{
-	color:#555;
+	color:#666;
 	height:30px;
 	line-height:30px;
 	overflow:hidden;
