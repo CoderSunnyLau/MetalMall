@@ -119,7 +119,7 @@
             if(code == v_code){
                 return true;
             }else{
-                this.refresh();
+                //this.refresh();
                 return false;
             }
         }

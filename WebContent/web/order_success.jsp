@@ -45,7 +45,7 @@
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr><td class="sum" colspan="7">商品总计：<b>￥<i class="os_amount"></i></b></td></tr>
+							<tr><td class="sum" colspan="7">商品总计：<big>￥<i class="os_amount"></i></big></td></tr>
 						</tfoot>
 					</table>
 				</div>
@@ -69,7 +69,7 @@
 							</tr>
 						</table>
 					</div>
-					<p class="bank_credit">银行授信：<span></span></p>
+					<p class="bank_credit">银行授信：<span class="os_creditAmount"></span>元</p>
 					<p class="box_title"><span>留言备注</span></p>
 					<textarea class="remark os_userMark" disabled="disabled"></textarea>
 				</div>

@@ -4,21 +4,8 @@ body{
 body .page_body{
 	margin-top:0;
 }
-body .header3 .main_width{
-	width:980px;
-}
-.header{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	width: 100%;
-	height: 80px;
-	overflow: hidden;
-	box-shadow: 0 -1px 1px #FB8 inset;
-	border-bottom: 1px solid #F80;
-	min-width: 850px;
-	background-color: #FFF;
+.main_width{
+	overflow:hidden;
 }
 .header .user{
 	display:none;
@@ -32,36 +19,35 @@ body .header3 .main_width{
 	margin: 81px 0 50px;
 	*top:81px;
 }
-.page_cnt{
-	position: relative;
-	overflow: hidden;
-	width: 980px;
-	margin: 0 auto;
-}
 .login_body{
-	height: 480px;
+	height: 540px;
 	background-color: #6A5246;
 	background-image:url(../images/login_bg.jpg);
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
 }
-.login_cnt{
-	height: 480px;
+.system_login.login_body{
+	background-image:url(../images/system_login.jpg);
+	background-color:#FFF;
+	height:600px;
 }
 .login_box, .forget_box, .setpsd_box{
-	width: 280px;
-	height: 300px;
+	width: 310px;
+	height: 360px;
 	background-color: #FFF;
 	padding: 20px;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
+.system_login .login_box, .system_login .forget_box, .system_login .setpsd_box {
+	background-color:#EEE;
+}
 .input_field{
 	position: relative;
 	height: 46px;
-	margin: 10px 0;
+	margin: 10px 0 20px;
 }
 .register_body .input_field{
 	width:407px;
@@ -69,29 +55,30 @@ body .header3 .main_width{
 }
 .input_field i{
 	position:absolute;
-	left:70px;
-	bottom:-10px;
+	left:61px;
+	bottom:-15px;
 	color: #E33;
 }
 .setpsd_box .input_field i{
 	left:100px;
 }
 .input_field span{
-	font-size: 16px;
+	font-size: 15px;
+	color:#666;
 	line-height: 50px;
 	height: 50px;
 	width: 50px;
 	overflow: hidden;
 	text-align: right;
-	margin: 0 10px;
+	margin-right:10px;
 	display: block;
 	float: left;
 }
 .input_field input, .input_field select{
 	display: block;
 	float: left;
-	width: 185px;
-	height: 34px;
+	width: 230px;
+	height: 38px;
 	line-height:34px;
 	margin: 6px 0;
 	border-radius: 0;
@@ -103,38 +90,50 @@ body .header3 .main_width{
 	font-weight: bold;
 	height: 20px;
 	line-height: 20px;
-	letter-spacing: 8px;
+	letter-spacing: 3px;
+	margin:10px 0 20px;
 }
 .user_valid input{
-	width: 90px;
+	width: 110px;
 }
-.user_valid img{
+.user_valid #verify_img{
 	display: block;
 	float: left;
-	width: 90px;
-	height: 38px;
 	margin:6px 0 6px 5px;
 }
 .login_box button, .forget_box button, .setpsd_box button{
-	width: 260px;
-	height: 35px;
-	margin: 20px auto 10px;
-	font-size: 18px;
+	width: 295px;
+	height: 40px;
+	margin: 30px auto 10px;
+	font-size: 17px;
+	border-radius:6px;
 }
 .row2{
 	position:relative;
-	font-size:15px;
+	font-size:13px;
 }
 .forget, .login, .login_2{
 	display: block;
 	text-align:center;
 	color:#AAA;
+	font-size:15px;
+}
+.system_login .forget{
+	padding-left:15px;
 }
 .register{
 	position:absolute;
 	right:10px;
 	top:0;
 	color:#F90;
+	font-size:15px;
+}
+.remember{
+	position:absolute;
+	left:10px;
+	display:block;
+	padding:0 15px;
+	font-size:15px;
 }
 
 /*  register  */
@@ -166,11 +165,14 @@ body .header3 .main_width{
 }
 .box_wrap{
 	position: relative;
-	width: 320px;
-	height: 340px;
+	width: 350px;
+	height: 400px;
 	overflow: hidden;
 	float: right;
-	margin: 70px 50px;
+	margin: 70px;
+}
+.system_login .box_wrap{
+	margin-top:150px;
 }
 .register_body{
 	margin:20px 0;
@@ -193,7 +195,7 @@ body .header3 .main_width{
 	height:44px;
 	padding-left:90px;
 	margin:0;
-	font-size:15px;
+	font-size:14px;
 }
 .company_type select{
 	width: 407px;
@@ -234,14 +236,15 @@ body .header3 .main_width{
 	width: 145px;
 	height: 46px;
 	float: right;
-	font-size: 16px;
+	font-size: 13px;
 	background-color:#8ad3cc;
 }
 .register_submit{
 	width: 407px;
 	height: 42px;
 	margin:15px auto;
-	font-size:18px;
+	font-size:16px;
+	letter-spacing:2px;
 }
 .forget_box, .setpsd_box{
 	opacity: 0;
@@ -249,19 +252,20 @@ body .header3 .main_width{
 	display: none;
 }
 .forget_box .valid_btn{
-	width: 86px;
-	font-size: 14px;
+	width: 110px;
+	font-size: 12px;
 	float: right;
 	margin: 6px 10px 0 0;
 }
 .forget_box .sent{
-	background-color:#AAA;
+	background-color:#CCC;
+	cursor:default;
 }
 .forget_box .input_field, .setpsd_box .input_field{
 	margin: 33px 0;
 }
 .setpsd_box .input_field input{
-	width: 165px;
+	width: 200px;
 }
 .setpsd_box .input_field span{
 	width: 80px;

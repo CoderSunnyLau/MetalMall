@@ -52,66 +52,11 @@
 			<ul class="rank">
 				<li class="rank_item">时间</li>
 			</ul>
-			<ul class="results">
-				<li class="result_item">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-				<li class="result_item crr_finance">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-				<li class="result_item">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-				<li class="result_item">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-				<li class="result_item">
-					<div class="item_left"><i>工商银行</i></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-				<li class="result_item">
-					<div class="item_left"></div>
-					<div class="item_right">
-						<div class="border">
-						<p class="item_title"><span>超级白条</span><i>白条分期</i>|<i>2017-08-21</i></p>
-						<p class="item_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-						</div>
-					</div>
-				</li>
-			</ul>
+			<ul class="results financial_list"></ul>
 			<jsp:include page="../components/page.jsp"></jsp:include>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../js/demand.js"></script>
+	<script src="../js/finance.js"></script>
 </body>
 </html>

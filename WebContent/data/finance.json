@@ -1,0 +1,55 @@
+{
+    "content": [
+        {
+            "name": "工行白条计划03",
+            "bankName": "工商银行",
+            "brief": "预留的简短介绍",
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "3个月",
+            "addTime": "2017-08-24 15:14:51"
+        },
+        {
+            "name": "工行白条计划02",
+            "bankName": "工商银行",
+            "brief": "预留的简短介绍",
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "6个月",
+            "addTime": "2017-08-24 15:14:47"
+        },
+        {
+            "name": "工行白条省手续费30%",
+            "bankName": "工商银行",
+            "brief": "预留的简短介绍",
+            "introduction": "手续费低至1000元1块钱！工商银行白金客户白条计划.......这里省略300字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "6个月,9个月",
+            "addTime": "2017-08-23 15:14:40"
+        },
+        {
+            "name": "招商银行夏日阳光分期",
+            "bankName": "招商银行",
+            "brief": "预留的简短介绍",
+            "introduction": "招商银行夏日阳光100--分期理财，让客户更自由，更省心地还款 ，这是一款白条分期的产品..........省略100字",
+            "paymentType": "白条分期",
+            "paymentDeadlineEnum": "3个月",
+            "addTime": "2017-08-23 15:14:29"
+        }
+    ],
+    "number": 0,
+    "numberOfElements": 4,
+    "size": 10,
+    "sort": [
+        {
+            "direction": "DESC",
+            "property": "addTime",
+            "ignoreCase": false,
+            "nullHandling": "NATIVE",
+            "descending": true,
+            "ascending": false
+        }
+    ],
+    "totalElements": 4,
+    "totalPages": 1
+}

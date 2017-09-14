@@ -1,59 +1,38 @@
+body .footer{
+	background-color:#FFF;
+	margin-top:10px;
+}
 body{
-	background-color:#EEE !important;
+	background-color:#F4F4F4 !important;
 }
-.logo{
-	float: left;
-	position: relative;
-	z-index: 99;
-	margin-left: 50px;
+body .header{
+	display:none;
 }
-.logo span{
-	font-size: 30px;
-	color: #FFF;
-	line-height: 80px;
-	font-weight: lighter;
+body .cnt_box{
+	margin-top:105px;
+	overflow:hidden;
 }
-body .logo i{
-	background-image: url(../images/logo_white.png);
-	background-repeat: no-repeat;
-	width: 200px;
-	height: 60px;
-	display: block;
-	float: left;
-	margin-top: 10px;
+.body_cnt{
+	float:right;
+	width:1030px;
+	margin-bottom:-300px;
 }
-.user{
-	float: right;
-	position: relative;
-	z-index: 99;
-	margin-right: 50px;
-	height: 80px;
-}
-.user span{
-	color: #FFF;
-	font-size: 20px;
-	line-height: 80px;
-	margin-left: 30px;
-	cursor: pointer;
-	padding: 5px;
-	border-radius: 10px;
-}
-.user span:hover{
-	background-color: rgba(255,255,255,0.5);
-	color: #A40;
+.min .body_cnt{
+	width:790px;
 }
 .nav{
-	position: fixed;
-	top: 80px;
-	left: 0;
-	width:140px;
+	float:left;
+	width:169px;
 	height:100%;
-	background-color: #333;
+	min-height:500px;
+	background-color: #FFF;
 	z-index:98;
+	margin-bottom:-300px;
+	padding-bottom:300px;
 }
 .menu{
-	width: 140px;
-	padding-top: 10px;
+	width: 135px;
+	margin:0 auto;
 	overflow-y:auto;
 	overflow-x:hidden;
 }
@@ -67,55 +46,53 @@ body .logo i{
 }
 .menu_item span{
 	display:block;
-	font-size: 19px;
-	line-height: 45px;
-	height:45px;
-	color: #EEE;
+	font-size: 16px;
+	line-height: 55px;
+	height:55px;
+	border-bottom:1px solid #EEE;
+	border-top:1px solid #EEE;
+	margin-top:-1px;
 }
-.active{
-	background-color:#111 !important;
+.active span, .menu_item span:hover{
+	border-bottom:1px solid #F90;
 }
 .active span{
 	color:#F90;
 }
 .menu2 .active2{
-	background-color:#555;
-	color:#F90;
+	color:#FFF;
+	background-color:#F90;
 }
 .menu2{
-	width: 120px;
 	height:0;
 	overflow:hidden;
-	background-color: #111;
-	padding: 0 10px;
+	padding: 0 15px;
 	cursor: default;
 }
 .menu2_item{
-	line-height: 35px;
-	color: #EEE;
-	font-size: 15px;
+	line-height: 30px;
+	color: #999;
+	font-size: 14px;
 	cursor: pointer;
-	margin:2px 0;
+	margin:10px 0 15px;
+	border-radius:14px;
 }
 .menu2_item:hover{
-	background-color: #555;
+	color:#F90;
 }
-.body_cnt{
-	width: 85%;
-	height: 100%;
-	/*margin: 91px 0 0 140px;*/
-	margin: 91px auto 0;
-	/*padding-left: 120px;*/
-	padding-left:150px;
-	height: 600px;
-	min-width: 690px;
-	position:relative;
-	*top:81px;
+.menu2 .active2:hover{
+	color:#FFF;
+}
+.cnt_body{
+	overflow:hidden;
+	background-color:#FFF;
+	margin:10px 0 10px 10px;
+	padding-bottom:300px;
 }
 .pdt_name{
 	color: #A40;
 }
-.pdt_money, .order_money{
+.cnt .pdt_money, .cnt .order_money{
 	color:#D00;
 }
 .orders_list td a{
@@ -125,15 +102,23 @@ body .logo i{
 .operation{
 	width:230px;
 }
+.pdts_part{
+	border:1px solid #FFF;
+}
+.search_bar{
+	background-color:#FFF;
+	border-bottom:2px solid #DDD;
+	overflow:hidden;
+	padding:10px 15px;
+}
 .search{
 	height: 30px;
 	float:right;
-	margin-bottom:6px;
 }
 .search input{
 	width: 200px;
 	height: 28px;
-	border: 1px solid #F90;
+	border: 1px solid #DDD;
 	display: block;
 	float: left;
 }
@@ -152,33 +137,46 @@ body .logo i{
 }
 .search button{
 	display: block;
-	float: right;
+	float: left;
+	border-radius:0;
+}
+.add_btn{
+	float:left;
+}
+.add_btn button{
+	background-color:#FFF;
+	color:#F90;
+	border:1px solid #F90;
 }
 .cnt_header{
-	height:30px;
+	height:55px;
+	background-color:#FFF;
+	line-height:55px !important;
+	padding-left:30px;
 }
 .cnt_header span{
-	font-size:16px;
-}
-.cnt_header .welcome{
-	font-size:25px;
-	line-height:40px;
-	margin-left:20px;
+	font-size:14px;
 }
 .col{
 	float: left;
-	border-radius: 30px;
-	background-color:#FFF;
+	background-color:#F4F4F4;
+	box-shadow:-1px -1px 0 0 #DDD inset,
+				1px 1px 0 0 #DDD inset;
+	cursor:pointer;
+}
+.c .my_credit{
+	background-color:#F76;
+	box-shadow:1px 1px 2px 0 #888;
+	margin-left:7%;
+}
+.my_credit *{
+	color:#FFF !important;
+}
+.c .my_credit .hbox_name{
+	background-color:#F64;
 }
 .col p{
 	text-align:center;
-	font-size:18px;
-}
-.col p b{
-	color:#F90;
-	font-size:32px;
-	margin:0 10px;
-	white-space:nowrap;
 }
 .col_2{
 	width: 25%;
@@ -191,23 +189,35 @@ body .logo i{
 }
 .col_4{
 	float:left;
-	width:18%;
-	height:450px;
-	margin:50px 0 50px 5%;
+	width:19%;
+	height:385px;
+	margin:80px 0 50px 3%;
 }
-.col_4 p{
+.hbox_cnt{
+	height:70px;
+	line-height:110px;
+	color:#F64;
+	font-size:24px;
+	white-space:nowrap;
+}
+.hbox_unit{
+	line-height:35px;
+}
+.col .hbox_name{
 	height: 30px;
-	line-height: 40px;
-	padding-top: 50px;
+	line-height: 30px;
+	font-size:16px;
+	color:#222;
+	background-color:#CCC;
 }
 .col_4 .col{
 	float:none;
 	width:100%;
-	height:200px;
-	margin-bottom:50px;
+	height:180px;
+	margin-bottom:25px;
 }
 .col .col_long{
-	padding-top:150px;
+	padding-top:90px;
 }
 .col_3{
 	width:26%;
@@ -217,6 +227,20 @@ body .logo i{
 .col_3 p{
 	height:30px;
 	padding-top:50px;
+}
+.c .col:hover{
+	background-color:#FC3;
+	box-shadow:0 0 5px 0 #FC3;
+}
+.c .col:hover *{
+	color:#FFF;
+}
+.c .col:hover .hbox_name{
+	background-color:#FB1;
+}
+.c .col:hover .hbox_cnt{
+	font-size:28px;
+	font-weight:600;
 }
 
 /**** order_detail ****/
@@ -334,4 +358,83 @@ body .logo i{
 	font-size:16px;
 	width:250px;
 	height:35px;
+}
+
+
+.user_title{
+	position:relative;
+	height:40px;
+	line-height:40px;
+	font-size:15px;
+	padding-left:20px;
+	border-bottom:2px solid #DDD;
+}
+.user_title::after{
+	content:"";
+	position:absolute;
+	width:130px;
+	height:2px;
+	background-color:#F90;
+	bottom:-2px;
+	left:0;
+}
+
+/*******  表單區域   *******/
+.fill_block{
+	padding:25px 40px;
+	border-bottom:10px solid #F4F4F4;
+}
+.fill_block p{
+	line-height:50px;
+}
+.fill_block span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:100px;
+	padding-right:20px;
+	text-align:right;
+	font-size:13px;
+	color:#666;
+}
+.fill_block input{
+	background-color:#FAFAFA;
+	border-color:#EEE;
+	height:30px;
+	line-height:30px;
+	width:250px;
+}
+.fill_block select{
+	width:262px;
+	height:32px;
+	line-height:32px;
+	border-color:#DDD;
+}
+.fill_block textarea{
+	width:75%;
+	min-height:150px;
+	max-height:300px;
+	line-height:25px;
+	border-color:#DDD;
+}
+
+
+/************  表格    ************/
+.cnt table thead{
+	background-color:#F4F4F4;
+}
+.cnt thead th{
+	line-height:28px;
+	font-size:13px;
+	color:#333;
+}
+.cnt td{
+	line-height:28px;
+	color:#777;
+}
+.rows .odd{
+	background-color:#F4F4F4;
+}
+.cnt .page_box{
+	margin:20px 5px 10px;
 }

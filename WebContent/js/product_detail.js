@@ -1,5 +1,5 @@
 $(function(){
-	$.get('product_detail.json', function(res){
+	$.get('../data/product_detail.json', function(res){
 		for(i in res.images){
 			if(i == 0){$('.img_box .main_img').attr('src',res.images[0]);}
 			$('.img_box .imgs').append("<li class='img'><img src='" + res.images[i] + "' /></li>");

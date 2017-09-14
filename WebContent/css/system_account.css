@@ -1,0 +1,335 @@
+.user_info{
+	position:absolute;
+	width:200px;
+	height:200px;
+}
+.security_level{
+	margin-left:200px;
+	height:200px;
+	border-left:10px solid #F4F4F4;
+}
+.cnt_bottom{
+	border-top:10px solid #F4F4F4;
+}
+.avatar{
+	display:block;
+	width:75px;
+	height:75px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:20px auto;
+}
+.avatar img{
+	width:100%;
+	height:100%;
+}
+.user_row{
+	text-indent:40px;
+	line-height:25px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	color:#666;
+}
+.security_level .user_title::after{
+	width:185px;
+}
+.level_block{
+	width:85%;
+	margin:0 auto;
+	overflow:hidden;
+}
+.level_bar{
+	position:relative;
+	float:left;
+	background-color:#EEE;
+	width:74%;
+	height:10px;
+	border-radius:10px;
+	margin:65px 0 0 3%;
+}
+.level_percent{
+	position:absolute;
+	width:70%;
+	height:10px;
+	border-radius:10px;
+	background-color:#9C6;
+}
+.level_percent i{
+	position:absolute;
+	display:block;
+	right:-20px;
+	top:-25px;
+	width:40px;
+	text-align:center;
+	background-color:#9C6;
+	border-radius:5px;
+	color:#FFF;
+}
+.level_text{
+	display:block;
+	float:right;
+	width:19%;
+	text-align:right;
+	margin:60px 3% 0 0;
+	font-size:14px;
+}
+.middle{
+	color:#F90;
+}
+.low{
+	color:#E33;
+}
+.high{
+	color:#9C6;
+}
+.cnt_row{
+	padding:30px 65px;
+	border-bottom:2px solid #F4F4F4;
+	overflow:hidden;
+}
+.cnt_row p{
+	float:left;
+}
+.row_name{
+	width:90px;
+	font-size:14px;
+}
+.row_desc{
+	width:620px;
+	color:#999;
+}
+.min .row_desc{
+	width:380px;
+}
+.row_state{
+	width:115px;
+	text-align:right;
+	font-size:14px;
+}
+.row_set{
+	width:60px;
+	text-align:right;
+	font-size:14px;
+}
+.row_set a{
+	color:#F90;
+	cursor:pointer;
+}
+.state_set{
+	color:#9C6;
+}
+.state_no{
+	color:#999;
+}
+.phone_num{
+	color:#E33;
+}
+.bound{
+	display:none;
+}
+.account_cnt{
+	border-bottom:10px solid #F4F4F4;
+	overflow:hidden;
+}
+.info_detail{
+	overflow:hidden;
+	padding:20px 0 20px 40px;
+}
+.info_detail div{
+	position:relative;
+	float:left;
+	width:33%;
+	height:75px;
+}
+.account_cnt .avatar{
+	margin:0 30px 0 0;
+	position:absolute;
+}
+.border_right{
+	border-right:8px solid #F4F4F4;
+	display:block;
+	height:75px;
+	padding-right:30px;
+	margin-left:110px;
+}
+.border_right p{
+	line-height:40px;
+	height:35px;
+}
+.login_total p, .latest_login p{
+	border-right:8px solid #F4F4F4;
+	height:75px;
+	line-height:120px;
+	text-align:center;
+}
+.latest_login p{
+	border:none;
+}
+.account_cnt .user_id{
+	color:#E33;
+}
+.user_title span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	padding:0 10px;
+	border:1px solid #F90;
+	border-radius:3px;
+	height:25px;
+	line-height:25px;
+	color:#F90;
+	margin-left:30px;
+	cursor:pointer;
+}
+.company_info{
+	padding:10px 55px;
+	overflow:hidden;
+}
+.company_info p{
+	height:45px;
+	line-height:45px;
+}
+.company_info p span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:90px;
+	margin-right:10px;
+	color:#AAA;
+}
+.company_info p i{
+	font-size:13px;
+	font-weight:600;
+}
+.account_last{
+	border:none;s
+}
+.account_last .company_info{
+	padding:30px 75px 20px;
+}
+.square_block{
+	width:33.3%;
+	height:120px;
+	float:left;
+	margin:20px 0;
+}
+.square{
+	width:73%;
+	height:120px;
+	margin:0 auto;
+	background-color:#F4F4F4;
+	border-radius:12px;
+	cursor:pointer;
+	color:#F90;
+	font-size:18px;
+	text-align:center;
+	line-height:120px;
+}
+.square:hover{
+	background-color:#FC3;
+	box-shadow: 0 0 5px 0 #FC3;
+	color:#FFF;
+	font-size:21px;
+}
+.rate_block{
+	border-bottom:10px solid #F4F4F4;
+	overflow:hidden;
+}
+.rate_line{
+	position:relative;
+	width:60%;
+	height:4px;
+	background-color:#CCC;
+	margin:50px 0 70px 80px;
+}
+.rate_line div{
+	float:left;
+	width:50%;
+	height:4px;
+	position:relative;
+}
+.check{
+	position:absolute;
+	left:-100px;
+	width:100px;
+	text-align:right;
+}
+.rate_line i{
+	border-radius:50%;
+	border:2px solid #CCC;
+	display:block;
+	position:absolute;
+	right:0;
+	width:15px;
+	height:15px;
+	background-color:#FFF;
+	margin:-7px -9px 0 0;
+}
+.rate_line span{
+	display:block;
+	position:absolute;
+	font-size:13px;
+	right:0;
+	width:100px;
+	text-align:center;
+	margin:20px -50px 0 0;
+}
+.done{
+	box-shadow:0 4px 0 0 #9C6 inset;
+}
+.done i{
+	border-color:#9C6;
+	background-color:#9C6;
+}
+.done span{
+	color:#9C6;
+}
+.c .fill_block span{
+	width:150px;
+}
+.c .fill_block input{
+	background:none;
+	border-color:#DDD;
+}
+.c .verify span{
+	float:left;
+}
+.c .fill_block #verify_input{
+	width:120px;
+	float:left;
+	margin-top:10px;
+}
+.c .fill_block #verify_img{
+	float:left;
+	margin-left:15px;
+}
+.fill_block #verifyCanvas{
+	width:115px;
+	height:32px;
+	margin-top:10px;
+}
+.fill_block button{
+	clear:both;
+}
+.pwd_cnt .change_verify{
+	line-height:50px;
+	margin-left:10px;
+}
+.pwd_cnt button{
+	width:132px;
+	margin:10px 0 0 170px;
+}
+.c .pwd_cnt .check_tip {
+	position: absolute;
+	left: 540px;
+	width: auto;
+	margin-top: -23px;
+	font-size: 12px;
+}
+.check_tip i{
+	color:#F90;
+}
+.c .fill_block{
+	border:none;
+}

@@ -3,7 +3,8 @@ $(function(){
 	var xItem = [],
 		yItem = {'p':[], 'a':[], 'c':[]},
 		zName = ['商品', '地区', '企业'];
-	$.get('index.json', function(res){
+	$.get('../data/index.json', function(res){
+//	$.get('http://192.168.0.107:8090/getIndexTotalData', function(res){
 		for(i in res.orderPriceBoardInfos){
 			$('.scroll').append("<li>" + res.orderPriceBoardInfos[i] + "</li>");
 		}
@@ -138,7 +139,14 @@ $(function(){
 });
 
 // function
+// change search type
 $('.tabs .tab').click(function(){
 	$('.tab_crr').removeClass('tab_crr');
 	$(this).addClass('tab_crr');
+});
+
+// search
+$('.search_btn').click(function(){
+	var searchType = $('.tab_crr').attr('type');
+	window.open(searchType + '.jsp');
 });

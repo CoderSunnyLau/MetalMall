@@ -10,12 +10,13 @@ $(function(){
 	var page = getUrlParameter('page');
 	if(page){
 		$('.cnt').load(page + '.jsp');
-		$('.active').removeClass('active');
-		$('[name=' + page + ']').addClass('active');
+//		$('.active').removeClass('active');
+//		$('[name=' + page + ']').addClass('active');
+		crrClass($('[name=' + page + ']'), 'active');
 	}
 
 	//初始化菜單
-	$('.menu').css({height: $(window).height() - 91});
+//	$('.menu').css({height: $(window).height() - 91});
 	$('.menu_item span').click(function(){
 		var item = $(this).parent();
 		var menu2 = item.find('.menu2');
@@ -28,16 +29,16 @@ $(function(){
 			if(item.hasClass('item_home')){
 				$('.menu .active2').removeClass('active2');
 			}else{
-				menu2.animate({height: menu2.find('li').length * 37 + 5}, 150);
+				menu2.animate({height: menu2.find('li').length * 45 + 6}, 150);
 			}
 			item.addClass('active');
 		}
 	})
-	.hover(function(){
-		$(this).parent().css({backgroundColor: '#111'});
-	}, function(){
-		$(this).parent().css({backgroundColor: '#333'});
-	});
+//	.hover(function(){
+//		$(this).parent().css({borderBottom: '1px solid #F90'});
+//	}, function(){
+//		$(this).parent().css({border: 'none'});
+//	});
 	$('.menu2_item').click(function(){
 		if($('.menu2 .active2')){
 			$('.menu2 .active2').removeClass('active2');

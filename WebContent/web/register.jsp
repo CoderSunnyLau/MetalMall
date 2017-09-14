@@ -27,7 +27,7 @@
 						<span>确认密码</span><input type="password" name="">
 					</div>
 					<div class="user_phone input_field">
-						<span>手机</span><input type="text" name="" />
+						<span>手机号</span><input type="text" name="" />
 					</div>
 					<div class="user_valid input_field">
 						<span>验证码</span><input type="text" name=""><button>获取验证码</button>

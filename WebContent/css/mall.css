@@ -157,11 +157,11 @@
 }
 .demand_cnt{
 	padding:15px;
-	background-color:#F4F4F4;
+	background-color:#EEE;
 }
 .demand_title{
 	height:35px;
-	font-size:16px;
+	font-size:15px;
 	font-weight:600;
 	text-align:center;
 }
@@ -172,7 +172,7 @@
 	overflow:hidden;
 }
 .demand_company{
-	color: #000;
+	color: #444;
 	height: 30px;
 	line-height: 18px;
 	margin-top: 10px;
@@ -185,15 +185,16 @@
 }
 .demand_budget span{
 	color:#E33;
+	font-size:14px;
 	font-weight:600;
 }
 .demand_action button{
-	float:right;
+	margin:15px auto 10px;
 	width:100px;
 	font-size:15px;
 }
 .demand_title, .demand_cnt li{
-	line-height:25px;
+	line-height:35px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;

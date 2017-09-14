@@ -1,5 +1,5 @@
 $(function(){
-	$.get('mall.json', function(res){
+	$.get('../data/mall.json', function(res){
 		for(var i = 0; i < res.content.length; i++){
 			var pdt = res.content[i];
 			$('.pdts').append(
@@ -21,5 +21,6 @@ $(function(){
 					"<a href='product_detail.jsp?productId=" + pdt.id + "'>下 单</a></div></li>"
 			)
 		}
+		pageInit(res.totalPages);
 	});
 });

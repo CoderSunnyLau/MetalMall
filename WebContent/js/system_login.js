@@ -84,7 +84,7 @@ $(function(){
 			fn($(this), name, minLength);
 		});
 	}
-	eachBindCheck($('.input_field input'),checkBindFn);
+	eachBindCheck($('.check_input input'),checkBindFn);
 	
 	/*登錄驗證*/
 	$('.dologin').click(function(){
@@ -99,8 +99,22 @@ $(function(){
 	
 	/*忘記密碼*/
 	$('#forget_valid .valid_btn').click(function(){
-		$(this).html("已发送").addClass('sent');
+		if(!$(this).hasClass('sent')){
+			$(this).html("已发送（59s）").addClass('sent');
+			WaitValid($(this));
+		}
 	});
+	var WaitValid = function(btn){
+		var clock = 59;
+		var waiteValidInterval = setInterval(function(){
+			if(clock > 0){
+				btn.html("已发送（" + (--clock) + "s）");
+			}else{
+				clearInterval(waiteValidInterval);
+				btn.html("获取验证码").removeClass('sent');
+			}
+		},1000);
+	}
 	var forgetNextClick = function(){
 		$(this).parents('.forget_box').find('#forget_valid input').val('').next('i').addClass('error');
 		$('.setpsd_box input').val("").next('i').empty().addClass('error');

@@ -1,0 +1,51 @@
+{
+    "content": [
+        {
+            "name": "想要100米的铜线",
+            "productType": "铜线",
+            "description": "大概100米，要求2cm以上粗细",
+            "material": "铜",
+            "specification": "2cm*100米",
+            "quantityReqrm": 1,
+            "unit": "件",
+            "companyName": "香港AAA001金属再造公司",
+            "phone": "13530000000",
+            "minBudget": 300,
+            "maxBudget": 600,
+            "area": "广州",
+            "whoAdd": "AA",
+            "addTime": "2017-08-25 18:08:52"
+        },
+        {
+            "name": "急购1.5吨电解铜",
+            "productType": "电解铜",
+            "description": "由于XXX原因，先急需1.5吨电解铜",
+            "material": "铜",
+            "specification": "普通的即可，形状不要求",
+            "quantityReqrm": 1,
+            "unit": "吨",
+            "companyName": "香港AAA001金属再造公司",
+            "phone": "13530000000",
+            "minBudget": 80000,
+            "maxBudget": 95000,
+            "area": "广州",
+            "whoAdd": "AA",
+            "addTime": "2017-08-25 18:06:39"
+        }
+    ],
+    "number": 0,
+    "numberOfElements": 2,
+    "size": 10,
+    "sort": [
+        {
+            "direction": "DESC",
+            "property": "id",
+            "ignoreCase": false,
+            "nullHandling": "NATIVE",
+            "ascending": false,
+            "descending": true
+        }
+    ],
+    "totalElements": 2,
+    "totalPages": 1
+}

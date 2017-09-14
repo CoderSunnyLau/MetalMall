@@ -15,7 +15,7 @@ var index_el = new Vue({
 	},
 	created: function(){
 			var _this = this;
-			_this.$http.get('index.json').then(function(res){
+			_this.$http.get('../data/index.json').then(function(res){
 				_this.banks = res.body.bankProductInfos;
 				_this.productSort = res.body.statisticsPriceInfos.product_sort;
 				_this.areaSort = res.body.statisticsPriceInfos.area_sort;

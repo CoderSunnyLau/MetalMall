@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>图形验证码</title>
-        <script src="excanvas.js"></script>
-    </head>
-    <body>
-　　　　　　<div id="v_container" style="width: 100px;height: 40px;">
-　　　　　　　　<canvas id="verifyCanvas" width="100" height="40" style="cursor: pointer;"></canvas>
-　　　　　　</div>
-　　　　　　<input type="text" id="code_input" value="" placeholder="请输入验证码"/><button id="my_button">验证</button>
-    </body>
-    <script src="js/gVerify.js"></script>
-    <script>
-        var verifyCode = new GVerify("v_container");
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%request.setCharacterEncoding("utf-8");%>
 
-        document.getElementById("my_button").onclick = function(){
-            var res = verifyCode.validate(document.getElementById("code_input").value);
-            if(res){
-                alert("验证正确");
-            }else{
-                alert("验证码错误");
-            }
-        }
-    </script>
-</html>
+<script src="../libs/excanvas.js"></script>
+<input type="text" name="" id="verify_input" placeholder="请输入验证码"><i class="error"></i>
+<div id="verify_img" style="width:115px;height:40px;">
+	<canvas id="verifyCanvas" width="115" height="40" style="cursor: pointer;" title="点击更换验证码"></canvas>
+</div>
+<script src="../libs/gVerify.js"></script>
+<script>
+	var verifyCode = new GVerify("verify_img");
+	var verifyInput = document.getElementById("verify_input");
+	verifyInput.onblur = function(){
+		var res = verifyCode.validate(verifyInput.value);
+		if(res){
+			verifyInput.nextSibling.innerHTML = "";
+			verifyInput.nextSibling.className = "";
+		}else if(verifyInput.value == ""){
+			verifyInput.nextSibling.innerHTML = "请输入验证码";
+		}else{
+			verifyInput.nextSibling.innerHTML = "您输入的验证码有误";
+		}
+	}
+	verifyInput.onfocus = function(){
+		verifyInput.nextSibling.innerHTML = "";
+	}
+</script>

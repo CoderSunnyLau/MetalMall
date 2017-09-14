@@ -18,8 +18,8 @@
 		<div class="page_cnt main_width">
 			<div class="tab_box">
 				<ul class="tabs">
-					<li class="tab tab_crr">商品</li>
-					<li class="tab">需求单</li>
+					<li class="tab tab_crr" type="mall">商品</li>
+					<li class="tab" type="demand">需求单</li>
 				</ul>
 				<ul class="tab_blocks">
 					<li class="tab_block">
@@ -155,7 +155,7 @@
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
+	<script src="../libs/echarts.min.js"></script>
 	<script src="../js/index.js"></script>
 </body>
 </html>

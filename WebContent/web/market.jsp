@@ -90,66 +90,11 @@
 				</div>
 			</div>
 			<p class="row_white"><span>行情直播</span></p>
-			<ol>
-				<li class="live_date">
-					<i class="live_tag">08-03</i>
-					<ul>
-						<li class="live_time">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-						<li class="live_time crr_live">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-						<li class="live_time">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-					</ul>
-					<hr>
-				</li>
-				<li class="live_date">
-					<i class="live_tag">08-02</i>
-					<ul>
-						<li class="live_time">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-						<li class="live_time">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-						<li class="live_time">
-							<div class="item_left"><span>10:58</span></div>
-							<div class="item_right">
-								<p class="live_title">全新库存铜大批订购</p>
-								<p class="live_cnt">铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。【铜库存】7月31日LME铜库存减3600吨至296975吨。【铝库存】7月31日LME铝库存减275至153825吨。【铅库存】7月31日LME铝库存减275至153825吨。</p>
-							</div>
-						</li>
-					</ul>
-					<hr>
-				</li>
-			</ol>
+			<ol class="live_box"></ol>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
+	<script src="../libs/echarts.min.js"></script>
 	<script src="../js/market.js"></script>
 </body>
 </html>

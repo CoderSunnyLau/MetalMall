@@ -105,7 +105,6 @@
 		</ul>
 	</div>
 </div>
-<script src="../libs/jquery.min.js"></script>
 <!-- IE8及以下版本瀏覽器 -->
 <!--[if lte IE 8]>
 <script>

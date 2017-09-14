@@ -213,7 +213,7 @@ body .page_body{
 }
 .demand_title{
 	height:35px;
-	font-size:14px;
+	font-size:15px;
 	font-weight:600;
 	text-align:center;
 }
@@ -238,7 +238,7 @@ body .page_body{
 .demand_budget span{
 	color:#E33;
 	font-weight:600;
-	font-size:13px;
+	font-size:14px;
 }
 .demand_action button{
 	width:100px;

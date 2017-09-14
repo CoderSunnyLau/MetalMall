@@ -1,3 +1,22 @@
+$.get('../data/market.json', function(res){
+	var today = 'live_today';
+	for(var date in res){
+		var $ul = $("<ul></ul>");
+		for(var i = 0; i < res[date].length; i++){
+			var item = res[date][i];
+			$ul.append('<li class="live_time"><div class="item_left"><span>' + item.updateTime.split(" ")[1] + 
+				'</span></div><div class="item_right"><p class="live_title">' + item.title + 
+				'</p><p class="live_cnt">' + item.description + '</p></div></li>'
+			);
+		}
+		var $li = ('<li class="live_date ' + today + '"><i class="live_tag">' + date + '</i><ul>' + $ul[0].innerHTML + '</ul><hr></li>');
+		$('.live_box').append($li);
+		if(today != ""){
+			today = "";
+		}
+	}
+});
+
 var myChart = echarts.init(document.getElementById('market_chart'));
 // 指定图表的配置项和数据
 var option = {

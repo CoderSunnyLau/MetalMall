@@ -10,7 +10,7 @@
 </head>
 <body>
 	<jsp:include page="../components/header.jsp">
-		<jsp:param name="systemTitle" value="登录"/> 
+		<jsp:param name="systemTitle" value="企业"/> 
 	</jsp:include>
 	<div class="page_body login_body">
 		<div class="page_cnt login_cnt">

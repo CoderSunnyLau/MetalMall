@@ -1,0 +1,62 @@
+.cnt .user_title::after{
+	width:0;
+}
+.fill_block .add_pics{
+	float:left;
+}
+.add_pics li{
+	width:100px;
+	height:65px;
+	border:5px solid #DDD;
+}
+.pics_row{
+	overflow:hidden;
+	margin:25px 0;
+}
+.pics_row span{
+	float:left;
+	height:70px;
+	line-height:15px;
+}
+.pdts_state{
+	padding:0;
+	margin-top:-2px;
+	color:#999;
+}
+.pdts_state span{
+	color:#999;
+}
+.pdts_state p, .pdts_state li{
+	border-top:2px solid #F4F4F4;
+	padding:15px 40px;
+	line-height:15px;
+	color:#999;
+}
+.pdts_state .username{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:80px;
+	margin-right:15px;
+}
+.button_block{
+	padding:40px 0;
+	overflow:hidden;
+}
+.submit, .preview{
+	width:28%;
+	height:45px;
+	border-radius:5px;
+	font-size:16px;
+}
+.preview{
+	float:right;
+	margin-right:18%;
+	background-color:#FFF;
+	border:1px solid #F90;
+	color:#F90;
+}
+.submit{
+	float:left;
+	margin-left:18%;
+}

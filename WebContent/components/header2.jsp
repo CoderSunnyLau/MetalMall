@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%request.setCharacterEncoding("utf-8");%>
 
+<script src="../libs/global.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <div class="header2">
 	<div class="top_bar">
@@ -31,3 +32,4 @@
 		</div>
 	</div>
 </div>
+<script src="../libs/jquery.min.js"></script>
