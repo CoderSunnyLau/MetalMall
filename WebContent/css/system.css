@@ -5,17 +5,13 @@ body .footer{
 body{
 	background-color:#F4F4F4 !important;
 }
-body .header{
-	display:none;
-}
 body .cnt_box{
-	margin-top:105px;
 	overflow:hidden;
 }
 .body_cnt{
 	float:right;
 	width:1030px;
-	margin-bottom:-300px;
+	margin-bottom:-1000px;
 }
 .min .body_cnt{
 	width:790px;
@@ -52,11 +48,33 @@ body .cnt_box{
 	border-bottom:1px solid #EEE;
 	border-top:1px solid #EEE;
 	margin-top:-1px;
-}
-.active span, .menu_item span:hover{
-	border-bottom:1px solid #F90;
+	background-image:url(../images/icon1.png);
+	background-position-x:10px;
 }
 .active span{
+	color:#F90;
+	border-bottom:1px solid #F90;
+}
+.m_home{background-position-y:-105px;}
+.m_apply{background-position-y:-145px;}
+.m_order{background-position-y:-185px;}
+.m_demand{background-position-y:-226px;}
+.m_credit{background-position-y:-268px;}
+.m_setting{background-position-y:-309px;}
+.m_finance{background-position-y:-594px;}
+.m_company{background-position-y:-671px;}
+.m_home:hover, .active .m_home{background-position-y:-351px;}
+.m_apply:hover, .active .m_apply{background-position-y:-391px;}
+.m_order:hover, .active .m_order{background-position-y:-431px;}
+.m_demand:hover, .active .m_demand{background-position-y:-472px;}
+.m_credit:hover, .active .m_credit{background-position-y:-513px;}
+.m_setting:hover, .active .m_setting{background-position-y:-554px;}
+.m_finance:hover, .active .m_finance{background-position-y:-631px;}
+.m_company:hover, .active .m_company{background-position-y:-710px;}
+.item_home{
+	z-index:9;
+}
+.menu_item span:hover{
 	color:#F90;
 }
 .menu2 .active2{
@@ -83,26 +101,28 @@ body .cnt_box{
 .menu2 .active2:hover{
 	color:#FFF;
 }
+.cnt{
+	background-image:url(../images/loading.gif);
+	min-height:500px;
+	background-position:50% 30%;
+}
 .cnt_body{
 	overflow:hidden;
 	background-color:#FFF;
 	margin:10px 0 10px 10px;
-	padding-bottom:300px;
-}
-.pdt_name{
-	color: #A40;
+	padding-bottom:1000px;
 }
 .cnt .pdt_money, .cnt .order_money{
 	color:#D00;
 }
 .orders_list td a{
-	margin:0 8px;
+	margin:0 3px;
 	color:#888;
 }
 .operation{
-	width:230px;
+	width:115px;
 }
-.pdts_part{
+.part{
 	border:1px solid #FFF;
 }
 .search_bar{
@@ -134,6 +154,8 @@ body .cnt_box{
 .search select{
 	width:150px;
 	margin-right:30px;
+	color:#999;
+	border:1px solid #DDD;
 }
 .search button{
 	display: block;
@@ -143,10 +165,10 @@ body .cnt_box{
 .add_btn{
 	float:left;
 }
-.add_btn button{
-	background-color:#FFF;
-	color:#F90;
-	border:1px solid #F90;
+.users .white_btn{
+	float:left;
+	width:100px;
+	margin:0 10px;
 }
 .cnt_header{
 	height:55px;
@@ -175,18 +197,6 @@ body .cnt_box{
 .c .my_credit .hbox_name{
 	background-color:#F64;
 }
-.col p{
-	text-align:center;
-}
-.col_2{
-	width: 25%;
-	height: 150px;
-	margin: 50px 0 50px 15%;
-}
-.col_2 p{
-	line-height: 28px;
-	padding-top: 28px;
-}
 .col_4{
 	float:left;
 	width:19%;
@@ -199,9 +209,18 @@ body .cnt_box{
 	color:#F64;
 	font-size:24px;
 	white-space:nowrap;
+	text-align:center;
+}
+.a .hbox_cnt{
+	font-size:16px;
+	padding-top:40px;
+}
+.hbox_cnt b{
+	font-size:26px;
 }
 .hbox_unit{
 	line-height:35px;
+	text-align:center;
 }
 .col .hbox_name{
 	height: 30px;
@@ -209,6 +228,7 @@ body .cnt_box{
 	font-size:16px;
 	color:#222;
 	background-color:#CCC;
+	text-align:center;
 }
 .col_4 .col{
 	float:none;
@@ -220,22 +240,18 @@ body .cnt_box{
 	padding-top:90px;
 }
 .col_3{
-	width:26%;
-	height:200px;
-	margin:50px 0 0 5%;
+	width:22%;
+	height:250px;
+	margin:80px -5% 0 11%;
 }
-.col_3 p{
-	height:30px;
-	padding-top:50px;
-}
-.c .col:hover{
+.c .col:hover, .a .col:hover{
 	background-color:#FC3;
 	box-shadow:0 0 5px 0 #FC3;
 }
-.c .col:hover *{
+.c .col:hover *, .a .col:hover *{
 	color:#FFF;
 }
-.c .col:hover .hbox_name{
+.c .col:hover .hbox_name, .a .col:hover .hbox_name{
 	background-color:#FB1;
 }
 .c .col:hover .hbox_cnt{
@@ -245,15 +261,30 @@ body .cnt_box{
 
 /**** order_detail ****/
 
+.os_id{
+	font-size:18px;
+	font-weight:600;
+	color:#E33;
+	margin-right:25px;
+}
+.cnt .order_track{
+	padding:10px 0 20px;
+}
+.order_track p{
+	overflow:hidden;
+}
+.order_detail_block{
+	border:1px solid #FFF;
+	padding-bottom:20px;
+}
+.track_block{
+	border-top:10px solid #F4F4F4;
+	border-bottom:10px solid #F4F4F4;
+}
 .order_pdt{
+	margin:15px auto;
+	width:83%;
 	border:1px solid #DDD;
-}
-.order_pdt *{
-	font-size:14px;
-}
-.order_pdt th{
-	background-color:#EEE;
-	color:#222;
 }
 .order_box{
 	background-color:#FFF;
@@ -269,40 +300,49 @@ body .cnt_box{
 	height:40px;
 	font-size:23px;
 }
-.order_detail_width{
-	width:90%;
-	margin:0 auto;
-}
 .order_title{
-	font-size:15px;
+	font-size:13px;
 	font-weight:600;
 	line-height:35px;
 	height:30px;
-	margin:10px 0;
-	border-bottom:1px dashed #BBB;
+	margin:15px 25px 0;
+	padding-top:15px;
+	border-top:1px dashed #DDD;
+	color:#666;
+}
+.seller_block .order_title, .credit_order_pay .order_title{
+	border:none;
+	margin-top:0;
+}
+.cnt .order_top{
+	padding-left:20px;
+	border-bottom:10px solid #F4F4F4;
+	line-height:45px;
 }
 .order_row{
 	overflow:hidden;
-	margin-left:1%;
+	padding-left:3%;
+}
+.os_userMark{
+	margin-left:5.5%;
 }
 .order_row span, .order_row i{
-	font-size:14px;
 	display:block;
 	float:left;
 	height:30px;
 	line-height:30px;
+	color:#777;
 }
 .order_row span{
 	width:12%;
 	text-align:right;
+	font-weight:600;
+}
+.order_track span{
+	font-weight:normal;
 }
 .order_row i{
 	width:21.3%;
-}
-.order_pdt{
-	margin:5px 0 5px 7%;
-	width:auto;
-	min-width:70%;
 }
 .os_serviceCharge{
 	color:#E33;
@@ -314,17 +354,30 @@ body .cnt_box{
 	font-weight:600;
 	font-size:18px;
 }
-.order_box .os_userMark, .order_track{
-	padding-left:55px;
+.order_back{
+	padding:20px 20px 10px;
 }
-.order_track{
-	margin-left:1%;
-}
-.order_box button{
+.order_back button{
 	width:200px;
 	height:36px;
-	margin:40px auto 10px;
-	font-size:18px;
+	font-size:14px;
+	margin:0 auto;
+}
+.order_account{
+	overflow:hidden;
+	margin-top:15px;
+}
+.order_account p{
+	width:250px;
+	float:right;
+	clear:both;
+	line-height:30px;
+	margin-right:4%;
+}
+.order_account p span{
+	display:inline-block;
+	width:100px;
+	text-align:right;
 }
 
 /**********  demand_management  **********/
@@ -336,30 +389,20 @@ body .cnt_box{
 
 
 /********* credit.jsp **********/
-.credit_add{
-	margin-top:10px;
-}
-.credit_add button{
-	width:100px;
-	font-size:16px;
-}
 .select_bank{
 	font-size:16px;
 	margin:15px;
 	line-height:50px;
 }
-.select_bank+button{
-	width: 100px;
-	margin: 0 212px;
+.credit_add{
+	width: 150px;
+	margin: 0 195px;
 	height: 35px;
 	font-size: 16px;
 }
-.select_bank select{
-	font-size:16px;
-	width:250px;
-	height:35px;
+.cnt .credit_block{
+	border:none;
 }
-
 
 .user_title{
 	position:relative;
@@ -379,7 +422,48 @@ body .cnt_box{
 	left:0;
 }
 
-/*******  表單區域   *******/
+.credit_detail .order_top{
+	border:none;
+	display:block;
+	float:right;
+}
+.credit_detail .order_top span{
+	font-size:14px;
+	color:#999;
+}
+.credit_detail .os_id{
+	font-size:16px;
+}
+.credit_detail .order_total, .buyer_credit{
+	font-size:14px;
+	font-weight:600;
+}
+.credit_detail .track_block{
+	padding:20px 0;
+}
+.credit_detail .order_row input{
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+.credit_detail .track_block .order_row{
+	margin:15px 0;
+}
+.order_row [type="radio"]{
+	width:15px;
+	height:15px;
+	margin:7.5px;
+	cursor:pointer;
+}
+.submit{
+	width:30%;
+	height:38px;
+	line-height:38px;
+	font-size:15px;
+	margin:15px auto 5px;
+}
+
+/*******  琛ㄥ柈鍗�鍩�   *******/
 .fill_block{
 	padding:25px 40px;
 	border-bottom:10px solid #F4F4F4;
@@ -399,7 +483,7 @@ body .cnt_box{
 }
 .fill_block input{
 	background-color:#FAFAFA;
-	border-color:#EEE;
+	border-color:#DDD;
 	height:30px;
 	line-height:30px;
 	width:250px;
@@ -419,7 +503,7 @@ body .cnt_box{
 }
 
 
-/************  表格    ************/
+/************  琛ㄦ牸    ************/
 .cnt table thead{
 	background-color:#F4F4F4;
 }
@@ -427,14 +511,91 @@ body .cnt_box{
 	line-height:28px;
 	font-size:13px;
 	color:#333;
+	padding:4px 1px;
+}
+.cnt .tab_4{
+	width:60px;
 }
 .cnt td{
 	line-height:28px;
 	color:#777;
+	padding:4px 1px;
 }
 .rows .odd{
 	background-color:#F4F4F4;
 }
 .cnt .page_box{
 	margin:20px 5px 10px;
+}
+
+/**************  閾惰鍚庡彴    ***************/
+.col_2{
+	width:35%;
+	height:150px;
+	margin:50px -7% -5px 12%;
+	border:3px solid #F4F4F4;
+	box-shadow:none;
+}
+.b .col_2{
+	background-image:url(../images/bank_home.png);
+	background-position:13% 32px;
+}
+.b .bh2{
+	background-position:13% -109px;
+}
+.b .bh3{
+	background-position:13% -251px;
+}
+.b .bh4{
+	background-position:13% -395px;
+}
+.b .col_2 .bank_num{
+	font-size:14px;
+	margin-top:35px;
+}
+.bank_num b{
+	font-size:28px;
+}
+.b .col_2 p{
+	text-indent:45%;
+	text-align:left;
+	font-size:16px;
+	margin-top:10px;
+	line-height:30px;
+}
+.b .org{
+	color:#F90;
+}
+.b .bl{
+	color:#88F;
+}
+.b .col_2:hover{
+	border-color:#F90;
+	box-shadow:-2px -2px 2px 1px #F4F4F4,
+				2px 2px 2px 1px #F4F4F4;
+}
+
+/** 支付方式 **/
+.pay_add_btn .submit{
+	width:262px;
+	margin-left:160px;
+}
+
+/*** 申请列表 ***/
+.finance_list .fill_block{
+	padding:5px 40px 10px;
+}
+.finance_order_list table{
+	border:1px solid #FFF;
+	border-top:none;
+}
+.finance_order_list{
+	border-bottom:10px solid #F4F4F4;
+	padding-bottom:20px;
+}
+.back_finance_btn{
+	width:25%;
+	height:35px;
+	font-size:16px;
+	margin:15px auto 10px;
 }

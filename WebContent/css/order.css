@@ -54,9 +54,39 @@
 .pdts_list thead th{
 	color:#999;
 }
-.amount{
-	width:60px;
+.op_count{
+	width:80px;
 	height:25px;
+	float:right;
+	border:1px solid #DDD;
+	text-align:center;
+	padding-right:15px;
+	out-line:none;
+}
+[disabled="disabled"]{
+	border:none;
+}
+.submit.sent{
+	background-color:#CCC;
+}
+.count_btn{
+	float:right;
+	width:43px;
+	height:25px;
+	padding:1px;
+	line-height:24px;
+	background-color:#F3F3F3;
+	color:#333;
+	border-radius:0;
+	margin-right:10px;
+}
+.count_btn:hover{
+	background-color:#FFF;
+	border:1px solid #AAA;
+	padding:0;
+}
+.red_border{
+	border-color:#E33;
 }
 .sum{
 	background-color:#FAFAFA;
@@ -129,7 +159,7 @@
 	width:160px;
 	text-align:right;
 	color:#E33;
-	font-size:15px;
+	font-size:14px;
 }
 .settlement .total i{
 	font-size:18px;
@@ -140,7 +170,7 @@
 	padding-top:5px;
 }
 .total b{
-	font-size:22px;
+	font-size:20px;
 }
 .settlement .submit, .view_order{
 	width:240px;

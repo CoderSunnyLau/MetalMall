@@ -1,0 +1,1 @@
+cntLoad($('.add_btn [jump="demand_add"]'), 'company');

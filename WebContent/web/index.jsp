@@ -1,11 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" import="com.yijinsuo.common.*"%>
 <%request.setCharacterEncoding("utf-8");%>
+<%! String prefix = ConstantUtil.YJS; %>
+
 <!DOCTYPE>
 <html>
 <head>
 	<title>首页</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<jsp:include page="../components/head.jsp"></jsp:include>
+	<link rel="stylesheet" type="text/css" href="<%=prefix%>/css/index.css">
 </head>
 <body>
 	<jsp:include page="../components/header2.jsp">
@@ -13,7 +15,7 @@
 	</jsp:include>
 	<div class="page_body" nav="index" id="index_el">
 		<div class="banner">
-			<img src="../images/banner_01.jpg" />
+			<img src="<%=prefix%>/images/banner_01.jpg" />
 		</div>
 		<div class="page_cnt main_width">
 			<div class="tab_box">
@@ -141,11 +143,11 @@
 				</div>
 			</div>
 			<div class="index_block">
-				<p class="row_white" style="margin-top:10px;"><span>金融动态</span><a href="finance.jsp">更多</a></p>
+				<p class="row_white" style="margin-top:10px;"><span>金融动态</span><a href="finance.jsp" class="hover_o">更多>></a></p>
 				<ul class="trend_dynamics"></ul>
 			</div>
 			<div class="index_block">
-				<p class="row_white"><span>需求动态</span><a href="demand.jsp">更多</a></p>
+				<p class="row_white"><span>需求动态</span><a href="demand.jsp" class="hover_o">更多>></a></p>
 				<ul class="demand_trend"></ul>
 			</div>
 			<div class="index_block">
@@ -155,7 +157,7 @@
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../libs/echarts.min.js"></script>
-	<script src="../js/index.js"></script>
+	<script src="<%=prefix%>/libs/echarts.min.js"></script>
+	<script src="<%=prefix%>/js/index.js"></script>
 </body>
 </html>

@@ -15,10 +15,13 @@
 		if(res){
 			verifyInput.nextSibling.innerHTML = "";
 			verifyInput.nextSibling.className = "";
-		}else if(verifyInput.value == ""){
-			verifyInput.nextSibling.innerHTML = "请输入验证码";
 		}else{
-			verifyInput.nextSibling.innerHTML = "您输入的验证码有误";
+			verifyInput.nextSibling.className = "error";
+			if(verifyInput.value == ""){
+				verifyInput.nextSibling.innerHTML = "请输入验证码";
+			}else{
+				verifyInput.nextSibling.innerHTML = "您输入的验证码有误";
+			}
 		}
 	}
 	verifyInput.onfocus = function(){

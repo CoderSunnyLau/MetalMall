@@ -1,9 +1,9 @@
-$(function(){
+
 	// init
 	var xItem = [],
 		yItem = {'p':[], 'a':[], 'c':[]},
 		zName = ['商品', '地区', '企业'];
-	$.get('../data/index.json', function(res){
+	$.get( DOMAIN + '/getIndexTotalData', function(res){
 //	$.get('http://192.168.0.107:8090/getIndexTotalData', function(res){
 		for(i in res.orderPriceBoardInfos){
 			$('.scroll').append("<li>" + res.orderPriceBoardInfos[i] + "</li>");
@@ -53,7 +53,7 @@ $(function(){
 				"</i></li><li><span>需求数量：</span><i>" + demand.quantityReqrm + demand.unit +
 				"</i></li></ul></div><div class='demand_action'><p class='demand_company'>" + demand.companyName +
 				"</p><p class='demand_budget'>预算：<span>" + demand.minBudget + "万~" + demand.minBudget +
-				"万</span></p><button>我要供货</button></div></li>"
+				"万</span></p><a href='demand_detail.jsp?id=" + demand.id + "' class='btn' target='_blank'>我要供货</a></div></li>"
 			);
 		}
 
@@ -136,17 +136,19 @@ $(function(){
 	}
 	scrollFn();
 	setInterval(scrollFn,10000);
-});
+
 
 // function
-// change search type
+
+/***********  [Search] pdts and demands  ************/
+/* change search type */
 $('.tabs .tab').click(function(){
 	$('.tab_crr').removeClass('tab_crr');
 	$(this).addClass('tab_crr');
 });
 
-// search
+/* search */
 $('.search_btn').click(function(){
 	var searchType = $('.tab_crr').attr('type');
-	window.open(searchType + '.jsp');
+	//window.open(searchType + '.jsp');
 });

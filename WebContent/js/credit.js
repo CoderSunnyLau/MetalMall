@@ -1,3 +1,2 @@
-$('.credit_add button').on('click', function(){
-	$('#cnt').load('./credit_add.jsp');
-});
+cntLoad($('.company [jump="credit_add"]'), 'company');
+cntLoad($('.bank [jump="credit_add"]'), 'bank');

@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>商城</title>
-    <meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/mall.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
 					<li class="rank_item">价格</li>
 				</ul>
 				<ul class="pdts">
+				<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
 				<!--
 					<li class="pdt">
 						<div class="pdt_l">

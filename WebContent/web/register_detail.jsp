@@ -4,8 +4,8 @@
 <html>
 <head>
 	<title>企业注册</title>
-	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 </head>
 <body>
 	<div class="header_more">

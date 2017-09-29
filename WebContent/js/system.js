@@ -9,7 +9,7 @@ $(function(){
 	//初始化頁面
 	var page = getUrlParameter('page');
 	if(page){
-		$('.cnt').load(page + '.jsp');
+		$('.cnt').empty().load(page + '.jsp');
 //		$('.active').removeClass('active');
 //		$('[name=' + page + ']').addClass('active');
 		crrClass($('[name=' + page + ']'), 'active');
@@ -50,7 +50,7 @@ $(function(){
 	});
 	$('.menu_link').click(function(){
 		var name = $(this).attr('name');
-		$('#cnt').load('./' + name + '.jsp');
+		$('#cnt').empty().load('./' + name + '.jsp');
 //		window.location.search = 'page=' + name;
 	});
 });

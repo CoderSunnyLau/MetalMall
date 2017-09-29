@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>供应链金融</title>
-    <meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
 <body>

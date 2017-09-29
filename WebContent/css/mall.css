@@ -17,6 +17,9 @@
 	overflow:hidden;
 	padding:10px 0;
 }
+.pdt:hover{
+	background-color:#FFF;
+}
 .pdt .pdt_l{
 	float: left;
 	width: 14%;
@@ -45,7 +48,7 @@
 	margin-right:10px;
 }
 .pdt_name:hover{
-	color:#888;
+	color:#F90;
 }
 .company_name{
 	line-height:45px;
@@ -71,23 +74,25 @@
 }
 .pdt_stock{
 	font-size:12px;
-	line-height:18px;
-	height:18px;
+	line-height:15px;
+	height:15px;
 	text-align:center;
 	margin-top:5px;
 }
 .pdt_stock span{
 	display:block;
 	float:left;
-	width:60px;
+	width:50px;
 	border:1px solid #DDD;
 	border-right:none;
 	color:#999;
+	background-color:#FFF;
 }
 .pdt_stock i{
 	display:block;
 	float:left;
-	width:90px;
+	width:80px;
+	border:1px solid #F90;
 	background-color:#F90;
 	color:#FFF;
 }
@@ -133,10 +138,18 @@
 	color: #FFF;
 	outline: none;
 }
+.pdt_r a:hover{
+	background-color:#FA0;
+}
 .pdt_name, .pdt_dtl_cnt span{
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
+}
+.no_pdt{
+	line-height:302px;
+	text-align:center;
+	font-size:14px;
 }
  
  /* demand.jsp */
@@ -152,23 +165,42 @@
 	border:1px solid #DDD;
 	margin:10px 0 0 10px;
 }
+.demand_box{
+	position:relative;
+	float:left;
+	width:285px;
+	border:1px solid #CCC;
+	background-color:#FFF;
+	margin:10px 0 0 10px;
+}
+.demand_box::before{
+	content:"";
+	width:65px;
+	height:63px;
+	display:block;
+	position:absolute;
+	top:-2px;
+	right:-2px;
+	background-image:url(../images/corner-folded1.png);
+}
 .min .demand_box{
 	width:225px;
 }
 .demand_cnt{
-	padding:15px;
-	background-color:#EEE;
+	padding:10px 15px;
 }
 .demand_title{
 	height:35px;
-	font-size:15px;
+	font-size:14px;
 	font-weight:600;
 	text-align:center;
+	max-width:82%;
+	margin:0 auto;
+	padding-right:10px;
 }
 .demand_action{
-	padding:10px 15px;
+	padding:0 15px 10px;
 	border-top:1px solid #DDD;
-	background-color:#FFF;
 	overflow:hidden;
 }
 .demand_company{

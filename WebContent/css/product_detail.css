@@ -72,7 +72,7 @@
 .price b{
 	font-size:24px;
 }
-.pdt_action button{
+.pdt_action .btn{
 	display:block;
 	float:right;
 	width:150px;
@@ -97,27 +97,6 @@
 	padding:0 10px;
 	border-bottom:1px solid #F90;
 }
-.detail_title{
-	line-height:50px;
-	font-size:14px;
-	text-indent:45px;
-}
-.param{
-	width:93%;
-	border:1px solid #CCC;
-	font-size:12px;
-}
-.param td{
-	padding:10px;
-}
-.detail_key{
-	width:250px;
-	background-color:#F4F4F4;
-}
-.param .detail_val{
-	text-align:left;
-	padding-left:25px;
-}
 #detail_cnt{
 	width:92%;
 	margin:30px auto 40px;
@@ -128,4 +107,11 @@
 	min-height:50px;
 	padding:20px;
 	line-height:30px;
+}
+.loading_wrapper{
+	position:absolute;
+	background-color:#FFF;
+	width:100%;
+	z-index:99;
+	height:100%;
 }

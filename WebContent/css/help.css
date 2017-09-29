@@ -1,0 +1,19 @@
+.help{
+	min-height:500px;
+}
+.help p{
+	margin:20px 5px;
+	text-indent:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#666;
+}
+.help_block{
+	position:relative;
+}
+.anchor{
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    width: 1px;
+}

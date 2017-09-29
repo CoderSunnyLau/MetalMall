@@ -32,6 +32,12 @@ body .page_cnt{
 	line-height:32px;
 	z-index:9;
 }
+.financial_list .item_left i::after{
+	background-position:0 -184px;
+}
+.financial_list .item_left i{
+	background-color:#F90;s
+}
 .item_left i::after, .live_tag::after, .item_left span::after{
 	content:"";
 	position:absolute;
@@ -86,13 +92,14 @@ body .page_cnt{
 }
 .item_title i{
 	margin:0 10px;
+	color:#999;
 }
 .item_cnt, .live_cnt{
 	padding:0 25px 25px;
 	color:#888;
 	line-height:25px;
 }
-.result_item:hover .item_title{
+.result_item:hover .item_title *{
 	color:#FF8080;
 }
 .result_item:hover .item_title{
@@ -109,7 +116,7 @@ body .page_cnt{
 	padding:0 5px 0 15px;
 	margin-left:15px;
 	background-image:url(../images/common_icons.png);
-	background-position:0 -210px;
+	background-position:0 -239px;
 }
 .financial_tip .date{
 	position:absolute;

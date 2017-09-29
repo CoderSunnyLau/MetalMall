@@ -14,9 +14,9 @@
 	</jsp:include>
 	<div class="page_body">
 		<div class="page_cnt">
-		    <div class="cnt_header">
-		        <span>首页 > 企业注册</span>
-		    </div>
+			<div class="cnt_header">
+				<span>首页 > 企业注册</span>
+			</div>
 			<div class="register_body">
 				<div class="company_info input_box">
 					<p>企业信息</p>

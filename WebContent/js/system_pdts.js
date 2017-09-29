@@ -11,5 +11,4 @@
 //			);
 //		}
 //	});
-
-cntLoad($('.add_btn [name="pdts_add"]'));
+cntLoad($('.add_btn [jump="pdts_add"]'), 'company');

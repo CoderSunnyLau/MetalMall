@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>商品详情</title>
-    <meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/product_detail.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
 			<div class="cnt_header">
 				<span class="position">商城 > 商品详情</span>
 			</div>
+			<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
 			<div class="info_box">
 				<div class="main_info">
 					<div class="img_box">
@@ -44,25 +45,14 @@
 						</div>
 						<div class="pdt_action">
 							<span class="price"><b>￥--</b>/--</span>
-							<button>我要下单</button>
+							<a class="btn buy">我要下单</a>
 						</div>
 					</div>
 				</div>
 				<div class="detail_box">
 					<p class="detail_header"><span>商品详情</span></p>
 					<div class="detail">
-						<p class="detail_title">基本参数</p>
-						<table class="param" border="1">
-							<tr>
-								<td class="detail_key">品牌：</td>
-								<td class="detail_val">绿志鸟</td>
-							</tr>
-							<tr>
-								<td class="detail_key">型号：</td>
-								<td class="detail_val">无铅高温纯锡条</td>
-							</tr>
-						</table>
-						<div id="detail_cnt"></div>
+						<div id="detail_cnt">正在加载...</div>
 					</div>
 					<p class="detail_header"><span>售后服务</span></p>
 					<div class="sold_service"></div>

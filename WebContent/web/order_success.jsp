@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>提交成功</title>
-    <meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/order.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 			<div class="checkout">
 				<div class="table_box">
 					<p class="box_title"><span>卖家企业</span></p>
-					<p class="company_name seller_name"></p>
+					<p class="company_name os_username"></p>
 					<p class="box_title"><span>商品明细</span></p>
 					<table class="pdts_list">
 						<thead>
@@ -30,28 +30,28 @@
 								<th>件重（kg）</th>
 								<th>重量（kg）</th>
 								<th>单价（元）</th>
-								<th>数量</th>
+								<th>数量（件）</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="os_productName"></td>
-								<td class="os_material"></td>
-								<td class="os_specification"></td>
-								<td class="os_unitWeight"></td>
-								<td class="os_totalWeight"></td>
-								<td class="os_unitPrice"></td>
-								<td class="os_quantity"></td>
+								<td class="op_name"></td>
+								<td class="op_material"></td>
+								<td class="op_specification"></td>
+								<td class="op_weight"></td>
+								<td class="op_totalweight"></td>
+								<td class="op_price"></td>
+								<td class="o_productQuantity"></td>
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr><td class="sum" colspan="7">商品总计：<big>￥<i class="os_amount"></i></big></td></tr>
+							<tr><td class="sum" colspan="7">商品总计：<big>￥<i class="op_amount"></i></big></td></tr>
 						</tfoot>
 					</table>
 				</div>
 				<div class="table_box">
 					<p class="box_title"><span>买家企业</span></p>
-					<p class="company_name"><i class="buyer_name"></i>　|　电话：<i class="buyer_phone"></i></p>
+					<p class="company_name"><span class="ob_username">--</span> | 电话：<span class="ob_phone"></span></p>
 					<p class="box_title"><span>支付方式</span></p>
 					<div class="payment_type">
 						<table>
@@ -62,9 +62,9 @@
 								<td colspan="3"></td>
 							</tr>
 							<tr>
-								<td class="os_paymentType"></td>
-								<td class="os_creditBank"></td>
-								<td class="os_paymentDeadline"></td>
+								<td class="o_paymentType"></td>
+								<td class="o_creditBank"></td>
+								<td class="o_paymentDeadline"></td>
 								<td colspan="3"></td>
 							</tr>
 						</table>
@@ -76,13 +76,13 @@
 				<div class="settlement_box">
 					<div class="settlement">
 						<p class="settlement_row">
-							<span>商品总价：</span><i>￥<big class="os_amount"></big></i>
+							<span>商品总价：</span><i>￥<big class="op_amount">--.--</big></i>
 						</p>
 						<p class="settlement_row">
-							<span>服务费用：</span><i>￥<big class="os_serviceCharge"></big></i>
+							<span>服务费用：</span><i>￥<big class="o_serviceCharge">--.--</big></i>
 						</p>
 						<p class="settlement_row total">
-							<span>应付金额：</span><i>￥<big class="order_total"></big></i>
+							<span>应付金额：</span><b>￥<big class="o_orderPriceAmount">--.--</big></b>
 						</p>
 						<button class="view_order">查看订单</button>
 					</div>

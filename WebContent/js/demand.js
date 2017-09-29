@@ -1,10 +1,37 @@
+$.get('../data/config.json', function(res){
+	for(var j = 0; j < 2; j++){
+		var item = j == 0 ? res.area : res.productType;
+		for(var i = 0; i < item.length; i++){
+			var _options = $('.options').eq(j);
+			var _class = i < 5 ? 'a' : ((i >= 5 && i < 7) ? 'a b': '');
+			_options.find('ul').append(
+				'<li class="' + _class + '">' + item[i] + '</li>'
+			);
+			var row_length = $('.main_width').width() == 1200 ? 7 : 5;
+			if(item.length > row_length){
+				_options.find('.all').show();
+			}else{
+				_options.find('.all').hide();
+			}
+		}
+	}
+});
+$('.select_box').find('tr').each(function(){
+	var row_length = $('.main_width').width() == 1200 ? 7 : 5;
+	if($(this).find('.options ul li').length > row_length){
+		$(this).find('.all').show();
+	}else{
+		$(this).find('.all').hide();
+	}
+});
+
 $('.all').click(function(){
 	var show_el = $(this).prev('ul').find('.show');
 	if(show_el.length > 0){
 		show_el.removeClass('show');
+		$(this).removeClass('unfolded').html('全部');
 	}else{
-		console.log(show_el);
-		$(this).prev('ul').find('li').addClass('show');
+		$(this).addClass('unfolded').html('收起').prev('ul').find('li').addClass('show');
 	}
 });
 

@@ -28,8 +28,9 @@ body .page_body{
 	background-size:cover;
 }
 .system_login.login_body{
-	background-image:url(../images/system_login.jpg);
+	background-image:url(../images/system_login.png);
 	background-color:#FFF;
+	background-size:1600px auto;
 	height:600px;
 }
 .login_box, .forget_box, .setpsd_box{
@@ -47,11 +48,21 @@ body .page_body{
 .input_field{
 	position: relative;
 	height: 46px;
-	margin: 10px 0 20px;
+	margin: 10px 0 15px;
 }
 .register_body .input_field{
 	width:407px;
 	margin: 15px auto;
+}
+.register_body .input_field i{
+	width: 200px;
+	height:46px;
+	overflow:hidden;
+	right: -215px;
+	left:auto;
+	bottom:auto;
+	display: block;
+	line-height: 46px;
 }
 .input_field i{
 	position:absolute;
@@ -104,7 +115,7 @@ body .page_body{
 .login_box button, .forget_box button, .setpsd_box button{
 	width: 295px;
 	height: 40px;
-	margin: 30px auto 10px;
+	margin: 45px auto 10px;
 	font-size: 17px;
 	border-radius:6px;
 }
@@ -118,9 +129,6 @@ body .page_body{
 	color:#AAA;
 	font-size:15px;
 }
-.system_login .forget{
-	padding-left:15px;
-}
 .register{
 	position:absolute;
 	right:10px;
@@ -132,8 +140,29 @@ body .page_body{
 	position:absolute;
 	left:10px;
 	display:block;
-	padding:0 15px;
 	font-size:15px;
+	margin:5px 0 0 15px;
+}
+.remember i{
+	display:block;
+	float:left;
+	width:13px;
+	height:13px;
+	border:1px solid #666;
+	border-radius:50%;
+	margin:4px;
+}
+.checked i{
+	box-shadow:0 -2px 0 0 #EEE inset,
+				0 2px 0 0 #EEE inset,
+				-2px 0 0 0 #EEE inset,
+				2px 0 0 0 #EEE inset;
+	background-color:#666;
+}
+.login_by_phone{
+	position:absolute;
+	right:10px;
+	bottom:10px;
 }
 
 /*  register  */
@@ -172,7 +201,7 @@ body .page_body{
 	margin: 70px;
 }
 .system_login .box_wrap{
-	margin-top:150px;
+	margin-top:125px;
 }
 .register_body{
 	margin:20px 0;
@@ -187,6 +216,7 @@ body .page_body{
 	line-height:46px;
 	text-align:left;
 	margin-left:20px;
+	font-size:14px;
 	color:#B40;
 	z-index:9;
 }
@@ -197,31 +227,12 @@ body .page_body{
 	margin:0;
 	font-size:14px;
 }
-.company_type select{
+.input_field select{
 	width: 407px;
 	height:46px;
 	padding-left:90px;
 	margin:0;
 	font-size:15px;
-}
-.company_area{
-	border:1px solid #DDD;
-	height:46px;
-}
-.company_area select{
-	width:150px;
-	height:46px;
-	font-size:15px;
-	border:none;
-	border-left:1px dashed #CCC;
-	padding-left:10px;
-}
-.company_area [name=province]{
-	margin:0 0 0 100px;
-}
-.company_area [name=city]{
-	float:right;
-	margin:0;
 }
 .company_info, .user_info{
 	width: 770px;
@@ -232,12 +243,15 @@ body .page_body{
 	float:left;
 	position:relative;
 }
-.register_body .user_valid button{
+.register_body .valid_btn{
 	width: 145px;
 	height: 46px;
 	float: right;
 	font-size: 13px;
 	background-color:#8ad3cc;
+}
+.register_body .valid_btn:hover{
+	background-color:#BDD;
 }
 .register_submit{
 	width: 407px;
@@ -246,20 +260,23 @@ body .page_body{
 	font-size:16px;
 	letter-spacing:2px;
 }
-.forget_box, .setpsd_box{
+.forget_box, .setpsd_box, .phone_box{
 	opacity: 0;
 	right: -320px;
 	display: none;
 }
-.forget_box .valid_btn{
+.forget_box .valid_btn, .phone_box .valid_btn{
 	width: 110px;
 	font-size: 12px;
 	float: right;
 	margin: 6px 10px 0 0;
 }
-.forget_box .sent{
-	background-color:#CCC;
+.sent{
+	background-color:#CCC !important;
 	cursor:default;
+}
+.sent:hover{
+	background-color:#CCC !important;
 }
 .forget_box .input_field, .setpsd_box .input_field{
 	margin: 33px 0;

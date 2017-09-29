@@ -1,6 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" import="com.yijinsuo.common.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%request.setCharacterEncoding("utf-8");%>
+<%!String _helpPrefix = ConstantUtil.YJS + "/web/help.jsp";%>
+
 <div class="footer">
 <c:if test="${param.show != 'false'}">
 	<div class="footer_bg">
@@ -9,13 +11,13 @@
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img"></div>
-						<span>交易无手续费</span>
+						<span>免费找货找车</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_1"></div>
-						<span>商城原料供销</span>
+						<span>商城钢厂直供</span>
 					</div>
 				</li>
 				<li class="circle">
@@ -27,13 +29,13 @@
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_3"></div>
-						<span>上下游企业链</span>
+						<span>仓储加工一体</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_4"></div>
-						<span>缺钱申请分期</span>
+						<span>缺钱可打白条</span>
 					</div>
 				</li>
 			</ul>
@@ -46,11 +48,9 @@
 					<div class="list_item">
 						<p class="list_title">我要买</p>
 						<ul class="list_block">
-							<li><a href="">如何采购？</a></li>
-							<li><a href="">定制商城采购流程</a></li>
-							<li><a href="">现货商城采购流程</a></li>
-							<li><a href="">如何支付</a></li>
-							<li><a href="">物流帮助</a></li>
+							<li><a href="<%=_helpPrefix%>#howtobuy">如何下单采购</a></li>
+							<li><a href="<%=_helpPrefix%>#howtopay">支付流程</a></li>
+							<li><a href="<%=_helpPrefix%>#releasedemands">如何发布需求单</a></li>
 						</ul>
 					</div>
 				</li>
@@ -58,10 +58,9 @@
 					<div class="list_item">
 						<p class="list_title">我要卖</p>
 						<ul class="list_block">
-							<li><a href="">如何销售？</a></li>
-							<li><a href="">定制商城销售指南</a></li>
-							<li><a href="">现货商城销售指南</a></li>
-							<li><a href="">如何发布现货库存</a></li>
+							<li><a href="<%=_helpPrefix%>#releasepdts">如何发布商品</a></li>
+							<li><a href="<%=_helpPrefix%>#releasestock">如何发布现货库存</a></li>
+							<li><a href="<%=_helpPrefix%>#viewstatistics">如何查看销售统计</a></li>
 						</ul>
 					</div>
 				</li>
@@ -69,10 +68,9 @@
 					<div class="list_item">
 						<p class="list_title">账户服务</p>
 						<ul class="list_block">
-							<li><a href="">用户注册</a></li>
-							<li><a href="">找回密码</a></li>
-							<li><a href="">如何认证</a></li>
-							<li><a href="">信用查询</a></li>
+							<li><a href="<%=_helpPrefix%>#userregister">用户注册</a></li>
+							<li><a href="<%=_helpPrefix%>#forgetpwd">找回密码</a></li>
+							<li><a href="<%=_helpPrefix%>#creditquery">授信查询</a></li>
 						</ul>
 					</div>
 				</li>
@@ -80,9 +78,9 @@
 					<div class="list_item">
 						<p class="list_title">常见问题</p>
 						<ul class="list_block">
-							<li><a href="">无法注册</a></li>
-							<li><a href="">无法登录</a></li>
-							<li><a href="">联系客户</a></li>
+							<li><a href="<%=_helpPrefix%>#cantregister">无法注册</a></li>
+							<li><a href="<%=_helpPrefix%>#cantlogin">无法登录</a></li>
+							<li><a href="<%=_helpPrefix%>#contactclients">联系客服</a></li>
 						</ul>
 					</div>
 				</li>
@@ -92,16 +90,14 @@
 </c:if>
 	<div class="main_width">
 		<div class="descriptions">
-			<p><a>关于我们</a>|<a>法律声明</a>|<a>诚聘英才</a>|<a>投资洽谈</a>|<a>联系我们</a>|<a>常见问题</a></p>
-			<p>Copyright©易金所 www.yijinsuo.com 粤ICP备 13000000号-3 ICP证：粤B2-20140000</p>
-			<p>商务部2015-2016年度电子商务示范企业 2016年度国家级服务标准化试点项目 中国互联网诚信示范企业 2015年中国大宗商品你现代流通诚信市场</p>
+			<p><a>关于我们</a>|<a>法律声明</a>|<a>投资洽谈</a>|<a>联系我们</a>|<a>常见问题</a></p>
+			<p>Copyright©易金所 www.yijinsuo.com 粤ICP备 xxxxxxxxx号-x</p>
 		</div>
 		<ul class="footer_icons">
-			<li></li>
-			<li class="footer_1"></li>
-			<li class="footer_2"></li>
-			<li class="footer_3"></li>
-			<li class="footer_4"></li>
+			<a href="http://www.zx110.org/" target="_blank"><li></li></a>
+			<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank"><li class="footer_1"></li></a>
+			<a href="http://www.cyberpolice.cn/wfjb/frame/impeach/chooseImpeachAnonymous.jsp" target="_blank"><li class="footer_2"></li></a>
+			<a href="http://www.creditchina.gov.cn/" target="_blank"><li class="footer_3"></li></a>
 		</ul>
 	</div>
 </div>

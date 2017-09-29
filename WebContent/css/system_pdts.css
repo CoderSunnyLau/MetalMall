@@ -3,11 +3,74 @@
 }
 .fill_block .add_pics{
 	float:left;
+	width:79%;
+	height:100px;
+	margin-left:-15px;
+	overflow:hidden;
 }
-.add_pics li{
-	width:100px;
+.add_pics .fileItem{
+	border:1px solid #DDD;
+	border-radius:5px;
+	display:block;
+	float:left;
+	margin-left:15px;
+	cursor:pointer;
+	overflow:hidden;
+}
+.add_pics .selectFileBt:hover, .fileItem:hover{
+	border-color:#CCC;
+	color:#CCC;
+}
+.add_pics .fileItem:hover .icon-shanchu{
+	display:block;
+}
+.add_pics .fileItem, .add_pics .icon-shanchu{
+	width:129px;
+	height:85px;
+}
+.add_pics .fileItem .imgShow{
+	width:100%;
 	height:65px;
+}
+.add_pics .imgShow img{
+	width:100%;
+}
+.add_pics .icon-shanchu{
+	display:none;
+	position:relative;
+	margin-top:-65px;
+	line-height:80px;
+	text-align:center;
+	font-size:70px;
+	color:#CCC;
+	background-color:rgba(255,255,255,0.95);
+}
+.add_pics .box{
+	float:left;
+}
+.add_pics .uploadBts{
+	position:absolute;
+	right:-144px;
+}
+.add_pics .fileUploadContent{
+	position:relative;
+	height:100px;
+	float:left;
+}
+.add_pics .selectFileBt{
+	width:119px;
+	height:77px;
 	border:5px solid #DDD;
+	border-radius:5px;
+	text-align:center;
+	line-height:70px;
+	color:#DDD;
+	font-size:50px;
+	cursor:pointer;
+	margin-left:15px;
+}
+.add_pics .fileName{
+	position:absolute;
 }
 .pics_row{
 	overflow:hidden;
@@ -43,20 +106,19 @@
 	padding:40px 0;
 	overflow:hidden;
 }
-.submit, .preview{
+.button_block .submit, .preview{
 	width:28%;
-	height:45px;
+	height:38px;
+	line-height:38px;
 	border-radius:5px;
-	font-size:16px;
+	font-size:15px;
 }
 .preview{
 	float:right;
 	margin-right:18%;
-	background-color:#FFF;
-	border:1px solid #F90;
-	color:#F90;
 }
-.submit{
+.button_block .submit{
 	float:left;
+	margin:0;
 	margin-left:18%;
 }

@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>需求单详情</title>
-    <meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/demand.css">
 </head>
 <body>

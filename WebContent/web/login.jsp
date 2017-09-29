@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>用户登录</title>
-	<meta charset="utf-8">
+	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
@@ -14,14 +14,14 @@
 	<div class="page_body login_body">
 		<div class="main_width login_cnt">
 			<div class="box_wrap">
-				<div class="login_box">
+				<div class="login_box vip_box">
 					<div class="box_title">登 录</div>
 					<div class="input_field check_input" id="user_name">
-						<span>账　号</span><input type="text" name="" placeholder="请输入用户名/手机号" />
+						<span>账　号</span><input type="text" name="userName" placeholder="请输入用户名/手机号" />
 						<i class="error"></i>
 					</div>
 					<div class="input_field check_input" id="user_psd">
-						<span>密　码</span><input type="password" name="" placeholder="请输入密码" />
+						<span>密　码</span><input type="password" name="pwd" placeholder="请输入密码" />
 						<i class="error"></i>
 					</div>
 					<div class="input_field user_valid" id="login_valid">
@@ -33,6 +33,7 @@
 						<a class="forget change_box" href="javascript:void(0);">忘记密码</a>
 						<a class="register" href="./register.jsp">免费注册</a>
 					</div>
+					<a style="display:none;" class="login_by_phone change_box" href="javascript:void(0);">手机号验证登录</a>
 				</div>
 				<div class="forget_box">
 					<div class="box_title">找回密码</div>
@@ -71,6 +72,6 @@
 	<jsp:include page="../components/footer.jsp">
 		<jsp:param value="false" name="show"/>
 	</jsp:include>
-	<script src="../js/system_login.js"></script>
+	<script src="../js/login.js"></script>
 </body>
 </html>
