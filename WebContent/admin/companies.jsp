@@ -16,66 +16,92 @@
 			<table>
 				<thead>
 					<tr>
-						<th>企业名称</th>
+						<th style="width:26%;">企业名称</th>
 						<th>企业区域</th>
 						<th>联系电话</th>
 						<th>商品数</th>
 						<th>需求数</th>
 						<th>供货笔数</th>
-						<th>供货交易额</th>
+						<!-- <th>供货交易额</th> -->
 						<th>采购笔数</th>
-						<th>采购交易额</th>
+						<!-- <th>采购交易额</th> -->
 						<th>登录次数</th>
-						<th>最近登录</th>
-						<th class="operation">操作</th>
+						<th  style="width:125px;">最近登录</th>
 					</tr>
 				</thead>
-				<tbody class="rows">
-					<tr>
-						<td>三门下灵宝xx有限公司</td>
-						<td>广州</td>
-						<td>15555555555</td>
-						<td>9</td>
-						<td>40</td>
-						<td>10000</td>
-						<td>98</td>
-						<td>10000</td>
-						<td>10000</td>
-						<td>8</td>
-						<td>2017-09-01 00:00:00</td>
-						<td><a>删除</a>|<a>交易信息</a></td>
-					</tr>
-					<tr class="odd">
-						<td>三门下灵宝xx有限公司</td>
-						<td>广州</td>
-						<td>15555555555</td>
-						<td>9</td>
-						<td>40</td>
-						<td>10000</td>
-						<td>98</td>
-						<td>10000</td>
-						<td>10000</td>
-						<td>8</td>
-						<td>2017-09-01 00:00:00</td>
-						<td><a>删除</a>|<a>交易信息</a></td>
-					</tr>
-					<tr>
-						<td>三门下灵宝xx有限公司</td>
-						<td>广州</td>
-						<td>15555555555</td>
-						<td>9</td>
-						<td>40</td>
-						<td>10000</td>
-						<td>98</td>
-						<td>10000</td>
-						<td>10000</td>
-						<td>8</td>
-						<td>2017-09-01 00:00:00</td>
-						<td><a>删除</a>|<a>交易信息</a></td>
-					</tr>
-				</tbody>
+				<tbody class="rows company_list"></tbody>
 			</table>
 		</div>
+		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
-<script src="../js/system_demand.js"></script>
+<script>
+	sysInit();
+	$.ajax({
+		url: DOMAIN + '/getAllCompanyUsersDetailInfo',
+		type: 'GET',
+		data: {
+			pageIndex: getSysUrlParam('pageIndex') || 0,
+			pageSize: 20
+		},
+		success: function(res){
+			$('.cnt_body').show();
+			$('.company_list').empty();
+			for(var i = 0; i < res.content.length; i++){
+				var item = res.content[i];
+				var _class = i % 2 == 0 ? '' : 'odd';
+				$('.company_list').append(
+					'<tr class="' + _class + 
+					'"><td>' + item.username +
+					'</td><td>' + item.area +
+					'</td><td>' + item.phone +
+					'</td><td>' + item.productCount +
+					'</td><td>' + item.reqFormCount +
+					'</td><td>' + item.sellOrderCount +
+					'</td><td>' + item.buyOrderCount +
+					'</td><td>' + item.loginCount +
+					'</td><td>' + item.stringLatestLoginTime + '</td></tr>'
+				);
+			}
+			$('.company_list').off();
+			$('.company_list').on('click', '.op', function(){
+				var financeId = $(this).parent().attr('financeId');
+				if($(this).hasClass('view')){
+					jump('admin', {
+						page: 'finance_list',
+						financeId: financeId
+					});
+				}else if($(this).hasClass('pass')){
+					changeFinanceStatus('Y', financeId);
+				}else if($(this).hasClass('refuse')){
+					changeFinanceStatus('R', financeId);
+				}
+			});
+			var changeFinanceStatus = function(status, financeId){
+				$.ajax({
+					url: DOMAIN + '/approveBankProduct',
+					type: 'POST',
+					data: {
+						productId: financeId,
+						status: status
+					},
+					dataType: 'json',
+					success: function(res){
+						console.log(res);
+						console.log(res.success);
+						if(res.success){
+							alert('操作成功！');
+							reload('admin');
+						}else{
+							alert('操作失败。');
+						}
+					},
+					error: function(res){
+						console.log(res)
+					}
+				});
+			}
+			pageInit(res.totalPages);
+		}
+	});
+</script>

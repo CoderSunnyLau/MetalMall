@@ -3,9 +3,9 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>商品详情</title>
+    <title>商品详情-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/product_detail.css">
+	<link rel="stylesheet" type="text/css" href="../css/product_detail.css?v=15">
 </head>
 <body>
 	<jsp:include page="../components/header2.jsp">
@@ -20,7 +20,7 @@
 			<div class="info_box">
 				<div class="main_info">
 					<div class="img_box">
-						<img src="#" class="main_img" />
+						<ul class="main_imgs"></ul>
 						<ul class="imgs"></ul>
 					</div>
 					<div class="summary">
@@ -61,6 +61,6 @@
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../js/product_detail.js"></script>
+	<script src="../js/product_detail.js?v=15"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>注册</title>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<title>注册-易金所</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css?v=17">
 	<jsp:include page="../components/head.jsp"></jsp:include>
 </head>
 <body>
@@ -18,11 +18,11 @@
 			<div class="register_body">
 				<div class="user_info input_box">
 					<div class="user_name input_field" id="user_name">
-						<span>用戶名</span><input class="check_field" type="text" name="" maxlength="14" placeholder="长度为4~14个字符" />
+						<span>用戶名</span><input class="check_field" type="text" name="loginName" maxlength="14" placeholder="长度为4~14个字符" />
 						<i class="error"></i>
 					</div>
 					<div class="user_psd input_field" id="set_psd">
-						<span>设置密码</span><input class="check_field" type="password" name="" maxlength="14" placeholder="长度为6~14位" />
+						<span>设置密码</span><input class="check_field" type="password" name="password" maxlength="14" placeholder="长度为6~14位" />
 						<i class="error"></i>
 					</div>
 					<div class="user_psd input_field" id="repeat_psd">
@@ -30,27 +30,28 @@
 						<i class="error"></i>
 					</div>
 					<div class="user_phone input_field" id="phone_num">
-						<span>手机号</span><input class="check_field" type="text" name="" maxlength="11" placeholder="可用于登录和找回密码" />
+						<span>手机号</span><input class="check_field" type="text" name="phone" maxlength="11" placeholder="可用于登录和找回密码" />
 						<i class="error"></i>
 					</div>
 					<div class="user_valid input_field" id="register_valid">
 						<span>验证码</span>
-						<input class="check_field" type="text" name="" placeholder="请输入4位数验证码">
+						<input class="check_field" type="text" name="code" placeholder="请输入4位数验证码">
 						<i class="error"></i>
 						<button class="valid_btn">获取验证码</button>
 					</div>
 					<div class="input_field company_type" id="company_type">
 						<span>企业类别</span>
-						<select class="check_field">
+						<select class="check_field" name="companyType">
 							<option value="unselected">请选择企业类别</option>
-							<option value="有限责任公司">有限责任公司</option>
-							<option value="股份责任公司">股份责任公司</option>
+							<option value="供货商">供货商</option>
+							<option value="需求商">需求商</option>
+							<option value="供货商兼需求商">供货商兼需求商</option>
 						</select>
 						<i class="error"></i>
 					</div>
 					<div class="input_field company_area" id="company_area">
 						<span>企业区域</span>
-						<select id="select_area" class="check_field">
+						<select id="select_area" class="check_field" name="area">
 							<option value="unselected">请选择地区</option>
 						</select>
 						<i class="error"></i>

@@ -5,9 +5,9 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>首页</title>
+	<title>首页-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="<%=prefix%>/css/index.css">
+	<link rel="stylesheet" type="text/css" href="<%=prefix%>/css/index.css?v=14">
 </head>
 <body>
 	<jsp:include page="../components/header2.jsp">
@@ -34,6 +34,7 @@
 				<i></i>
 				<ul class="scroll"></ul>
 			</div>
+			<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
 			<div class="index_block">
 				<p class="row_white">
 					<span>易金所指数</span>
@@ -158,6 +159,6 @@
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
 	<script src="<%=prefix%>/libs/echarts.min.js"></script>
-	<script src="<%=prefix%>/js/index.js"></script>
+	<script src="<%=prefix%>/js/index.js?v=14"></script>
 </body>
 </html>

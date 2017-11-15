@@ -4,7 +4,7 @@
 .fill_block .add_pics{
 	float:left;
 	width:79%;
-	height:100px;
+	height:140px;
 	margin-left:-15px;
 	overflow:hidden;
 }
@@ -52,6 +52,11 @@
 	position:absolute;
 	right:-144px;
 }
+.add_pics .upload_btn{
+	right:auto;
+	left:16px;
+	top:100px;
+}
 .add_pics .fileUploadContent{
 	position:relative;
 	height:100px;
@@ -72,6 +77,24 @@
 .add_pics .fileName{
 	position:absolute;
 }
+.uploadFileBt{
+	cursor:pointer;
+}
+.uploadFileBt:hover .icon-shangchuan{
+	background-color:#FFF;
+	color:#F90 !important;
+}
+.uploadFileBt .icon-shangchuan{
+	display:block;
+	width:128px;
+	height:35px;
+	border:1px solid #F90;
+	border-radius:5px;
+	background-color:#F90;
+	color:#FFF !important;
+	text-align:center;
+	line-height:35px;
+}
 .pics_row{
 	overflow:hidden;
 	margin:25px 0;
@@ -80,6 +103,13 @@
 	float:left;
 	height:70px;
 	line-height:15px;
+}
+.fill_block .pics_ul{
+	margin-left:0;
+}
+.pics_ul img{
+	width: 19.5%;
+	vertical-align: middle;
 }
 .pdts_state{
 	padding:0;
@@ -121,4 +151,9 @@
 	float:left;
 	margin:0;
 	margin-left:18%;
+}
+.fix_btn{
+	margin-left:120px;
+	width:145px;
+	font-size:13px;
 }

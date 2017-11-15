@@ -2,14 +2,20 @@
 <div class="cnt_header">
 	<span>首页 > 订单中心 > 采购订单</span>
 </div>
-<div class="cnt_body">
+<div class="cnt_body order_purchase">
 	<div class="part">
 		<div class="search_bar">
-			<div class="search">
-			<span>订单号：</span><input type="text" placeholder="请输入订单号"/>
+			<div class="search" style="display:block;">
 			<span>状态：</span>
-			<select>
-				<option>请选择状态</option>
+			<select id="sel_status" onchange="selStatus(this)">
+				<option value="">全部订单</option>
+				<option value="已下单">已下单</option>
+				<option value="已确认">已确认</option>
+				<option value="已授信">已授信</option>
+				<option value="拒绝授信">拒绝授信</option>
+				<option value="已发货">已发货</option>
+				<option value="已签收">已签收</option>
+				<option value="已取消">已取消</option>
 			</select>
 				<button>搜 索</button>
 			</div>
@@ -29,49 +35,115 @@
 					<th class="tab_4">订单总价</th>
 					<th class="operation">操作</th>
 				</thead>
-				<tbody class="rows">
-					<tr>
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>确认</a>|<a>取消</a>|<a>详情</a></td>
-					</tr>
-					<tr class="odd">
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>确认</a>|<a>取消</a>|<a>详情</a></td>
-					</tr>
-					<tr>
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>确认</a>|<a>取消</a>|<a>详情</a></td>
-					</tr>
-				</tbody>
+				<tbody class="rows orders_p"></tbody>
 			</table>
 		</div>
 		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
+<script>
+	sysInit();
+	var successCallback = function(){
+		var _operation,
+			_method,
+			_type,
+			_param = {
+			'pageIndex': getSysUrlParam('pageIndex') || 0,
+			'pageSize': 20
+		}
+		var status = getSysUrlParam('status');
+		if(status){
+			_param.status = status;
+			_param.companyId = USER.id;
+			$('#sel_status').val(status);
+		}else{
+			_param.userId = USER.id;
+		}
+		_method = status ? '/getBuyingOrdersByCompanyAndStatus' : '/getPagedUserOrderByUserId';
+		_type = 'purchase';
+		$.ajax({
+			url: DOMAIN + _method,
+			type: 'GET',
+			data: _param,
+			success: function(res){
+				$('.orders_p').empty();
+				if(res.content.length){
+					for(var i = 0; i < res.content.length; i++){
+						var order = res.content[i];
+						var _class = i % 2 == 0 ? '' : 'odd';
+						if(order.status == '已下单'){
+							_operation = '<a class="op cancel">取消</a>|';
+						}else if(order.status == '已授信'){
+							_operation = '';
+						}else if(order.status == '已发货'){
+							_operation = '<a class="op recieve">收货</a>|';
+						}else{
+							_operation = '';
+						}
+						$('.orders_p').append(
+							'<tr class="' + _class + 
+							'"><td>' + order.id + 
+							'</td><td>' + order.productName +
+							'</td><td>' + order.productType +
+							'</td><td>' + order.sellerCompanyName +
+							'</td><td>' + order.status +
+							'</td><td>' + order.unitPrice +
+							'</td><td>' + order.quantity +
+							'</td><td>' + (order.amount - order.serviceCharge) +
+							'</td><td>' + order.serviceCharge +
+							'</td><td class="order_money">￥' + order.amount +
+							'</td><td orderId="' + order.id + '">' + _operation + '<a class="op view" jump="order_detail">详情</a></td></tr>'
+						);
+					}
+				}else{
+					noRes($('.orders_p'));
+				}
+				pageInit(res.totalPages);
+				$('.cnt_body').show();
+			}
+		});
+		
+		$('.orders_p').on('click', '.op', function(){
+			if($(this).hasClass('view')){
+				jump('company',{
+					page: 'order_detail',
+					orderType: _type,
+					orderId: $(this).parent().attr('orderId')
+				});
+			}else{
+				var _opParam = {
+					orderId: $(this).parent().attr('orderId')
+				},
+				_op,
+				_msg;
+				if($(this).hasClass('cancel')){
+					_op = '/cancelOrder'
+					_opParam.userName = $('.user_name').html();
+					_msg = '订单已取消';
+				}else if($(this).hasClass('confirm')){
+					_op = '/confirmOrder'
+					_msg = '订单已确认';
+				}else if($(this).hasClass('order_send')){
+					_op = '/sendOrderProductConfirm'
+					_msg = '发货成功';
+				}else if($(this).hasClass('recieve')){
+					_op = '/receiveOrderProductConfirm';
+					_msg = '确认收货成功';
+				}
+				$.ajax({
+					url: DOMAIN + _op,
+					type: 'POST',
+					dataType: 'json',
+					data: _opParam,
+					success: function(res){
+						alert(_msg);
+						reload('company');
+					}
+				});
+			}
+		});
+	}
+	var selStatus = function(el){
+		setUrlParameter('status', el.value);
+	}
+</script>

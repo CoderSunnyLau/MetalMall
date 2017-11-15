@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>企业注册</title>
+	<title>易金所-企业注册</title>
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
 	<jsp:include page="../components/head.jsp"></jsp:include>
 </head>

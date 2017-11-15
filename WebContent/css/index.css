@@ -73,11 +73,9 @@ body .page_body{
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
-.row_white a{
-	font-size:14px;
-}
 .index_block{
 	overflow:hidden;
+	display:none;
 }
 .pdt_index{
 	overflow:hidden;
@@ -91,7 +89,7 @@ body .page_body{
 	float:left;
 }
 .chart{
-	width:34%;
+	width:35%;
 	height:280px;
 	position:absolute;
 	right:0;
@@ -181,6 +179,12 @@ body .page_body{
 	background-color:#F4F4F4;
 	color:#777;
 }
+.trend_cnt a{
+	color:#777;
+}
+.trend_cnt a:hover{
+	color:#F90;
+}
 .trend_title span{
 	font-size:14px;
 	line-height:32px;
@@ -233,6 +237,9 @@ body .page_body{
 	max-width:82%;
 	margin:0 auto;
 	padding-right:10px;
+}
+.demand_title:hover{
+	color:#F90;
 }
 .demand_action{
 	padding:0 15px 10px;

@@ -94,6 +94,7 @@ body .page_body{
 	margin: 6px 0;
 	border-radius: 0;
 	border: 1px solid #DDD;
+	font-size:14px;
 }
 .box_title{
 	text-align: center;
@@ -125,7 +126,7 @@ body .page_body{
 }
 .forget, .login, .login_2{
 	display: block;
-	text-align:center;
+	padding-left:12px;
 	color:#AAA;
 	font-size:15px;
 }
@@ -172,14 +173,14 @@ body .page_body{
 .header_more{
 	position:relative;
 	height:0;
-	width:980px;
+	width:1180px;
 	margin:0 auto;
 	z-index:9;
 }
 .header_more span{
 	position:absolute;
 	top:30px;
-	left:222px;
+	left:285px;
 	font-size:16px;
 	color:#B40;
 }
@@ -204,7 +205,8 @@ body .page_body{
 	margin-top:125px;
 }
 .register_body{
-	margin:20px 0;
+	margin:20px auto;
+	width:1200px;
 	padding:15px 0 50px;
 	border:1px solid #DDD;
 	border-top:3px solid #F90;
@@ -260,6 +262,15 @@ body .page_body{
 	font-size:16px;
 	letter-spacing:2px;
 }
+.register_body .company_type, .register_body .company_area{
+	border:1px solid #DDD;
+}
+.register_body .input_field select{
+	width:315px;
+	border:none;
+	margin-left:85px;
+}
+
 .forget_box, .setpsd_box, .phone_box{
 	opacity: 0;
 	right: -320px;
@@ -270,13 +281,6 @@ body .page_body{
 	font-size: 12px;
 	float: right;
 	margin: 6px 10px 0 0;
-}
-.sent{
-	background-color:#CCC !important;
-	cursor:default;
-}
-.sent:hover{
-	background-color:#CCC !important;
 }
 .forget_box .input_field, .setpsd_box .input_field{
 	margin: 33px 0;

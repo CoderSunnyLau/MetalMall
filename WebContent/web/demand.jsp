@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>需求单</title>
+    <title>需求单-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/mall.css">
 </head>
@@ -21,7 +21,7 @@
 						<span class="all">全部</span>
 					</td>
 				</tr>
-				<tr class="pdt_type">
+				<tr class="type">
 					<td class="select_title">类　型：</td>
 					<td class="options">
 						<ul></ul>
@@ -29,11 +29,19 @@
 					</td>
 				</tr>
 			</table>
-			<ul class="rank">
-				<li class="rank_item">时间</li>
-				<li class="rank_item">预算</li>
+			<div class="rank">
+				<ul class="fl_left">
+					<li class="piece_sel piece_area" s_type="area"></li>
+					<li class="piece_sel piece_type" s_type="type"></li>
+				</ul>
+				<ul class="fl_right">
+					<li class="rank_item" sort="addTime">时间</li>
+					<li class="rank_item" sort="minBudget">预算</li>
+				</ul>
+			</div>
+			<ul class="demand_trend results">
+				<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
 			</ul>
-			<ul class="demand_trend results"></ul>
 			<jsp:include page="../components/page.jsp"></jsp:include>
 		</div>
 	</div>

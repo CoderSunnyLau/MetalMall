@@ -5,7 +5,7 @@
 <head>
 	<title>易金所管理系统</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/system.css">
+	<link rel="stylesheet" type="text/css" href="../css/system.css?v=18">
 </head>
 <body>
 	<jsp:include page="../components/header.jsp">
@@ -14,7 +14,7 @@
 	<div class="main_width cnt_box">
 	<div class="nav">
 		<ul class="menu" id="admin">
-			<li class="menu_item item_home menu_link active" name="admin_home">
+			<li class="menu_item item_home menu_link active" name="home">
 				<span class="m_home">首　　页</span>
 			</li>
 			<li class="menu_item">
@@ -55,7 +55,7 @@
 				<ul class="menu2">
 					<li class="menu2_item menu_link" name="live">直播管理</li>
 					<li class="menu2_item menu_link" name="parameters">参数管理</li>
-					<li class="menu2_item menu_link" name="roles">角色管理</li>
+					<!-- <li class="menu2_item menu_link" name="roles">角色管理</li> -->
 					<li class="menu2_item menu_link" name="users">用户管理</li>
 					<li class="menu2_item menu_link" name="account_security">账户安全</li>
 					<li class="menu2_item menu_link" name="account_pwd">修改密码</li>
@@ -65,13 +65,12 @@
 	</div>
 	<div class="body_cnt">
 		<div class="cnt a" id="cnt">
-			<jsp:include page="./admin_home.jsp"></jsp:include>
+			<jsp:include page="./home.jsp"></jsp:include>
 		</div>
 	</div>
 	</div>
 	<jsp:include page="../components/footer.jsp">
 		<jsp:param value="false" name="show"/>
 	</jsp:include>
-	<script src="../js/system.js"></script>
 </body>
 </html>

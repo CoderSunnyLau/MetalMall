@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>用户登录</title>
+	<title>用户登录-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css?v=17">
 </head>
 <body>
 	<jsp:include page="../components/header3.jsp">
@@ -28,7 +28,7 @@
 						<span>验证码</span>
 						<jsp:include page="../components/verify.jsp"></jsp:include>
 					</div>
-					<button class="dologin">登 录</button>
+					<button class="dologin pwd_login">登 录</button>
 					<div class="row2">
 						<a class="forget change_box" href="javascript:void(0);">忘记密码</a>
 						<a class="register" href="./register.jsp">免费注册</a>
@@ -42,7 +42,7 @@
 						<i class="error"></i>
 					</div>
 					<div class="input_field user_valid check_input" id="forget_valid">
-						<span>验证码</span><input type="text" name="" placeholder="请输入验证码"><i class="error"></i><button class="valid_btn">获取验证码</button>
+						<span>验证码</span><input type="number" class="check_code" placeholder="请输入验证码"><i class="error"></i><button class="valid_btn">获取验证码</button>
 					</div>
 					<button class="next_step change_box">下一步</button>
 					<div class="row2">

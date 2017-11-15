@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>用户登录</title>
+	<title>银行用户登录-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css?v=17">
 </head>
 <body>
 	<jsp:include page="../components/header.jsp">
@@ -17,11 +17,11 @@
 				<div class="login_box vip_box">
 					<div class="box_title">会员登录</div>
 					<div class="input_field check_input" id="user_name">
-						<span>账　号</span><input type="text" name="" placeholder="请输入用户名/手机号" />
+						<span>账　号</span><input type="text" name="userName" placeholder="请输入用户名/手机号" />
 						<i class="error"></i>
 					</div>
 					<div class="input_field check_input" id="user_psd">
-						<span>密　码</span><input type="password" name="" placeholder="请输入密码" />
+						<span>密　码</span><input type="password" name="pwd" placeholder="请输入密码" />
 						<i class="error"></i>
 					</div>
 					<div class="input_field user_valid" id="login_valid">
@@ -29,7 +29,7 @@
 						<jsp:include page="../components/verify.jsp"></jsp:include>
 					</div>
 						<a class="remember" href="javascript:void(0);"><i></i>记住密码</a>
-					<button class="dologin">登 录</button>
+					<button class="dologin pwd_login">登 录</button>
 					<div class="row2">
 						<a class="forget change_box" href="javascript:void(0);">忘记密码</a>
 						<a class="register" href="../web/register.jsp">免费注册</a>
@@ -74,9 +74,9 @@
 						<i class="error"></i>
 					</div>
 					<div class="input_field user_valid check_input" id="forget_valid2">
-						<span>验证码</span><input type="text" name="" placeholder="请输入验证码"><i class="error"></i><button class="valid_btn">获取验证码</button>
+						<span>验证码</span><input type="text" class="check_code" placeholder="请输入验证码"><i class="error"></i><button class="valid_btn">获取验证码</button>
 					</div>
-					<button class="dologin">登 录</button>
+					<button class="dologin phone_login">登 录</button>
 					<a class="login_by_phone change_box" href="javascript:void(0);">账号密码登录</a>
 				</div>
 			</div>

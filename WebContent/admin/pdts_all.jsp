@@ -2,7 +2,7 @@
 <div class="cnt_header">
 	<span>首页 > 供货中心 > 商品管理</span>
 </div>
-<div class="cnt_body">
+<div class="cnt_body pdt_all">
 	<div class="part">
 		<div class="search_bar">
 			<div class="search">
@@ -19,256 +19,85 @@
 					<th>材质</th>
 					<th>库存</th>
 					<th>当前状态</th>
-					<th>时间</th>
+					<th style="width:120px;">时间</th>
 					<th>成交笔数</th>
-					<th>成交总额</th>
 					<th>操作</th>
 				</thead>
-				<tbody class="pdts rows">
-					<tr>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr>
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>已上架</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td class="pdt_money">￥18485.88</td>
-						<td>查看</td>
-					</tr>
-				</tbody>
+				<tbody class="pdts_all rows"></tbody>
 			</table>
 		</div>
 		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
-<script src="../js/system_pdts.js"></script>
+<script>
+sysInit();
+var _method = '/getAllProductsByPageOnBackend',
+	_operation = '<a class="view op">查看</a>';
+	
+$('.pdts_all').off();
+$('.pdts_all').on('click', '.op', function(){
+	var pdtId = $(this).parent().attr('pdtId');
+	if($(this).hasClass('pass') || $(this).hasClass('refuse')){
+		if($(this).hasClass('pass')){
+			var _status = '已审核';
+		}else{
+			var _status = '审核打回';
+		}
+		$.ajax({
+			url: DOMAIN + '/changeProductStatus',
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				productId: pdtId,
+				status: _status
+			},
+			success: function(res){
+				if(res.success){
+					alert('操作成功！');
+					reload('admin');
+				}
+			}
+		});
+	}else if($(this).hasClass('view')){
+		jump('admin', {
+			page: 'pdt_detail',
+			pdtId: pdtId
+		});
+	}
+});
+
+$.ajax({
+	url: DOMAIN + _method,
+	type: 'GET',
+	data: {
+		'pageIndex': getSysUrlParam('pageIndex') || 0,
+		'pageSize': 20
+	},
+	success: function(res){
+		$('.pdts_all').empty();
+		if(res.content.length){
+			for(var i = 0; i < res.content.length; i++){
+				var pdt = res.content[i];
+				var _class = i % 2 == 0 ? '' : 'odd';
+				var _operation2 = pdt.status == '已审核' ? '|<a class="refuse op">打回</a>' : '';
+				$('.pdts_all').append(
+					'<tr class="' + _class + 
+					'"><td class="pdt_name">' + pdt.name + 
+					'</td><td>' + pdt.type +
+					'</td><td>' + pdt.specification +
+					'</td><td>' + pdt.material +
+					'</td><td>' + pdt.stockQuantity +
+					'</td><td>' + pdt.status +
+					'</td><td>' + pdt.addTime +
+					'</td><td>' + pdt.salesCount +
+					'</td><td pdtId="' + pdt.id + '">' + _operation + _operation2 + '</td></tr>'
+				);
+			}
+		}else{
+			noRes($('.pdts_all'));
+		}
+		$('.cnt_body').show();
+		pageInit(res.totalPages);
+	}
+});
+</script>

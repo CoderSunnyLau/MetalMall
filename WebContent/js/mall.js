@@ -1,7 +1,7 @@
 $(function(){
 	var _param = {
 		'pageSize': 20,
-		'pageIndex': getUrlParameter('pageSize') || 0
+		'pageIndex': getUrlParameter('pageIndex') || 0
 	};
 	var _method = '/getAllProductsByPage';
 	if(window.location.href.indexOf('=') > 0){
@@ -13,7 +13,15 @@ $(function(){
 			console.log(_val)
 		});
 	}
-	console.log(_param)
+	var sortField = getUrlParameter('sortField'),
+		ascendingFlag = getUrlParameter('ascendingFlag');
+	if(sortField && ascendingFlag && sortField != "" && ascendingFlag != ""){
+		_param.sortField = sortField;
+		_param.ascendingFlag = ascendingFlag;
+		_method = '/getSortedProductsByConditionsAndPage';
+		var _class = ascendingFlag == 'true' ? 'rank_up' : (ascendingFlag == 'false' ? 'rank_down' : '');
+		$('.rank_item[sort="' + sortField + '"]').addClass(_class);
+	}
 	$.ajax({
 		url: DOMAIN + _method,
 		type: 'GET',
@@ -25,7 +33,7 @@ $(function(){
 					var pdt = res.content[i];
 					$('.pdts').append(
 							"<li class='pdt'>" +
-								"<div class='pdt_l'><img src='" + pdt.image01 + "' /></div>" +
+								"<div class='pdt_l'><a href='product_detail.jsp?productId=" + pdt.id + "'><img src='" + pdt.image01 + "' /></a></div>" +
 								"<div class='pdt_c'>" +
 									"<p class='pdt_title'>" +
 										"<a href='product_detail.jsp?productId=" + pdt.id + "'><b class='pdt_name'>" + pdt.name + "</b></a>" +
@@ -45,7 +53,7 @@ $(function(){
 				pageInit(res.totalPages);
 			}else{
 				$('.page_box').hide();
-				$('.pdts').append("<p class='no_pdt'>抱歉，没有相应的商品。</p>")
+				$('.pdts').append("<p class='no_res'>抱歉，没有相应的商品。</p>")
 			}
 		}
 	});

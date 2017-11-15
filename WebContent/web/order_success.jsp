@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>提交成功</title>
+    <title>提交成功-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/order.css">
 </head>
@@ -16,6 +16,7 @@
 			<div class="cnt_header">
 				<span class="tip success"><i></i>订单提交成功，请您尽快付款！</span>
 			</div>
+			<p class="loading_wrapper"><i class="loading"></i>正在加载订单信息，请稍候...</p>
 			<div class="checkout">
 				<div class="table_box">
 					<p class="box_title"><span>卖家企业</span></p>
@@ -69,9 +70,9 @@
 							</tr>
 						</table>
 					</div>
-					<p class="bank_credit">银行授信：<span class="os_creditAmount"></span>元</p>
+					<p class="bank_credit">银行授信：<span class="ob_creditAmount"></span>元</p>
 					<p class="box_title"><span>留言备注</span></p>
-					<textarea class="remark os_userMark" disabled="disabled"></textarea>
+					<textarea class="remark o_userMark" disabled="disabled"></textarea>
 				</div>
 				<div class="settlement_box">
 					<div class="settlement">
@@ -84,13 +85,13 @@
 						<p class="settlement_row total">
 							<span>应付金额：</span><b>￥<big class="o_orderPriceAmount">--.--</big></b>
 						</p>
-						<button class="view_order">查看订单</button>
+						<a class="view_order btn" target="_blank">查看订单</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../js/order.js"></script>
+	<script src="../js/order.js?v=17"></script>
 </body>
 </html>

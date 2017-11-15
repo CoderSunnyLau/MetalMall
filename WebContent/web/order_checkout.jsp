@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>订单确认</title>
+    <title>订单确认-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/order.css">
 </head>
@@ -16,6 +16,7 @@
 			<div class="cnt_header">
 				<span class="tip">填写并核对订单信息</span>
 			</div>
+			<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
 			<div class="checkout">
 				<div class="table_box">
 					<p class="box_title"><span>卖家企业</span></p>
@@ -73,7 +74,7 @@
 							<span>商品总价：</span><i>￥<big class="op_amount op_price">--.--</big></i>
 						</p>
 						<p class="settlement_row">
-							<span>服务费用：</span><i>￥<big>100.00</big></i>
+							<span>服务费用：</span><i>￥<big class="op_serviceCharge"></big></i>
 						</p>
 						<p class="settlement_row total">
 							<span>应付金额：</span><b>￥<big class="total_money">--.--</big></b>
@@ -85,6 +86,6 @@
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../js/order.js"></script>
+	<script src="../js/order.js?v=17"></script>
 </body>
 </html>

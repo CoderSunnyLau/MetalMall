@@ -1,8 +1,9 @@
+document.write('<script src="' + YJS + '/libs/md5.js"></script>');
 // 加載地區選項
 $.get('../data/config.json', function(res){
 	optionConfigInit('select_area', res.area)
 });
-sendVerify($('.valid_btn'));
+sendVerify($('.valid_btn'), $('.check_field[name="phone"]'));
 
 /*表單驗證函數*/
 //驗證方法
@@ -65,7 +66,8 @@ eachBindCheck($('.check_field'),checkBindFn);
 // 提交註冊
 $('.register_submit').click(function(){
 	if(!$('.input_box .error').length){
-		doRegister();
+		$(this).attr('disabled', 'disabled').addClass('sent').html('正在注册...');
+		doRegister($(this));
 	}else{
 		$('.input_box .error').prev('.check_field').each(function(){
 			eachBindCheck($(this),checkFn);
@@ -74,7 +76,50 @@ $('.register_submit').click(function(){
 });
 
 // 註冊
-var doRegister = function(){
-	alert("注册成功，将跳转到登录页。");
-	window.location.href = "./login.jsp";
+var doRegister = function(el){	
+	var callbackReg = function(){
+		var postData = {
+			"id":null,
+			"loginName": $('[name="loginName"]').val(),
+			"password": md5($('[name="password"]').val()),//要求前端Javascript调用接口的时候，已经进行MD5加密
+			"phone": $('[name="phone"]').val(),
+			"roleId":1,//角色，1为企业用户，2为银行用户，3为系统用户
+			"companyType": $('[name="companyType"]').val(),
+			"area": $('[name="area"]').val()
+		}
+		
+		$.ajax({
+			url: DOMAIN + '/simpleRegUser',
+			type: 'POST',
+			data: JSON.stringify(postData),
+			dataType: 'json',
+			contentType : "application/json ; charset=utf-8",
+			success: function(res){
+				if(res.saved){
+					el.html('注册成功，正在自动登录...');
+					doLogin($('[name="loginName"]').val(), $('[name="password"]').val(), el, true);
+					//window.location.href = "./login.jsp";
+				}
+			}
+		});
+	}
+
+	$.ajax({
+		url: DOMAIN + '/checkThePhoneNumAndCodeMatch',
+		type: 'GET',
+		data: {
+			phoneNum: $('[name="phone"]').val(),
+			code: $('[name="code"]').val()
+		},
+		dataType: 'json',
+		success: function(res){
+			if(res.access){
+				callbackReg();
+			}else{
+				alert('手机验证码有误。');
+			}
+		}
+	});
+	
+	
 }

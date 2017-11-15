@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>供应链金融</title>
+    <title>供应链金融-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
@@ -21,16 +21,9 @@
 					<td class="select_title">类　型</td>
 					<td class="options">
 						<ul>
-							<li class="a">白条分期</li>
-							<li class="a">应收票据</li>
-							<li class="a">反向保理</li>
-							<li class="a">深圳</li>
-							<li class="a b">杭州</li>
-							<li class="a b">南京</li>
-							<li>天津</li>
-							<li>成都</li>
-							<li>长沙</li>
-							<li>无锡</li>
+							<li class="a" val="白条分期">白条分期</li>
+							<li class="a" val="应收票据">应收票据</li>
+							<li class="a" val="反向保理">反向保理</li>
 						</ul>
 						<span class="all">全部</span>
 					</td>
@@ -39,24 +32,33 @@
 					<td class="select_title">银　行</td>
 					<td class="options">
 						<ul>
-							<li class="a">工商银行</li>
-							<li class="a">广发银行</li>
-							<li class="a">广州银行</li>
-							<li class="a">农业银行</li>
-							<li class="a b">建设银行</li>
+							<li class="a" val="工商银行">工商银行</li>
+							<li class="a" val="招商银行">招商银行</li>
+							<li class="a" val="建设银行">建设银行</li>
+							<li class="a" val="农业银行">农业银行</li>
+							<li class="a b" val="中国银行">中国银行</li>
+							<li class="a b" val="交通银行">平安银行</li>
 						</ul>
 						<span class="all">全部</span>
 					</td>
 				</tr>
 			</table>
 			<ul class="rank">
-				<li class="rank_item">时间</li>
+				<ul class="fl_left">
+					<li class="piece_sel piece_area" s_type="type"></li>
+					<li class="piece_sel piece_type" s_type="bank"></li>
+				</ul>
+				<ul class="fl_right">
+					<li class="rank_item" sort="addTime">时间</li>
+				</ul>
 			</ul>
-			<ul class="results financial_list"></ul>
+			<ul class="results financial_list">
+				<p class="loading_wrapper"><i class="loading"></i>正在加载，请稍候...</p>
+			</ul>
 			<jsp:include page="../components/page.jsp"></jsp:include>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp"></jsp:include>
-	<script src="../js/finance.js"></script>
+	<script src="../js/finance.js?v=13"></script>
 </body>
 </html>

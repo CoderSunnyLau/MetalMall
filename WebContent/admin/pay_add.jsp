@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/system_pdts.css?a=66">
 <div class="cnt_header">
-	<span>首页 > 银行中心 > 分期管理 > 新增分期</span>
+	<span>首页 > 金融中心 > 分期管理 > 新增分期</span>
 </div>
 <div class="cnt_body">
 	<p class="user_title">新增分期支付方式</p>

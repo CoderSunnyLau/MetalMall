@@ -1,0 +1,29 @@
+<html>
+<body>
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/jquery-form.js"></script>
+<script>
+function ajaxFileUpload(){
+	$("#userFileUpload").ajaxSubmit({
+                        type: 'post',
+                        url: 'http://47.95.240.195:8090/uploadFileForUser',
+						//url: 'http://127.0.0.1:8090/uploadFileForUser',
+                        success: function (data) {
+                            alert(data);
+                        }
+                    });
+	
+	alert("AAA");
+	
+}
+</script>
+<form method="post" enctype="multipart/form-data" name="userFileUpload" id="userFileUpload" onsubmit="ajaxFileUpload()" target="nojump">
+<input type="text" id="userId" name="userId">
+<input type="text" name="useType">
+<input type="file" name="uploadFile"/>
+<input type="text" name="extraParameter"/>
+<input type="submit" value="submit" name="submit">
+</form>
+<iframe name="nojump"></iframe>
+</body>
+</html>

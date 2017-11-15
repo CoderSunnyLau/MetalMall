@@ -36,7 +36,6 @@ body .cnt_box{
 	color:#FFF;
 }
 .menu_item{
-	text-align: center;
 	cursor: pointer;
 	position: relative;
 }
@@ -44,12 +43,12 @@ body .cnt_box{
 	display:block;
 	font-size: 16px;
 	line-height: 55px;
+	text-indent:25px;
 	height:55px;
 	border-bottom:1px solid #EEE;
 	border-top:1px solid #EEE;
 	margin-top:-1px;
 	background-image:url(../images/icon1.png);
-	background-position-x:10px;
 }
 .active span{
 	color:#F90;
@@ -84,7 +83,6 @@ body .cnt_box{
 .menu2{
 	height:0;
 	overflow:hidden;
-	padding: 0 15px;
 	cursor: default;
 }
 .menu2_item{
@@ -94,6 +92,7 @@ body .cnt_box{
 	cursor: pointer;
 	margin:10px 0 15px;
 	border-radius:14px;
+	text-indent:10px;
 }
 .menu2_item:hover{
 	color:#F90;
@@ -111,13 +110,23 @@ body .cnt_box{
 	background-color:#FFF;
 	margin:10px 0 10px 10px;
 	padding-bottom:1000px;
+	display:none;
+	position:relative;
+}
+.no_info{
+	position:absolute;
+	width:100%;
+	line-height:50px;
 }
 .cnt .pdt_money, .cnt .order_money{
 	color:#D00;
 }
-.orders_list td a{
+td a{
 	margin:0 3px;
 	color:#888;
+}
+td a:hover{
+	color:#F90;
 }
 .operation{
 	width:115px;
@@ -130,10 +139,12 @@ body .cnt_box{
 	border-bottom:2px solid #DDD;
 	overflow:hidden;
 	padding:10px 15px;
+	min-height:15px;
 }
 .search{
 	height: 30px;
 	float:right;
+	display:none;
 }
 .search input{
 	width: 200px;
@@ -216,7 +227,7 @@ body .cnt_box{
 	padding-top:40px;
 }
 .hbox_cnt b{
-	font-size:26px;
+	font-size:30px;
 }
 .hbox_unit{
 	line-height:35px;
@@ -226,7 +237,7 @@ body .cnt_box{
 	height: 30px;
 	line-height: 30px;
 	font-size:16px;
-	color:#222;
+	color:#555;
 	background-color:#CCC;
 	text-align:center;
 }
@@ -268,7 +279,7 @@ body .cnt_box{
 	margin-right:25px;
 }
 .cnt .order_track{
-	padding:10px 0 20px;
+	padding:10px 15px 20px 100px;
 }
 .order_track p{
 	overflow:hidden;
@@ -340,6 +351,17 @@ body .cnt_box{
 }
 .order_track span{
 	font-weight:normal;
+	text-align:left;
+	width:12%;
+}
+.order_track span:last-child{
+	width:125px;
+}
+.order_track p i{
+	width:42%;
+	line-height:20px;
+	padding: 5px 20px 5px 0;
+	height:auto;
 }
 .order_row i{
 	width:21.3%;
@@ -480,6 +502,7 @@ body .cnt_box{
 	text-align:right;
 	font-size:13px;
 	color:#666;
+	vertical-align:top;
 }
 .fill_block input{
 	background-color:#FAFAFA;
@@ -501,7 +524,11 @@ body .cnt_box{
 	line-height:25px;
 	border-color:#DDD;
 }
-
+.cnt_finance_add .fill_block textarea{
+	margin-top:15px;
+	min-height:100px;
+	max-height:100px;
+}
 
 /************  琛ㄦ牸    ************/
 .cnt table thead{
@@ -580,6 +607,14 @@ body .cnt_box{
 	width:262px;
 	margin-left:160px;
 }
+.fill_block input[type="checkbox"]{
+	width:12px;
+	height:12px;
+	margin:0 3px 0 10px;
+}
+span.sel_deadline{
+	width:auto;
+}
 
 /*** 申请列表 ***/
 .finance_list .fill_block{
@@ -599,3 +634,4 @@ body .cnt_box{
 	font-size:16px;
 	margin:15px auto 10px;
 }
+

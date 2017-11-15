@@ -7,7 +7,7 @@
 <div class="cnt_body">
 	<div class="part">
 		<div class="search_bar">
-			<div class="add_btn"><button class="white_btn" jump="bank_add">新增</button></div>
+			<div class="add_btn"><button class="white_btn" jump="bank_add">新 增</button></div>
 			<div class="search">
 				<input type="text" placeholder="请输入关键词" />
 				<button>搜 索</button>
@@ -20,33 +20,40 @@
 						<th>银行名称</th>
 						<th>联系电话</th>
 						<th>总授信</th>
-						<th class="operation">操作</th>
+						<th>最近登录</th>
 					</tr>
 				</thead>
-				<tbody class="rows">
-					<tr>
-						<td>工商银行</td>
-						<td>15555555555</td>
-						<td>10000</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-					<tr class="odd">
-						<td>工商银行</td>
-						<td>15555555555</td>
-						<td>10000</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-					<tr>
-						<td>工商银行</td>
-						<td>15555555555</td>
-						<td>10000</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-				</tbody>
+				<tbody class="rows bank_list"></tbody>
 			</table>
 		</div>
+		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
 <script>
 	cntLoad($('.add_btn [jump="bank_add"]'));
+	sysInit();
+	$.ajax({
+		url: DOMAIN + '/getAllBankUsers',
+		type: 'GET',
+		data: {
+			pageIndex: getSysUrlParam('pageIndex') || 0,
+			pageSize: 20
+		},
+		success: function(res){
+			$('.cnt_body').show();
+			$('.bank_list').empty();
+			for(var i = 0; i < res.content.length; i++){
+				var item = res.content[i];
+				var _class = i % 2 == 0 ? '' : 'odd';
+				$('.bank_list').append(
+					'<tr class="' + _class + 
+					'"><td>' + item.username +
+					'</td><td>' + item.phone +
+					'</td><td>' + item.creditAmountForBank +
+					'</td><td>' + item.stringLatestLoginTime + '</td></tr>'
+				);
+			}
+			pageInit(res.totalPages);
+		}
+	});
 </script>

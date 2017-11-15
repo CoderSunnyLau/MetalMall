@@ -1,0 +1,73 @@
+
+body{background-color:#EEE !important;}
+.font_thin, .about{
+	font-family:/* Roman */ Source Sans Pro, Helvetica, Arial, sans-serif, /* CJK */ Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, /* Arabic */ Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, /* Thai */ Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, /* Sans Fallbacks */ Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', /* CJK Fallbacks */ Heiti SC,  Microsoft Yahei, Segoe UI;
+}
+.about{
+	padding: 10px 70px 50px;
+	background-color:#FFF;
+	margin:20px auto;
+	color:#444;
+	overflow:hidden;
+}
+.about .about_title{
+	font-size:28px;
+	text-align:center;
+	line-height:80px;
+	font-weight:200;
+	text-indent:0;
+	color:#666;
+}
+.about p{
+	text-indent: 28px;
+	line-height:34px;
+	font-size:14px;
+	margin:8px 0;
+}
+.about .text_title{
+	text-indent:0;
+	font-size:20px;
+	font-weight:200;
+	margin:25px 0 10px;
+	color:#666;
+}
+.left{
+	float:left;
+	width:25%;
+	text-align:center;
+	color:#777;
+	font-weight:200;
+	line-height:20px;
+}
+.icon{
+	width:50px;
+	height:50px;
+	background-image:url(../images/about_icon.png);
+	margin:0 auto 10px;
+	background-color:#EEE;
+	border-radius:15px;
+}
+.icon2{
+	background-position:0 -50px;
+}
+.icon3{
+	background-position:-50px -50px;
+}
+.icon4{
+	background-position:-110px -50px;
+}
+.qr_code img{
+	width:150px;
+	height:150px;
+	position:absolute;
+	z-index:9;
+	display:none;
+	box-shadow:3px 3px 5px #AAA;
+	border:1px solid #DDD;
+}
+.qr_code span{
+	cursor:pointer;
+}
+.qr_code span:hover img{
+	display:block;
+}

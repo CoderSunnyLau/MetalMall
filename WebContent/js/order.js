@@ -20,7 +20,8 @@
 	],
 	orderParamBuyer = [
 	    'username',
-	    'phone'
+	    'phone',
+	    'creditAmount'
 	],
 	orderParamProduct = [
    	    'name',
@@ -29,7 +30,7 @@
    	    'weight',
    	    'price'
    	];
-	if(window.location.href.indexOf("admin/system_") != -1){
+	if(window.location.href.indexOf("/system") != -1){
 		orderParam.push(
 			'id',
 			'status',
@@ -50,14 +51,18 @@
 					'userId': USERID
 				},
 				success: function(r){
+					$('.loading_wrapper').hide();
+					$('.checkout').show();
 					var res = r.prepareUserOrderInfo;
 					doFill(res.product, orderParamProduct, 'op_');
 					doFill(res.buyer, orderParamBuyer, 'ob_');
 					doFill(res.seller, orderParamSeller, 'os_');
 					if(_href.indexOf('order_checkout') >= 0){
 						var amount = Number($('.op_amount').html());
+						console.log((res.serviceChargeRate * amount).toFixed(2))
+						$('.op_serviceCharge').html((res.serviceChargeRate * amount).toFixed(2));
 						$('.op_amount').html(amount.toFixed(2));
-						$('.total_money').html((amount + 100).toFixed(2));
+						$('.total_money').html((amount + Number($('.op_serviceCharge').html())).toFixed(2));
 						var items = r.paymentItems;
 						var payTypeArr = [];
 						for(payType in items){
@@ -97,6 +102,38 @@
 						});
 //						optionConfigInit('pay_bank', res.productType);
 //						optionConfigInit('pay_deadline', res.productType);
+
+						var setCount = 0;
+						$('.count_btn').click(function(){
+							if(setCount == 0){
+								setCount = 1;
+								$(this).html("确认");
+								$('.op_count').removeAttr('disabled').focus();
+								var countTemp = $('.op_count').val();
+								$('.op_count').val("").val(countTemp);
+							}else{
+								setCount = 0;
+								$(this).html("修改");
+								$('.op_count').attr('disabled', 'disabled').removeClass('red_border');
+								var input_el = $('.op_count');
+								var count;
+								var _thisArray = input_el.val().split('.');
+								if(_thisArray.length == 2 && Number(_thisArray[1]) > 0){
+									count = Number(input_el.val()).toFixed(3) || 1;
+								}else{
+									count = parseInt(input_el.val()) || 1;
+								}
+								$(this).val(count);
+								var totalWeight = ($('.op_weight').eq(0).html() * count).toString();
+								totalWeight = totalWeight.split('.')[1] > 0 ? Number(totalWeight).toFixed(2) : parseInt(totalWeight);
+								$('.op_totalweight').html(totalWeight);
+								$('.op_amount').html(($('.op_price').eq(0).html() * count).toFixed(2));
+								$('.op_serviceCharge').html((res.serviceChargeRate * Number($('.op_amount').html())).toFixed(2));
+								$('.total_money').html((Number($('.op_amount').eq(0).html()) + Number($('.op_serviceCharge').html())).toFixed(2));
+							}
+						});
+					}else{
+						$('.op_serviceCharge').html(res.serviceCharge);
 					}
 					
 					var pdt = res.product;
@@ -116,7 +153,7 @@
 						"paymentDeadline": "",//支付期限
 						"creditBankId": null,//(该单选取的）信用银行的id'
 						"creditBank": "",//(该单选取的）信用银行
-						"bankInterest": null,//银行收取该单的利息
+						"bankInterest": res.bankInterest,//银行收取该单的利息
 						"createTime": null,//订单创建时间
 						"status": "已下单",//状态：已下单、已确认、已授信、拒绝授信、已发货、已签收、已取消
 						"confirmTime": null,//确认时间
@@ -125,7 +162,7 @@
 						"receiveTime": null,//收货时间
 						"cancelTime": null,//取消时间
 						"whoCancel": "",
-						"serviceCharge": 100,//服务费
+						"serviceCharge": Number($('.op_serviceCharge').html()),//服务费
 						"userMark": "",//用户备注
 						"systemMark": "",//系统备注
 						"valid": "Y"//是否生效
@@ -134,6 +171,7 @@
 				
 			});
 		}else if(window.location.href.indexOf('order_success') >= 0){
+			$('.view_order').attr('href', YJS + '/' + TYPE + '/system.jsp#?page=order_detail&orderTpye=purchase&orderId=' + getUrlParameter('orderId'));
 			$.ajax({
 				url: DOMAIN + '/getUserOrderDetail',
 				type: 'GET',
@@ -141,13 +179,16 @@
 					'id': getUrlParameter('orderId')
 				},
 				success: function(res){
+					$('.loading_wrapper').hide();
+					$('.checkout').show();
 					var orderOtherData = [
 					    'creditBank',
 					    'orderPriceAmount',
 					    'paymentDeadline',
 					    'paymentType',
 					    'productQuantity',
-					    'serviceCharge'
+					    'serviceCharge',
+					    'userMark'
 					];
 					doFill(res.product, orderParamProduct, 'op_');
 					doFill(res.buyer, orderParamBuyer, 'ob_');
@@ -172,35 +213,6 @@
 //		//银行授信
 //		resId = res.id;
 //	});
-	var setCount = 0;
-	$('.count_btn').click(function(){
-		if(setCount == 0){
-			setCount = 1;
-			$(this).html("确认");
-			$('.op_count').removeAttr('disabled').focus();
-			var countTemp = $('.op_count').val();
-			$('.op_count').val("").val(countTemp);
-		}else{
-			setCount = 0;
-			$(this).html("修改");
-			$('.op_count').attr('disabled', 'disabled').removeClass('red_border');
-			var input_el = $('.op_count');
-			var count;
-			var _thisArray = input_el.val().split('.');
-			if(_thisArray.length == 2 && Number(_thisArray[1]) > 0){
-				count = Number(input_el.val()).toFixed(3) || 1;
-			}else{
-				count = parseInt(input_el.val()) || 1;
-			}
-			$(this).val(count);
-			var totalWeight = ($('.op_weight').eq(0).html() * count).toString();
-			totalWeight = totalWeight.split('.')[1] > 0 ? Number(totalWeight).toFixed(2) : parseInt(totalWeight);
-			$('.op_totalweight').html(totalWeight);
-			$('.op_amount').html(($('.op_price').eq(0).html() * count).toFixed(2));
-			$('.total_money').html((Number($('.op_amount').eq(0).html()) + 100).toFixed(2));
-		
-		}
-	});
 	$('.op_count').bind('blur', function(){});
 	var userType = 'company';
 	var orderType = getUrlParameter('orderType');
@@ -209,12 +221,12 @@
 		window.location.search = 'page=' + prePage;
 	});
 	
-	$('.view_order').click(function(){
+/*	$('.view_order').click(function(){
 		//判斷跳轉地址
 		var url = '../admin/system_' + userType + '.jsp?page=order_detail&orderTpye=purchase&orderId=' + resId;
 		window.open(url);
 	});
-	
+*/	
 	$('.submit').click(function(){
 		$(this).attr('disabled','disabled');
 		if(!$('.op_count').attr('disabled')){
@@ -241,9 +253,10 @@
 		postData.paymentType = $('#pay_type').val();
 		postData.paymentDeadline = $('#sel_deadline').val();
 //		postData.creditBankId = $('#sel_bank').val();
-		postData.creditBankId = 1;
-		postData.creditBank = $('#sel_bank').find("option [value='" + $('#sel_bank').val() + "']").html();
+		postData.creditBank = $('#sel_bank').find("[value='" + $('#sel_bank').val() + "']").html();
+		console.log(postData.creditBank)
 		postData.userMark = $('.remark').val();
+		postData.serviceCharge = Number($('.op_serviceCharge').html());
 		
 		$.ajax({
 			url: DOMAIN + "/addUserOrder",
@@ -253,9 +266,10 @@
 			contentType : "application/json ; charset=utf-8", 
 			success: function(res){
 				if(res.saved){
-//					window.location.href = YJS + '/web/order_success.jsp?orderId=' + res.orderId;
+					window.location.href = YJS + '/web/order_success.jsp?orderId=' + res.orderId;
 				}else{
-					alert(res.message);
+					//alert(res.msg);
+					alert("订单提交失败，商家不能购买自己的产品。")
 					$('.submit').removeAttr('disabled').removeClass('sent');
 				}
 			},

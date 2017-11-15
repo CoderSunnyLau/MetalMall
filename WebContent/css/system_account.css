@@ -166,7 +166,7 @@
 .latest_login p{
 	border:none;
 }
-.account_cnt .user_id{
+.account_cnt .login_name{
 	color:#E33;
 }
 .user_title span{
@@ -191,16 +191,23 @@
 	line-height:45px;
 }
 .company_info p span{
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	width:90px;
+	display:block;
+	width:100px;
 	margin-right:10px;
 	color:#AAA;
+	float:left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
-.company_info p i{
+.company_info p input{
 	font-size:13px;
 	font-weight:600;
+	border:1px solid #DDD;
+	width:50%;
+}
+.company_info p .disabled{
+	border:none;
 }
 .account_last{
 	border:none;s
@@ -213,6 +220,7 @@
 	height:120px;
 	float:left;
 	margin:20px 0;
+	position:relative;
 }
 .square{
 	width:73%;
@@ -225,12 +233,6 @@
 	font-size:18px;
 	text-align:center;
 	line-height:120px;
-}
-.square:hover{
-	background-color:#FC3;
-	box-shadow: 0 0 5px 0 #FC3;
-	color:#FFF;
-	font-size:21px;
 }
 .rate_block{
 	border-bottom:10px solid #F4F4F4;
@@ -332,4 +334,64 @@
 }
 .c .fill_block{
 	border:none;
+}
+.error{
+	position:absolute;
+	color:#E33;
+	bottom: 48px;
+	margin-left:15px;
+}
+.square_block input{
+	display:none;
+}
+.hover_box{
+	display:none;
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+	background-color:#FC3;
+	box-shadow: 0 0 5px 0 #FC3;
+	color:#FFF;
+	font-size:21px;
+	border-radius:12px;
+	position:absolute;
+	top:0;
+	left:14%;
+	line-height:120px;
+	text-align:center;
+	overflow:hidden;
+}
+.hover_box img{
+	width:100%;
+	height:auto;
+	z-index:8;
+	position:relative;
+}
+.square_block:hover .hover_box{
+	display:block;
+}
+.upload_fix, .upload_view{
+	width:35px;
+	height:30px;
+	background-color:#F90;
+	color:#FFF;
+	text-align:center;
+	position:absolute;
+	z-index:8;
+	top: 25px;
+	left:0;
+	line-height:30px;
+	font-size:12px;
+	cursor:pointer;
+}
+.upload_view{
+	background-color:#FFF;
+	color:#F90;
+	top: 65px;
+}
+.upload_view:hover{
+	color:#F50;
+}
+.upload_fix:hover{
+	background-color:#FA0;
 }

@@ -12,12 +12,13 @@
 	position:absolute;
 	left:50%;
 	top:20px;
-	margin-left:-220px;
+	margin-left:-190px;
 	background-image:url(../images/common_icons.png);
 	background-position:0 -90px;
 }
 .checkout{
 	margin:10px 0;
+	display:none;
 }
 .box_title{
 	position:relative;
@@ -175,6 +176,7 @@
 .settlement .submit, .view_order{
 	width:240px;
 	height:40px;
+	line-height:40px;
 	font-size:18px;
 	margin-top:10px;
 }

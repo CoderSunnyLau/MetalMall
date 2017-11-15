@@ -1,0 +1,26 @@
+<html>
+<body>
+<script src="libs/jquery.min.js"></script>
+<script src="libs/jquery-form.js"></script>
+<script>
+function ajaxFileUpload(){
+	$("#userFileUpload").ajaxSubmit({
+	    type: 'post',
+	    url: 'http://47.95.240.195:8090/uploadFileForUser',
+	    success: function (data) {
+	        alert(data);
+	    }
+	});
+	alert("AAA");
+	
+}
+</script>
+<form method="post" enctype="multipart/form-data" name="userFileUpload" id="userFileUpload" onsubmit="ajaxFileUpload()" target="i">
+<input type="text" name="userId" value="1">
+<input type="text" name="useType" value="updateUserOpeningBankAccPermitsImg">
+<input type="file" name="uploadFile"/>
+<input type="submit" value="submit" name="submit">
+</form>
+<iframe id="i" name="i" style="display:none;"></iframe>
+</body>
+</html>

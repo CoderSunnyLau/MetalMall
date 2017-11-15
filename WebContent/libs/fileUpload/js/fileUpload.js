@@ -63,8 +63,10 @@ var uploadTools = {
         var btsStr = "";
         btsStr += "<div class='uploadBts'>";
         btsStr += "<div class='selectFileBt'>+</div>";
+        btsStr += " </div>";
+        btsStr += "<div class='uploadBts upload_btn'>";
         btsStr += "<div class='uploadFileBt'>";
-        btsStr += "<i class='iconfont icon-shangchuan'></i>";
+        btsStr += "<i class='iconfont icon-shangchuan'>上 传</i>";
         btsStr += " </div>";
         btsStr += "</div>";
         $("#"+uploadId).append(btsStr);

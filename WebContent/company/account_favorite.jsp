@@ -15,35 +15,81 @@
 					<th>规格</th>
 					<th>材质</th>
 					<th>库存</th>
-					<th>时间</th>
-					<th>单价</th>
+					<!-- <th>时间</th> -->
+					<th>单价（元）</th>
 					<th>操作</th>
 				</thead>
-				<tbody class="pdts rows">
-					<tr>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td>查看</td>
-					</tr>
-					<tr class="odd">
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2017-7-31</td>
-						<td>1298</td>
-						<td>查看</td>
-					</tr>
-				</tbody>
+				<tbody class="favorite_list rows"></tbody>
 			</table>
 		</div>
 		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
-<script src="../js/system_pdts.js"></script>
+<script>
+	sysInit();
+	
+	var successCallback = function(){
+		$.ajax({
+			url: DOMAIN + '/getAllCompanyStoredProductsByCompanyId',
+			type: 'GET',
+			data: {
+				id: USER.id,
+				pageIndex: getSysUrlParam('pageIndex') || 0,
+				pageSize: 40
+			},
+			success: function(res){
+				$('.cnt_body').show();
+				console.log(res)
+				if(res.totalElements){
+					$('.favorite_list').empty();
+					for(var i = 0; i < res.content.length; i++){
+						var pdt = res.content[i];
+						var _class = i % 2 == 0 ? '' : 'odd';
+						$('.favorite_list').append(
+							'<tr class="' + _class + 
+							'"><td>' + pdt.name +
+							'</td><td>' + pdt.type +
+							'</td><td>' + pdt.specification +
+							'</td><td>' + pdt.material +
+							'</td><td>' + pdt.stockQuantity +
+							'</td><td>' + pdt.price +
+							'</td><td pdtId="' + pdt.id + '"><a class="op to_del">删除</a>|<a class="op view" jump="pdt_detail">查看</a></td></tr>'
+						);
+					}
+					$('.favorite_list').off();
+					$('.favorite_list').on('click', '.op', function(){
+						var pdtId = $(this).parent().attr('pdtId');
+						if($(this).hasClass('view')){
+							jump('company', {
+								page: 'pdt_detail',
+								pdtId: pdtId,
+								prepage: 'account_favorite'
+							});
+						}else if($(this).hasClass('to_del')){
+							$.ajax({
+								url: DOMAIN + '/removeFavoriteProductForCompany',
+								type: 'POST',
+								data: {
+									companyId: USER.id,
+									productId: pdtId
+								},
+								dataType: 'json',
+								success: function(res){
+									if(res.deleted){
+										alert('已取消收藏！');
+										reload('company');
+									}else{
+										alert('操作失败，请重试。');
+									}
+								}
+							});
+						}
+					});
+					pageInit(res.totalPages);
+				}else{
+					noRes($('.favorite_list'));
+				}
+			}
+		});
+	}
+</script>

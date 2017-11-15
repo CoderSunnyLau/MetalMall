@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>企业管理系统</title>
+	<title>企业管理系统-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/system.css">
+	<link rel="stylesheet" type="text/css" href="../css/system.css?v=18">
 </head>
 <body>
 	<jsp:include page="../components/header.jsp">
@@ -58,6 +58,5 @@
 	<jsp:include page="../components/footer.jsp">
 		<jsp:param value="false" name="show"/>
 	</jsp:include>
-	<script src="../js/system.js"></script>
 </body>
 </html>

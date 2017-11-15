@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="../css/system.css">
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <div class="cnt_header">
-	<span>首页 > 银行中心 > 支付方式</span>
+	<span>首页 > 金融中心 > 分期管理</span>
 </div>
 <div class="cnt_body">
 	<div class="part">
@@ -23,30 +23,64 @@
 						<th class="operation">操作</th>
 					</tr>
 				</thead>
-				<tbody class="rows">
-					<tr>
-						<td>中国银行</td>
-						<td>白条分期</td>
-						<td>2017-12-31</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-					<tr class="odd">
-						<td>中国银行</td>
-						<td>白条分期</td>
-						<td>2017-12-31</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-					<tr>
-						<td>中国银行</td>
-						<td>白条分期</td>
-						<td>2017-12-31</td>
-						<td><a>修改</a>|<a>删除</a></td>
-					</tr>
-				</tbody>
+				<tbody class="rows pay_types"></tbody>
 			</table>
 		</div>
 	</div>
 </div>
 <script>
+	sysInit();
 	cntLoad($('.add_btn [jump="pay_add"]'), 'bank');
+	
+	var successCallback = function(){
+		$.ajax({
+			url: DOMAIN + '/getBankInstallmentsDetailByBankId',
+			type: 'GET',
+			data: {
+				bankId: USER.id,
+				pageIndex: getUrlParameter('pageIndex') || 0,
+				pageSize: 20
+			},
+			success: function(res){
+				$('.cnt_body').show();
+				$('.pay_types').empty();
+				for(var i = 0; i < res.length; i++){
+					var item = res[i];
+					var _class = i % 2 == 0 ? '' : 'odd';
+					$('.pay_types').append(
+						'<tr class="' + _class + 
+						'"><td>' + item.bankName +
+						'</td><td>' + item.paymentType +
+						'</td><td>' + item.paymentDeadlineEnum +
+						'</td><td itemId="' + item.id + '"><a class="op edit" jump="pay_fix">修改</a>|<a class="op to_del">删除</a>' +
+						'</td></tr>'
+					);
+				}
+				cntLoad($('.edit[jump="pay_fix"]'), 'bank');
+				$('.pay_types').on('click', '.op', function(){
+					var itemId = $(this).parent().attr('itemId');
+					if($(this).hasClass('edit')){
+						setUrlParameter('installmentId', itemId);
+					}else if($(this).hasClass('to_del')){
+						$.ajax({
+							url: DOMAIN + '/deleteBankInstallment',
+							type: 'POST',
+							data: {
+								installmentId: itemId
+							},
+							dataType: 'json',
+							success: function(res){
+								if(res.deleted){
+									alert('操作成功！');
+									reload('bank');
+								}else{
+									alert('操作失败，请重试。');
+								}
+							}
+						});
+					}
+				});
+			}
+		});
+	}
 </script>

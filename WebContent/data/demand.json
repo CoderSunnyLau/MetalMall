@@ -1,8 +1,43 @@
 {
     "content": [
         {
+            "id": 4,
+            "name": "C11000铜带",
+            "productType": "电解铜",
+            "description": "需要优质的铜带，厚度公差0.005，宽度公差0.05mm",
+            "material": null,
+            "specification": "0.08*914.4",
+            "quantityReqrm": 200,
+            "unit": "件",
+            "companyName": "珠海横琴长隆BBB002建设发展有限公司",
+            "phone": "18800000000",
+            "minBudget": 6000,
+            "maxBudget": 8000,
+            "area": "上海",
+            "whoAdd": "BB",
+            "addTime": "2017-10-01 03:27:46"
+        },
+        {
+            "id": 3,
+            "name": "急需H62铜棒0.2吨",
+            "productType": "电解铜",
+            "description": "急需0.2吨的H62铜棒，希望上海地区有人能及时供货",
+            "material": "铜棒",
+            "specification": "H62铜棒",
+            "quantityReqrm": 0,
+            "unit": "吨",
+            "companyName": "珠海横琴长隆BBB002建设发展有限公司",
+            "phone": "18800000000",
+            "minBudget": 3500,
+            "maxBudget": 4200,
+            "area": "上海",
+            "whoAdd": "BB",
+            "addTime": "2017-10-01 03:23:07"
+        },
+        {
+            "id": 2,
             "name": "想要100米的铜线",
-            "productType": "铜线",
+            "productType": "电解铜",
             "description": "大概100米，要求2cm以上粗细",
             "material": "铜",
             "specification": "2cm*100米",
@@ -12,11 +47,12 @@
             "phone": "13530000000",
             "minBudget": 300,
             "maxBudget": 600,
-            "area": "广州",
+            "area": "上海",
             "whoAdd": "AA",
             "addTime": "2017-08-25 18:08:52"
         },
         {
+            "id": 1,
             "name": "急购1.5吨电解铜",
             "productType": "电解铜",
             "description": "由于XXX原因，先急需1.5吨电解铜",
@@ -34,7 +70,7 @@
         }
     ],
     "number": 0,
-    "numberOfElements": 2,
+    "numberOfElements": 4,
     "size": 10,
     "sort": [
         {
@@ -42,10 +78,10 @@
             "property": "id",
             "ignoreCase": false,
             "nullHandling": "NATIVE",
-            "ascending": false,
-            "descending": true
+            "descending": true,
+            "ascending": false
         }
     ],
-    "totalElements": 2,
+    "totalElements": 4,
     "totalPages": 1
 }

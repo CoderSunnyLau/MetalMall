@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%request.setCharacterEncoding("utf-8");%>
 <%!String _helpPrefix = ConstantUtil.YJS + "/web/help.jsp";%>
+<%!String _prefix = ConstantUtil.YJS;%>
 
 <div class="footer">
 <c:if test="${param.show != 'false'}">
@@ -11,31 +12,31 @@
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img"></div>
-						<span>免费找货找车</span>
+						<span>帮您快速找货</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_1"></div>
-						<span>商城钢厂直供</span>
+						<span>供需厂商直供</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_2"></div>
-						<span>品种规格齐全</span>
+						<span>专业交易团队</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_3"></div>
-						<span>仓储加工一体</span>
+						<span>供应链分期支付</span>
 					</div>
 				</li>
 				<li class="circle">
 					<div class="circle_item">
 						<div class="circle_img circle_4"></div>
-						<span>缺钱可打白条</span>
+						<span>一站式降本增效</span>
 					</div>
 				</li>
 			</ul>
@@ -90,7 +91,7 @@
 </c:if>
 	<div class="main_width">
 		<div class="descriptions">
-			<p><a>关于我们</a>|<a>法律声明</a>|<a>投资洽谈</a>|<a>联系我们</a>|<a>常见问题</a></p>
+			<p><a href="<%=_prefix%>/web/about_us.jsp" target="_blank">关于我们</a>|<a href="<%=_prefix%>/web/legal_statement.jsp">法律声明</a>|<a href="<%=_prefix%>/web/partners.jsp" target="_blank">合作伙伴</a>|<a href="<%=_prefix%>/web/contact_us.jsp" target="_blank">联系我们</a>|<a href="<%=_helpPrefix%>" target="_blank">常见问题</a></p>
 			<p>Copyright©易金所 www.yijinsuo.com 粤ICP备 xxxxxxxxx号-x</p>
 		</div>
 		<ul class="footer_icons">
@@ -101,6 +102,35 @@
 		</ul>
 	</div>
 </div>
+<div class="modal_wrap">
+	<div class="modal_box">
+		<div class="modal_title">提 示</div>
+		<div class="modal_cnt"></div>
+		<div class="modal_btns">
+			<button class="modal_choose modal_cancel">取消</button>
+			<button class="modal_choose modal_confirm">确定</button>
+		</div>
+	</div>
+</div>
+<script>
+	var modal = {
+		choose: function(msg, callback){
+			$('.modal_wrap').show();
+			$('.modal_choose').off();
+			$('.modal_cnt').html(msg);
+			$('.modal_choose').on('click', function(){
+				var r;
+				if($(this).hasClass('modal_confirm')){
+					r = true;
+				}else{
+					r = false;
+				}
+				callback(r);
+				$('.modal_wrap').hide();
+			});
+		}
+	};
+</script>
 <!-- IE8及以下版本瀏覽器 -->
 <!--[if lte IE 8]>
 <script>

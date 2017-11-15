@@ -20,6 +20,11 @@ $.get('../data/market.json', function(res){
 var myChart = echarts.init(document.getElementById('market_chart'));
 // 指定图表的配置项和数据
 var option = {
+	grid: {
+		y: 25,
+		y2: 35,
+		x2: 40
+	},
     tooltip: {
         trigger: 'axis'
     },
@@ -32,20 +37,20 @@ var option = {
     xAxis: {
         type: 'category',
         boundaryGap: false,
-        data: ["13/8","14/8","15/8","16/8","17/8","18/8"]
+        data: [ "20170916","20170917","20170918","20170919","20170920","20170921","20170922","20170923","20170924","20170925","20170926","20170927","20170928","20170929","20170930"]
     },
     yAxis: {
         type: 'value',
-    	min: 2750,
-    	max:4000,
+    	min: 4165,
+    	max:4220,
     	splitNumber: 4,
-    	interval:250,
+    	interval:10,
 	    axisLine: {show: false}
     },
     series: [{
     	name:'商品',
         type: 'line',
-        data: [3750, 3000, 3250, 3700, 3350, 3660],
+        data: [4168,4172,4176, 4175,4183, 4188,4182,4185,4198,4203,4201,4206,4211,4186,4217],
         showSymbol:false,
         smooth:true
     }],

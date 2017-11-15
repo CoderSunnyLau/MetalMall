@@ -5,7 +5,7 @@ body .row_grey{
 	text-align:center;
 	position:relative;
 }
-.row_grey span{
+.row_grey .d_name{
 	font-size:18px;
 	font-weight:600;
 }
@@ -13,6 +13,8 @@ body .row_grey{
 	position:absolute;
 	top:0;
 	right:15px;
+	font-size:12px;
+	color:#999;
 }
 .info_box{
 	border:1px solid #DDD;
@@ -21,6 +23,9 @@ body .row_grey{
 .float{
 	float:left;
 	width:50%;
+}
+.demand_detail{
+	display:none;
 }
 .demand_info{
 	width:300px;
@@ -62,7 +67,7 @@ body .row_grey{
 	padding:0 15px;
 }
 .budget span{
-	font-size:20px;
+	font-size:16px;
 	color:#E33;
 	margin-left:15px;
 }
@@ -86,10 +91,10 @@ body .row_grey{
 }
 .offer{
 	clear: both;
-	margin: 10px 0 0 85px;
+	margin: 15px 0 0 75px;
 	width: 250px;
-	height: 43px;
-	font-size:16px;
+	height: 35px;
+	font-size:14px;
 }
 body .row_white{
 	background-color:#F8F8F8;

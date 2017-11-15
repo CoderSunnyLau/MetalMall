@@ -4,7 +4,8 @@
 		yItem = {'p':[], 'a':[], 'c':[]},
 		zName = ['商品', '地区', '企业'];
 	$.get( DOMAIN + '/getIndexTotalData', function(res){
-//	$.get('http://192.168.0.107:8090/getIndexTotalData', function(res){
+		$('.loading_wrapper').hide();
+		$('.index_block').show();
 		for(i in res.orderPriceBoardInfos){
 			$('.scroll').append("<li>" + res.orderPriceBoardInfos[i] + "</li>");
 		}
@@ -36,23 +37,24 @@
 		for(i in res.bankProductInfos){
 			var bank = res.bankProductInfos[i];
 			$('.trend_dynamics').append(
-				"<li class='trend_box'><p class='trend_title'><span>" +
-				bank.name + "</span><i>" + bank.paymentType + " | 工商银行</i></p><p class='trend_cnt'>" +
-				bank.introduction + "</p></li>"
+				"<li class='trend_box'><p class='trend_title'><a target='_blank' href='financial_detail.jsp?id=" + bank.id + "'><span>" +
+				bank.name + "</span><a><i>" + bank.paymentType + " | 工商银行</i></p><p class='trend_cnt'><a target='blank' href='financial_detail.jsp?id=" + bank.id + "'>" +
+				bank.brief + "</a></p></li>"
 			);
 		}
 
 		for(i in res.requirementFormInfos){
 			var demand = res.requirementFormInfos[i];
 			$('.demand_trend').append(
-				"<li class='demand_box'><div class='demand_cnt'><p class='demand_title'>" + demand.name +
-				"</p><ul class='demand_detail'><li><span>发布时间：</span><i>" + demand.addTime +
+				"<li class='demand_box'><div class='demand_cnt'><a href='demand_detail.jsp?id=" + demand.id + 
+				"' target='_blank'><p class='demand_title'>" + demand.name +
+				"</p></a><ul class='demand_detail'><li><span>发布时间：</span><i>" + demand.addTime +
 				"</i></li><li><span>需求地区：</span><i>" + demand.area +
 				"</i></li><li><span>商品类别：</span><i>" + demand.productType +
 				"</i></li><li><span>材质要求：</span><i>" + demand.specification +
 				"</i></li><li><span>需求数量：</span><i>" + demand.quantityReqrm + demand.unit +
 				"</i></li></ul></div><div class='demand_action'><p class='demand_company'>" + demand.companyName +
-				"</p><p class='demand_budget'>预算：<span>" + demand.minBudget + "万~" + demand.minBudget +
+				"</p><p class='demand_budget'>预算：<span>" + demand.minBudget + "万~" + demand.maxBudget +
 				"万</span></p><a href='demand_detail.jsp?id=" + demand.id + "' class='btn' target='_blank'>我要供货</a></div></li>"
 			);
 		}
@@ -87,6 +89,11 @@
 				tooltip: {
 					trigger: 'axis'
 				},
+				grid: { // 控制图的大小，调整下面这些值就可以，
+					x: 40,
+					x2: '4%'
+					//y2: 20// y2可以控制 X轴跟Zoom控件之间的间隔，避免以为倾斜后造成 label重叠到zoom上
+					    },
 				xAxis: {
 					type: 'category',
 					boundaryGap: false,
@@ -145,6 +152,11 @@
 $('.tabs .tab').click(function(){
 	$('.tab_crr').removeClass('tab_crr');
 	$(this).addClass('tab_crr');
+	if($(this).attr('type') == "demand"){
+		$('.search_pdts').hide();
+	}else{
+		$('.search_pdts').show();
+	}
 });
 
 /* search */

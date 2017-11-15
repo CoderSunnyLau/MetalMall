@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <div class="cnt_header">
-	<span>首页 > 订单中心 > 采购订单</span>
+	<span>首页 > 订单中心 > 全部订单</span>
 </div>
 <div class="cnt_body">
 	<div class="part">
@@ -27,51 +27,12 @@
 					<th class="tab_4">商品总价</th>
 					<th class="tab_4">服务费</th>
 					<th class="tab_4">订单总价</th>
-					<th class="operation">操作</th>
+					<th class="operation tab_4">操作</th>
 				</thead>
-				<tbody class="rows">
-					<tr>
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>订单详情</a></td>
-					</tr>
-					<tr class="odd">
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>订单详情</a></td>
-					</tr>
-					<tr>
-						<td>0001</td>
-						<td class="pdt_name">001号xxxxx电解铜</td>
-						<td>电解铜</td>
-						<td>xxxxx</td>
-						<td>xxxxx</td>
-						<td>5000</td>
-						<td>2</td>
-						<td>10000</td>
-						<td>1298</td>
-						<td class="order_money">￥11298.00</td>
-						<td><a>订单详情</a></td>
-					</tr>
-				</tbody>
+				<tbody class="rows orders"></tbody>
 			</table>
 		</div>
 		<jsp:include page="../components/page.jsp"></jsp:include>
 	</div>
 </div>
+<script src="../js/a_order.js"></script>

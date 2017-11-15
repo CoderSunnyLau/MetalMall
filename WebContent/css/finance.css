@@ -107,6 +107,7 @@ body .page_cnt{
 }
 .financial_tip{
 	border-top:1px solid #DDD;
+	border-bottom:1px solid #DDD;;
 	line-height:35px;
 	height:35px;
 	position:relative;

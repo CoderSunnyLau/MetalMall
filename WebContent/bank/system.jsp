@@ -3,9 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>银行管理系统</title>
+	<title>银行管理系统-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
-	<link rel="stylesheet" type="text/css" href="../css/system.css">
+	<link rel="stylesheet" type="text/css" href="../css/system.css?v=18">
+	<meta http-equiv="content-type" content="must-revalidate" />
 </head>
 <body>
 	<jsp:include page="../components/header.jsp">
@@ -14,7 +15,7 @@
 	<div class="main_width cnt_box">
 		<div class="nav">
 			<ul class="menu" id="bank">
-				<li class="menu_item item_home menu_link active" name="bank_home">
+				<li class="menu_item item_home menu_link active" name="home">
 					<span class="m_home">首　　页</span>
 				</li>
 				<li class="menu_item"><span class="m_credit">资信中心</span>
@@ -25,7 +26,7 @@
 				</li>
 				<li class="menu_item"><span class="m_finance">金融中心</span>
 					<ul class="menu2">
-						<li class="menu2_item menu_link" name="pay_type">支付方式</li>
+						<li class="menu2_item menu_link" name="pay_type">分期管理</li>
 						<li class="menu2_item menu_link" name="finance">金融管理</li>
 					</ul>
 				</li>
@@ -40,13 +41,12 @@
 		</div>
 		<div class="body_cnt">
 			<div class="cnt" id="cnt">
-				<jsp:include page="./bank_home.jsp"></jsp:include>
+				<jsp:include page="./home.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="../components/footer.jsp">
 		<jsp:param value="false" name="show"/>
 	</jsp:include>
-	<script src="../js/system.js"></script>
 </body>
 </html>

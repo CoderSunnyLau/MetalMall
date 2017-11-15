@@ -3,7 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    <title>供应链金融</title>
+    <title>行情速递-易金所</title>
 	<jsp:include page="../components/head.jsp"></jsp:include>
 	<link rel="stylesheet" type="text/css" href="../css/finance.css">
 </head>
@@ -73,13 +73,13 @@
 				</div>
 				<div class="float">
 					<div class="border">
-						<p class="right_top"><span>AMM1#电解铜</span><i>【49910.00（49750-50070）】</i></p>
+						<p class="right_top"><span>易金所指数</span><!-- <i>【49910.00（49750-50070）】</i> --></p>
 						<table class="tab_row">
 							<tr>
-								<td>本月最低：<span>50150</span></td>
-								<td>本月最高：<span class="red">50150</span></td>
-								<td>本月均值：<span>50150</span></td>
-								<td>本月环比：<span class="red">3.7%</span></td>
+								<td>本月最低：<span>4168</span></td>
+								<td>本月最高：<span class="red">4217</span></td>
+								<td>本月均值：<span>4195</span></td>
+								<td>本月环比：<span class="red">1.01%</span></td>
 							</tr>
 						</table>
 						<p class="price_crr"><span>现货价格</span></p>
